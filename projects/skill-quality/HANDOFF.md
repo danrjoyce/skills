@@ -4,7 +4,7 @@ Updated: **2026-10-02 UTC**.
 
 ## Current deliverable
 
-**R8 implementation is complete locally: a smaller two-file v2 creator, frozen and statically checked.** Publication checks are recorded in [R8 verification](research/verification-r8.md). Continue on `research/skill-quality` and [draft PR #1](https://github.com/danrjoyce/skills/pull/1); verify the actual remote head before writes. No merge, installation, promotion, paid service, credential/settings/protection change or upstream synchronization is authorized.
+**R8 implementation is published: a smaller two-file v2 creator, frozen and statically checked.** Publication checks are recorded in [R8 verification](research/verification-r8.md). Continue on `research/skill-quality` and [draft PR #1](https://github.com/danrjoyce/skills/pull/1); verify the actual remote head before writes. No merge, installation, promotion, paid service, credential/settings/protection change or upstream synchronization is authorized.
 
 The usable artifact is [evidence-skill-creator-v2](candidate/evidence-skill-creator-v2/SKILL.md): 664 entrypoint words, two files, 4,665 bytes. It establishes material starting state and authority, distinguishes allowed new files from an occupied target, and asks for a realistic consumer first-use check. It keeps collision refusal and uncertain-outcome reconciliation. The six-file v1 remains byte-for-byte frozen.
 

@@ -32,4 +32,10 @@ The inherited `skills-r6` directory was not a Git checkout; an initial `git stat
 
 ## Publication
 
-Publication is pending at this local checkpoint. Before claiming it complete, verify the intended bytes and complete changed-path set at the resulting commit, the actual branch/PR head and draft state, and workflow/status/check-run records for that exact commit. Absent CI must be reported as absent, not passed. Record the substantive commit and observations in a tracking-only update; do not rewrite any historical freeze or trial record.
+Substantive R8 commit: `687608b851fd8a1f99d15d40d705223f33a9bfa0`. A fresh PR read confirmed that exact head, open and draft. All twelve intended changed files were independently fetched by commit and matched the local UTF-8 bytes exactly. The complete untruncated remote tree (391 entries) was compared with the starting tree: exactly those twelve project paths changed, comprising three current tracking documents and nine new v2/research files. All prior candidate, support, research evidence and every outside-project blob/mode remain unchanged; the denied archives remain absent.
+
+The R4 static checker passed 278 relative links/anchors, schema and unchanged protocol arithmetic. R8 package/freeze checks and the R5 preservation check passed. These are deterministic checks, not a new qualification or live trial.
+
+For this exact substantive commit, workflow-run, combined-status and check-run endpoints each returned zero records. The combined state was `pending` with zero statuses. This is absent CI, not running or passed CI.
+
+A final tracking-only commit updates this verification record and the current handoff to record the observed publication. Its bytes, two-path delta, actual head and exact-commit CI are verified separately and reported in the PR status, avoiding a self-referential commit hash. No package, freeze or experiment is changed by that checkpoint.
