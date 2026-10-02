@@ -45,4 +45,8 @@ Full public baseline source closures/licenses and exact template bytes are not m
 
 ## Remote publication
 
-Publication verification is pending at this local checkpoint. The next step is scoped publication to the existing branch, independent remote-byte comparison, changed-path review and exact-commit workflow/status/check inspection. Absence of a configured check is not a CI pass.
+Substantive commit: `94b572a5592076284a99ae5a4640f7ed109d8aef`. All 45 project files were independently fetched from that exact commit and matched local bytes and Git blob identities. The complete recursive tree and GitHub comparison both show exactly the 30 intended project-path additions/updates relative to the starting commit. The original main comparison shows only 45 project additions and no unrelated changes.
+
+The commit returned zero workflow runs, zero commit statuses and zero check runs. This is not a CI pass; the repository has no observed PR-triggered test pipeline. Local checks passed, including 142 relative links/anchors, all 33 unit tests and two final complete qualification rebuilds matching the committed evidence identities.
+
+The following tracking-only checkpoint records these verified findings and names the substantive commit in TASKS/HANDOFF. It changes no candidate/support bytes. Final branch identity and the repeated byte/check verification are reported in the PR description, avoiding a self-referential commit hash in its own file.
