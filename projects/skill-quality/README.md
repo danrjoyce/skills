@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: research in progress. Started 2026-10-02.
+Status: first foundations draft written; publication checks in progress. Started 2026-10-02. No skill-performance experiment has been run.
 
 ## Purpose
 
@@ -21,7 +21,12 @@ This is a research project, not an installed skill. It does not change existing 
 
 ## Navigation
 
+- [How to determine if a skill is good](how-to-determine-if-a-skill-is-good.md): the substantive first analysis
+- [Source register](research/source-register.md): evidence quality, claim scope, and limitations
+- [Implementation audit](research/implementation-audit.md): exact public-code observations and methodological critique
+- [Implementation pins](research/implementation-pins.json): machine-readable commit and blob identifiers
+- [Methodology](research/methodology.md): search approach, verification, and unresolved questions
 - [TASKS.md](TASKS.md): sequential task ledger and acceptance criteria
 - [HANDOFF.md](HANDOFF.md): current state and exact restart prompt
 
-The first substantive deliverable will be `how-to-determine-if-a-skill-is-good.md`, supported by source triage and methodology records under `research/`.
+The draft proposes a measurement and decision framework. It does not claim that a new creator has been built or has beaten any alternative.

@@ -14,6 +14,7 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - Include construct validity, causal marginal usefulness, activation, task distributions, generalization, reliability, safety, cost, maintainability, environment constraints, contamination, and an evaluation protocol.
    - Keep a source register with version pins, evidence quality, claim scope, and limitations.
    - Acceptance: substantive first draft and research records on a branch, remotely verified; exact fresh-context critique prompt recorded. No final meta-skill yet.
+   - Current checkpoint: substantive draft, source register, implementation audit, methodology, and source pins written. Local text/link/JSON checks passed. Final publication and remote byte verification pending.
 2. **R2: Independently critique the foundations. PENDING**
    - Fresh context, no private reasoning from R1.
    - Verify important citations and definitions. Seek counterexamples and methodological weaknesses.
@@ -38,3 +39,4 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 ## Checkpoints
 
 - 2026-10-02: Repository inspected at `3cca18b368ae95cdbdebbff572ccafa662551015`. No existing project or research branch found. Created `research/skill-quality`. Root `AGENTS.md` resolves to `CLAUDE.md`; project research will remain outside shipped skill buckets. Repository prose prohibits em dashes.
+- 2026-10-02: Scaffold published at `dcf2ec650120d4a2cd86cbcef4f1fe61d81783c2`; [draft PR #1](https://github.com/danrjoyce/skills/pull/1) opened. The first substantive draft is approximately 5,400 words. Public implementations are pinned and the main proposed framework is separated from measured results.

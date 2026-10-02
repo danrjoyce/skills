@@ -1,0 +1,60 @@
+{
+  "retrieved_at_utc": "2026-10-02",
+  "purpose": "Public implementation baselines for the first skill-quality research draft; not runtime versions or empirical results.",
+  "repositories": [
+    {
+      "repository": "openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "files": [
+        {
+          "path": "skills/.system/skill-creator/SKILL.md",
+          "blob": "72bc0b97e7a6476254a9d5c424c9971748402ec3"
+        },
+        {
+          "path": "skills/.system/skill-creator/scripts/quick_validate.py",
+          "blob": "0547b4041a5f58fa19892079a114a1df98286406"
+        }
+      ]
+    },
+    {
+      "repository": "anthropics/skills",
+      "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+      "files": [
+        {
+          "path": "skills/skill-creator/SKILL.md",
+          "blob": "65b3a402dbd09b8e83f9d637c6b553875189085c"
+        },
+        {
+          "path": "skills/skill-creator/agents/comparator.md",
+          "blob": "80e00eb45db3ee53a132fc2ba97fd59a7339e563"
+        },
+        {
+          "path": "skills/skill-creator/agents/grader.md",
+          "blob": "558ab05c0a9a8bb062ef4c51823d4d76c3acf7c4"
+        },
+        {
+          "path": "skills/skill-creator/scripts/run_eval.py",
+          "blob": "e58c70bea39d5b252a1e819f242bbdcdf20e8b87"
+        },
+        {
+          "path": "skills/skill-creator/scripts/run_loop.py",
+          "blob": "30a263d674ef19de11c756d6f7537f91a421909e"
+        }
+      ]
+    },
+    {
+      "repository": "agentskills/agentskills",
+      "commit": "69ef37e9424c0a7ea9dd2293b559e43ec8176379",
+      "files": [
+        {
+          "path": "docs/skill-creation/evaluating-skills.mdx",
+          "blob": "7c90d54295be88ac40de7f19db0876cee6180c4e"
+        },
+        {
+          "path": "docs/specification.mdx",
+          "blob": "d9a2db099d905da8b879a5c6f996728073985279"
+        }
+      ]
+    }
+  ]
+}
