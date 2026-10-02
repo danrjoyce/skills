@@ -1,12 +1,12 @@
 # Research methodology and limitations
 
-Date: **2026-10-02 UTC**. Scope: first foundations chunk, R1.
+Date: **2026-10-02 UTC**. Scope: R1 foundations through R3 conceptual revision. R1 retrieval history is preserved below; R3 additions are explicitly identified.
 
 ## 1. Questions and stopping condition
 
 The question is not which creator has the most features. It is what evidence could justify saying that a skill is good, and eventually that one creation process produces better skills than relevant alternatives.
 
-R1 stops when there is:
+R1 stopped when there was:
 
 - A substantive initial answer with an explicit construct and measurement argument
 - Primary evidence for the main methodological risks
@@ -19,7 +19,7 @@ It does not require an exhaustive literature survey, a runnable benchmark, a fin
 
 ## 2. Retrieval and source-selection process
 
-### Repository and implementation inspection
+### R1 repository and implementation inspection
 
 1. Inspected `danrjoyce/skills` root, branch list, open pull requests, recursive tree, `AGENTS.md`, `CLAUDE.md`, `CONTEXT.md`, and `package.json` at `3cca18b368ae95cdbdebbff572ccafa662551015`.
 2. Confirmed no existing research project or competing branch before creating `research/skill-quality`.
@@ -29,7 +29,7 @@ It does not require an exhaustive literature survey, a runnable benchmark, a fin
 
 The research directory is outside `skills/`, so it is not a shipped skill. The existing plugin manifests, bucket documentation, router, and versioning were not changed.
 
-### Literature searches
+### R1 literature searches
 
 Representative queries used during the pass:
 
@@ -87,7 +87,7 @@ These calculations test the examples' arithmetic. They are not observations abou
 
 ## 5. Verification performed and not performed
 
-### Performed in this chunk
+### Performed in R1
 
 - Retrieved public implementation files and pinned their source SHAs
 - Checked the relevant code branches behind the consequential implementation critique
@@ -109,9 +109,9 @@ These calculations test the examples' arithmetic. They are not observations abou
 
 The draft's static audit and literature analysis should not be described as a benchmark result or a security certification.
 
-## 6. Risks in this draft itself
+## 6. Risks retained after criticism
 
-The independent critic should consider, rather than assume away:
+The R2 critique and R3 response address these concerns without treating conceptual revision as empirical validation:
 
 1. The definition may be too demanding for low-risk skills or too broad to operationalize cheaply.
 2. The proposed quality dimensions may overlap or omit a critical dimension.
@@ -121,10 +121,37 @@ The independent critic should consider, rather than assume away:
 6. The causal interpretation may require stronger design assumptions than the prose makes clear.
 7. The selected literature could reflect search and author judgment rather than the full range of high-quality counterevidence.
 
-These are review questions, not resolved defects or instructions to reach a particular verdict.
+The current main analysis mitigates these concerns through explicit contracts, tiers, and inference limits. Practical feasibility, utility weights, coverage, and actual behavior remain unvalidated. See the C1-C9 [response ledger](revision-01.md).
 
 ## 7. What must be decided later
 
 Before R4 can freeze an experimental protocol, establish target creation families, supported execution environments, acceptable risk, budget, baseline fidelity, who can maintain an inaccessible final set, and how human judgments will be obtained and calibrated. Some facts can be discovered from the repository; value judgments and consequential new resource commitments require an explicit decision.
 
 Keep these unresolved matters visible. Do not substitute arbitrary “industry-standard” thresholds or a few self-generated examples merely to move on to implementation.
+
+
+## 8. R3 independent verification and revision procedure
+
+R3 began from `ca27f690562c7440458dc50cdc0f01b5073f08ad`, after a fresh-context R2 critique. It fetched the actual PR head and repository guidance, then matched all ten starting local project files against remote content and Git blob identities. It preserved the independent critique and R1 verification record unchanged.
+
+The revision followed the critic's acceptance questions rather than accepting every inference by authority. It used definitional counterexamples, dimensional analysis, static code paths, current version histories, and inspected primary passages. Important qualifications include that independent final testing is one valid route rather than the only statistically possible route, that a selected validation score is not an allegation of hidden leakage, and that a static catalog risk has no measured incidence here.
+
+### Source rechecks
+
+- Independently fetched all ten files in the revised public implementation manifest at immutable commits, compared blob IDs, and reread the consequential validator/selection/probe branches. Added S5 to the manifest; did not silently update frozen baselines to a new moving head.
+- Revisited the exact SkillsBench v1/v4 texts and arXiv history; inspected the v4 construction, generated-skill protocol, run selection, and interval definitions. Revised its claim disposition rather than treating recency as stronger causal evidence.
+- Rechecked the SWE paper's placement passages and cost-ratio equation. A fresh GitHub API request for its linked repository returned 404. The code remains unavailable, not presumed invalid or deleted.
+- Revisited SkillLearnBench's selection, reference-sensitive grading, judge repeatability, and single-round creator adaptation.
+- Reopened M1-M4 and E1-E4 at their recorded primary URLs. Inspected consequential passages for the retained methodological uses. M2's original PDF was accessible; M3's accessible preprint was used. Its OpenReview final-publication route again returned browser verification, so the unread final text supplies no claim.
+
+This is a targeted source audit, not an updated exhaustive search. No unseen source, search snippet, or source's reputation substitutes for inspected text. Publication metadata and source versions are in the source register. The project's October research date is distinct from paper submission dates and the pinned public implementation snapshots.
+
+### Quantitative rechecks
+
+R3 checked the existing base-rate precision and zero-failure bounds, the majority-of-three polynomial, the two-candidate selected-maximum illustration, cost-ratio sign examples, and the prospective low-risk break-even arithmetic. These are derived examples under explicit assumptions. No random model samples, validator run, creator run, benchmark reproduction, or paid model experiment was used.
+
+### Revision boundary and validation
+
+The changed main document and supporting evidence records define a conceptual framework. They do not freeze actual task weights, host versions, sample sizes, utility weights, release margins, or a final benchmark. The response ledger maps every criticism to a change or a named future test. Relative links/anchors, JSON, source identities, arithmetic, repository prose rules, unchanged historical artifacts, and changed-path scope are checked before publication. Final remote bytes and commit scope are verified separately; see [verification-r3.md](verification-r3.md).
+
+R4 is protocol design only. It must turn open empirical/value choices into concrete proposed decisions with prerequisites, not run a paid study or implement the creator. When custody, runtime, money, or user values cannot be established, it must describe the blocker and a bounded exploratory alternative rather than claim the condition exists.

@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: R1 foundations and R2 independent critique complete; R3 revision is next. Started 2026-10-02. No skill-performance experiment has been run.
+Status: R1 foundations, R2 independent critique, and R3 conceptual revision complete; R4 comparative-protocol design is next. Started 2026-10-02. No skill-performance experiment has been run.
 
 ## Purpose
 
@@ -21,8 +21,10 @@ This is a research project, not an installed skill. It does not change existing 
 
 ## Navigation
 
-- [How to determine if a skill is good](how-to-determine-if-a-skill-is-good.md): the substantive first analysis
+- [How to determine if a skill is good](how-to-determine-if-a-skill-is-good.md): the revised measurement and decision framework
 - [Independent critique](research/critique-01.md): nine prioritized findings, verified code/source checks, and revision acceptance criteria
+- [R3 response ledger](research/revision-01.md): C1-C9 dispositions, independently checked evidence, and remaining decisions
+- [R3 verification record](research/verification-r3.md): checks and publication limits
 - [Source register](research/source-register.md): evidence quality, claim scope, and limitations
 - [Implementation audit](research/implementation-audit.md): exact public-code observations and methodological critique
 - [Implementation pins](research/implementation-pins.json): machine-readable commit and blob identifiers

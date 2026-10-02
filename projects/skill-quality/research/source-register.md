@@ -1,6 +1,6 @@
 # Source register and evidence triage
 
-Research date: **2026-10-02 UTC**. This is a targeted, critically selected evidence set, not an exhaustive systematic review. Claims are limited to the versions and passages inspected. No published experiment was independently reproduced here.
+Research/revision date: **2026-10-02 UTC**. R1 sources were independently revisited for R3; the R2 critique remains unchanged. This is a targeted, critically selected evidence set, not an exhaustive systematic review. Claims are limited to the versions and passages inspected. No published experiment was independently reproduced here.
 
 ## How sources are admitted
 
@@ -16,7 +16,7 @@ Primary sources are preferred. Peer review strengthens scrutiny but does not rep
 ## S1. Agent Skills specification
 
 - **Source:** [specification at pinned commit](https://github.com/agentskills/agentskills/blob/69ef37e9424c0a7ea9dd2293b559e43ec8176379/docs/specification.mdx)
-- **Version:** `69ef37e9424c0a7ea9dd2293b559e43ec8176379`; current repository head retrieved on the research date. File blob `d9a2db099d905da8b879a5c6f996728073985279`.
+- **Version:** `69ef37e9424c0a7ea9dd2293b559e43ec8176379`; head captured during R1 on this date, retained as a frozen baseline rather than a promise of the latest future version. File blob `d9a2db099d905da8b879a5c6f996728073985279`.
 - **Role:** authoritative format definition. Inspected frontmatter, compatibility, resources, disclosure, and validation sections.
 - **Use:** establishes the package contract and runtime-dependent aspects. Its recommendations are not controlled evidence for an optimal length or structure.
 - **Limit:** parseability is not behavioral portability, usefulness, or safety.
@@ -37,7 +37,7 @@ Primary sources are preferred. Peer review strengthens scrutiny but does not rep
 - **Inspected:** creator workflow and platform branches; complete `run_loop.py` and `run_eval.py`; relevant grader and comparator instructions.
 - **Role:** strong practical baseline with observable evaluation machinery.
 - **Use:** paired runs, artifact-grounded grading, human review, trigger evaluation, iterative improvement.
-- **Limits:** intended development feedback is different from confirmatory evidence. Platform-specific fallbacks change rigor. The source's recommendation to encourage triggering is a context-sensitive heuristic, not a universal optimum. The [audit](implementation-audit.md) separates exact code observations from implications.
+- **Limits:** intended development feedback is different from confirmatory evidence. Platform-specific fallbacks change the available evaluation procedure. Selection is explicitly documented by the authors; the audit does not allege hidden leakage or an unbiased-score claim. Parallel probe interference is a static risk, not an observed error rate. The source's recommendation to encourage triggering is a context-sensitive heuristic, not a universal optimum. The [audit](implementation-audit.md) separates exact code observations from implications.
 
 ## S4. Agent Skills output-evaluation guide
 
@@ -46,6 +46,14 @@ Primary sources are preferred. Peer review strengthens scrutiny but does not rep
 - **Role:** practical guidance; complete guide inspected.
 - **Use:** explicit no-skill comparisons, outcome inspection, timing, iterative diagnosis.
 - **Limits:** assertions added after seeing results are development artifacts. Reusing them is not an independent final test. Always-passing safety or preservation checks can still be valuable regression guards, even if they do not discriminate current candidates. The guide's link to the Anthropic creator and overlapping workflow mean these are not independent empirical confirmations.
+
+## S5. Agent Skills client integration guide
+
+- **Source:** [pinned integration guide](https://github.com/agentskills/agentskills/blob/69ef37e9424c0a7ea9dd2293b559e43ec8176379/docs/client-implementation/adding-skills-support.mdx).
+- **Version:** same Agent Skills commit as S1; blob `6c784309faec4ea27715e57734e1e0b5929c1977`, independently retrieved in R2 and R3 and now added to the manifest.
+- **Inspected:** discovery/trust, parsing, catalog filtering, activation, paths/resources, and optional delegation.
+- **Use:** file access or a host-registered activation tool supplies instructions; user-explicit activation can be injected by the host. Package trust and model-invocation filtering matter.
+- **Limit:** integration recommendations describe options, not proof that each host implements them or that a package registers a native function. The guide's broad implementation language is not adopted as a universal portability guarantee. Its lenient-parser advice and the format's strict constraints are distinct contracts.
 
 ## M1. Measurement and Fairness
 
@@ -66,7 +74,7 @@ Primary sources are preferred. Peer review strengthens scrutiny but does not rep
 - **Bibliography:** Sayash Kapoor, Benedikt Stroebl, Zachary S. Siegel, Nitya Nadgir, and Arvind Narayanan, 2024. [Inspected arXiv v1](https://arxiv.org/html/2407.01502v1).
 - **Inspected:** sections 2 and 5, holdout taxonomy, associated methodology passages.
 - **Role:** primary experiments and critique of agent evaluation, including cost-sensitive baselines and holdouts appropriate to claimed generality.
-- **Limit:** experiments concern earlier agents and benchmarks, not modern skill creators. A later TMLR record was found, but its full text was blocked in this session; this project cites the accessible pinned preprint, not an assumed identical revision.
+- **Limit:** experiments concern earlier agents and benchmarks, not modern skill creators. A later [TMLR record](https://openreview.net/forum?id=Zy4uFzMviZ) was identified in R1/R2, but R3 again received a browser-verification page. The final text is not admitted as inspected evidence. This project cites the accessible pinned preprint; no equivalence with the final publication is assumed. Its general cost/holdout arguments are retained, not its historical performance rankings.
 
 ## M4. Interactive information retrieval
 
@@ -105,27 +113,44 @@ Primary sources are preferred. Peer review strengthens scrutiny but does not rep
 
 ## D1. SkillsBench
 
-- **Bibliography:** Xiangyi Li and colleagues, 2026. [Inspected arXiv v1](https://arxiv.org/html/2602.12670v1).
-- **Status:** primary preprint; peer-review status not established in this pass.
-- **Inspected:** sections 2-5 and appendices C.10, E, F, and relevant failure/exclusion details.
-- **Strength:** controlled skill/no-skill conditions, multiple harness-model combinations, repeated trials, deterministic verifiers.
-- **Limit:** 86 constructed tasks but 84 evaluated; curated task-skill pairing is an optimistic deployment setting. Missing length-matched and component controls limit mechanism claims. Package-size comparisons stratify different tasks, so confounding prevents a universal “two or three modules is best” prescription. Its own limitations acknowledge important transfer and causal-control gaps.
+- **Bibliography/status:** Xiangyi Li and colleagues, 2026, primary preprint. [Version history](https://arxiv.org/abs/2602.12670), [historical v1](https://arxiv.org/html/2602.12670v1), [current v4](https://arxiv.org/html/2602.12670v4). Peer-review status not established here.
+- **Historical v1 (13 February 2026):** R1 inspected sections 2-5 and appendices; 86 constructed/84 evaluated tasks, seven configurations, reported +16.2 percentage points. Retained as a historical account, not the current aggregate or an independent replication.
+- **v4 (14 June 2026):** R3 inspected sections 3-5 and appendices D.6, G, N. Reports 87 tasks, 18 configurations, 33.9% versus 50.5% (+16.6 points), with three selected trials per cell. Construction rejects low-separation tasks. Healthy scored runs precede timeout backfills; other coverage gaps are rerun. Plotted intervals use result-count Wald calculations. Generated-skill protocols differ in reuse/isolation and report discovery/interference problems.
+- **Our inference:** these choices define a selected benchmark intervention, not prevalence-weighted first-attempt deployment value. Excluding some timeouts can remove treatment-mediated cost; direction/magnitude cannot be established without all attempts and causes. Result-count intervals do not supply a paired, task-clustered effect interval. Better coverage and recency do not remove those limits.
+- **Disposition:** retain descriptive experimental evidence and design hypotheses; exclude pooled version estimates, a causal package-size optimum, universal deployment gains, and rankings of the exact pinned creators. R4 may use benchmark tasks as disclosed development material, not secretly repurpose public cases as a sealed test. No raw-run reproduction here.
 
 ## D2. SWE-Skills-Bench
 
-- **Bibliography:** Tingxu Han and colleagues, 2026. [Inspected arXiv v1](https://arxiv.org/html/2603.15401v1).
-- **Status:** primary preprint; peer-review status not established in this pass.
-- **Inspected:** construction, experimental setup, metrics, and results.
-- **Strength:** pinned repositories, explicit acceptance criteria, paired comparisons, cost reporting.
-- **Limit:** filters toward feasible, deterministically testable tasks; one Claude Code/Haiku 4.5 solver configuration. Section 3.2 describes placement under `~/.claude`; section 4.1 says project root. No repeated-run protocol was identified in the inspected text. These uncertainties constrain reuse and interpretation; they are not evidence of invalid results. Actual loading and raw trials need independent code-level audit.
+- **Bibliography/status:** Tingxu Han and colleagues, 2026. [Inspected arXiv v1](https://arxiv.org/html/2603.15401v1), sections 3-4 and equation 5. Primary preprint; peer-review status not established here.
+- **Observed:** 49 skills/565 instances, one Claude Code/Haiku 4.5 configuration, reported approximately +1.2 points with a high baseline. Sections 3.2 and 4.1 give different placement accounts. No repetition protocol was identified in inspected text. The linked [repository](https://github.com/GeniusHTX/SWE-Skills-Bench) returned 404 in R2 and R3's GitHub API check; loading and raw trials remain unverified. No reason for the 404 is inferred.
+- **Metric:** equation 5 divides accuracy change by relative token-cost change. Our algebraic counterexample: +0.02 accuracy and -0.10 cost gives -0.2, although both improve; -0.02 accuracy and -0.10 cost gives +0.2 despite lower accuracy. Zero cost change is undefined. These are illustrations, not paper data.
+- **Disposition:** retain a qualified reported observation and verification lead. Exclude that ratio as an overall value rule, near-null-as-equivalence claims, and calibration of this project's expected effect or budget. Accessible paper text supports this restricted use; inaccessible code does not support any code claim. Access plus a loading/data audit would be required to upgrade it.
 
 ## D3. SkillLearnBench
 
-- **Bibliography:** Shanshan Zhong and colleagues, 2026. [Inspected arXiv v1](https://arxiv.org/html/2604.20087v1).
-- **Status:** primary preprint; peer-review status not established in this pass.
-- **Inspected:** sections 3-4 and appendices K, L, M excerpts.
-- **Strength:** directly evaluates skill generation and downstream execution while fixing the solver.
-- **Limit:** 20 tasks and 100 instances, explicitly selected for low no-skill success and solvability with human skills. Seventeen tasks derive from SkillsBench, so the studies are not independent samples. Judge-based artifact and trajectory scores depend on reference/oracle choices. The single-round creator adaptation cannot rank the complete current Anthropic workflow. Useful for hypotheses and protocol design, not broad superiority conclusions.
+- **Bibliography/status:** Shanshan Zhong and colleagues, 2026. [Inspected arXiv v1](https://arxiv.org/html/2604.20087v1), sections 3-4 and appendices K-M. Primary preprint; peer-review status not established here.
+- **Observed:** 20 tasks/100 instances selected for skill dependence, 17 tasks adapted from SkillsBench, fixed solver, and a single-round Skill-Creator condition. Artifact/trajectory scores depend on references and oracle steps. Appendix L.3 reruns the judge on fixed outputs; this is evaluator repeatability evidence rather than solver reliability.
+- **Our inference:** efficient valid alternatives can differ from an oracle sequence. Stable grading does not prove valid grading, and textual safety judgments cannot establish behavior under attack. Shared task origins constrain independence of evidence.
+- **Disposition:** retain for hypotheses about authoring feedback and metric design. Exclude full-workflow creator ranking, behavioral safety certification, and any implication that one generation or solver trial suffices for general comparative inference. R4 must independently calibrate its own oracles and estimate relevant variance.
+
+## Claim-level admission summary
+
+| Sources | Retain for this claim | Exclude or defer this inference |
+|---|---|---|
+| S1, S5 | Format and proposed integration contracts | Runtime compatibility, native-tool registration by a file, or demonstrated benefit without execution |
+| S2, S3 | Exact public construction workflows and inspected code paths | Comparative creator quality, deployed error frequency, or concealed intent |
+| S4 | Practical evaluation design ideas | Independent outcome replication or always-passing invariants being dispensable |
+| M1 | Explicit measurement assumptions | A validated latent skill-quality scale; technical psychometric terms for our custom checklist |
+| M2 | Selection-bias mechanism and need for valid post-selection inference | Measured bias in the pinned optimizer or a claim its authors never made |
+| M3 inspected preprint | Cost-aware baselines and holdout scope | Unread final-version claims or current-model performance |
+| M4 | Contextual relevance analogy | Agent activation validation or nonsignificance as equivalence |
+| E1 | Reliability distinction and endpoint/process gap | Current skill failure rates or independent-run formulas for stateful retries |
+| E2 | Joint benign utility and adversarial evaluation under a threat model | Certification or extrapolation to untested attacks/hosts |
+| E3 | Judge-bias mechanisms | Validity of this project's uncalibrated grader |
+| E4 | Bounded contamination-detection argument | Proof of cleanliness from a negative detector result |
+| D1-D3 | Qualified reported experiments and hypotheses, with dispositions above | Universal effectiveness/ineffectiveness, a pooled effect, or superiority of a new creator |
+
+**Evidence status:** paper-reported results, source-code observations, and this project's proposals remain separate. No source has been independently reproduced by this project. Important framework claims survive removing D1-D3: their justification is the stated counterexamples, runtime contracts, and methodological arguments, not a borrowed headline.
 
 ## Screened but not used as load-bearing evidence
 

@@ -21,10 +21,12 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - Deliver a prioritized critique with concrete revisions and unresolved questions.
    - Completed: [independent critique](research/critique-01.md), approximately 5,300 words, with nine prioritized findings, source/code checks, counterexamples, strengths, empirical gaps, and R3 acceptance criteria. All nine public implementation blob pins matched. Main analysis and R1 evidence artifacts left unchanged.
    - Key corrections: distinguish fitness from superiority; specify the callable/runtime contract; reconcile SkillsBench v4; preserve the fair Anthropic selection-set finding and add static probe-interference risks; formalize creator evaluation and proportionate measurement. No creator or benchmark was executed.
-3. **R3: Revise and settle the measurement model. PENDING**
+3. **R3: Revise and settle the measurement model. COMPLETED**
    - Respond to each critique item with evidence or a recorded uncertainty.
    - Freeze a defensible initial decision framework and identify remaining evidence needs.
-   - Follow C1-C9 and the acceptance checklist in critique-01.md. Write a response ledger, revise the main analysis and supporting evidence, and record the exact R4 prompt. Do not implement the creator or silently promote a static source risk to an observed runtime effect.
+   - Completed: [C1-C9 response ledger](research/revision-01.md), revised main framework, source dispositions/version reconciliation, expanded static implementation audit, integration-guide pin, methodology, and R4 prompt.
+   - Separates fitness/adoption/superiority, defines the initial host-loaded workflow, nested creator-policy estimands and information boundaries, observable metrics, risk-proportionate costs, missingness/inference rules, and supply-chain threat model.
+   - All ten public blob pins independently matched. Empirical questions are deferred explicitly, not marked solved. No creator or benchmark was executed. Publication checks: [R3 verification](research/verification-r3.md).
 4. **R4: Design the comparative evaluation. PENDING**
    - Declare creation-task and downstream-task distributions, baselines, budgets, holdout ownership, grading calibration, safety gates, uncertainty analysis, and stopping rules before implementation.
    - Distinguish testing a creator from testing a skill it creates.
@@ -46,3 +48,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R1 substantive commit `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27` verified remotely. Comparison with the original main shows only project-document additions; no existing skill or configuration changed. No PR-triggered workflow run or commit status was returned for that commit. Stop here and renew context for R2; the exact critique prompt is in HANDOFF.md.
 
 - 2026-10-02: R2 independently reviewed remote project commit `9283609fbd998aeb3a4de2e00e41d73d0bfd5cf8`. Published critique and updated project tracking only. The revised evidence review must address the June 2026 SkillsBench v4; the linked SWE-Skills-Bench repository returned 404 during verification. These findings do not constitute benchmark replication. R3 is the next substantive task.
+
+- 2026-10-02: R3 revised from `ca27f690562c7440458dc50cdc0f01b5073f08ad`, preserving R2 critique and R1 verification unchanged. Conceptual acceptance criteria addressed; runtime/benefit/custody and actual resource/value decisions remain open. R4 is next in fresh context; no R5 implementation or paid experiment is authorized by this checkpoint.

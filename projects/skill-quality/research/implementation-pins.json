@@ -1,6 +1,6 @@
 {
   "retrieved_at_utc": "2026-10-02",
-  "purpose": "Public implementation baselines for the first skill-quality research draft; not runtime versions or empirical results.",
+  "purpose": "Frozen public baselines and integration evidence for R1-R3; not installed host versions or empirical results.",
   "repositories": [
     {
       "repository": "openai/skills",
@@ -53,8 +53,13 @@
         {
           "path": "docs/specification.mdx",
           "blob": "d9a2db099d905da8b879a5c6f996728073985279"
+        },
+        {
+          "path": "docs/client-implementation/adding-skills-support.mdx",
+          "blob": "6c784309faec4ea27715e57734e1e0b5929c1977"
         }
       ]
     }
-  ]
+  ],
+  "independently_reverified_at_utc": "2026-10-02"
 }

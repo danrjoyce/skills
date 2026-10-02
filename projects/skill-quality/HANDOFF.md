@@ -4,59 +4,78 @@ Updated: **2026-10-02 UTC**.
 
 ## Current state
 
-**R1 foundations and R2 independent critique are complete. R3 revision is next.** Continue on `research/skill-quality` and [draft PR #1](https://github.com/danrjoyce/skills/pull/1), based on main at `3cca18b368ae95cdbdebbff572ccafa662551015`. Inspect the actual branch tip before writing; do not recreate the branch or PR.
+**R1 foundations, R2 independent critique, and R3 conceptual revision are complete. R4 comparative-protocol design is next.** Continue on `research/skill-quality` and [draft PR #1](https://github.com/danrjoyce/skills/pull/1), based on main at `3cca18b368ae95cdbdebbff572ccafa662551015`. Inspect the actual branch tip before writing; do not recreate the branch or PR.
 
-R1's substantive draft was published at `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27`; its tracking checkpoint was `9283609fbd998aeb3a4de2e00e41d73d0bfd5cf8`. R2 reviewed that checkpoint in fresh context. Its deliverable is [critique-01.md](research/critique-01.md), approximately 5,300 words. R2 adds the critique and updates TASKS, HANDOFF, and README only. The main analysis and R1 evidence artifacts remain unchanged so the criticism and subsequent response are auditable separately.
+R1's substantive draft was published at `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27`, with tracking checkpoint `9283609fbd998aeb3a4de2e00e41d73d0bfd5cf8`. R2's critique is at `ca27f690562c7440458dc50cdc0f01b5073f08ad`. R3 revised from that commit and preserves the independent critique and historical R1 verification unchanged. The PR and [R3 verification record](research/verification-r3.md) identify the published revision checkpoint.
 
-The project is research documentation only. No final meta-skill, performance benchmark, sealed holdout, runtime compatibility test, or superiority result exists. No merge, repository-security change, or upstream synchronization is part of this project checkpoint.
+No final creator, model-performance experiment, runtime compatibility result, calibrated grader, sealed holdout, or superiority finding exists. The conceptual framework is settled enough for protocol design; numerical thresholds, actual host configurations, budget, and custody remain open. No merge, repository-security change, or upstream synchronization is part of this checkpoint.
 
-## Artifacts
+## Read these artifacts
 
-1. [Main analysis](how-to-determine-if-a-skill-is-good.md), still the R1 draft
-2. [Independent critique](research/critique-01.md), the R2 deliverable and acceptance checklist
-3. [Source register](research/source-register.md), awaiting the R3 dispositions and version reconciliation
-4. [Pinned implementation audit](research/implementation-audit.md), awaiting the R3 corrections
-5. [Source-version manifest](research/implementation-pins.json)
-6. [Methodology and limitations](research/methodology.md)
-7. [Task ledger](TASKS.md)
-8. [R1 verification record](research/verification-r1.md)
+1. [Revised main analysis](how-to-determine-if-a-skill-is-good.md), especially sections 1.2-1.4, 2.3, 3, 6.4, 7, 9-11
+2. [R3 response ledger](research/revision-01.md), C1-C9 dispositions and limits
+3. [Independent R2 critique](research/critique-01.md), preserved unchanged
+4. [Source register](research/source-register.md), exact versions and claim-level admission
+5. [Static implementation audit](research/implementation-audit.md), including unexecuted instrument qualification plan
+6. [Implementation pins](research/implementation-pins.json), ten independently rechecked public files
+7. [Methodology](research/methodology.md), historical R1 process and R3 rechecks
+8. [Task ledger](TASKS.md) and [R3 verification](research/verification-r3.md)
 
-## Findings to preserve and resolve
+## Decisions to preserve
 
-The critique retains the relational view of quality, the separation of deployment/forced-use/ablation experiments, the distinction between implementation evidence and outcome evidence, and the draft's arithmetic. Its required changes are identified as C1-C9:
+- Fitness for purpose, incremental value, adoption, and superiority are different. Equal adequate alternatives can both be good; nonsignificance is not equivalence.
+- The initial candidate is a host-loaded model-invocable authoring workflow, not a registered native service. Claude Code/Codex are intended targets, untested. A host/adapter supplies discovery, loading, execution, permissions, and results. Generated user-only artifacts require explicit-invocation evaluation.
+- Distinguish package deployment effect, forced-use diagnostics, and component mechanisms. Skill access traces do not establish understanding or causal benefit.
+- The complete creator policy includes all attempts, human help, budgets, selection, status/fallback handling, and adapter. Broader authoring value and conditional/production skill quality are separate claims.
+- Freeze the creator before evaluation-family adaptation, then freeze each artifact before downstream confirmation. The solver sees its legitimate task/input; solutions/grader secrets remain concealed. No actual custody boundary exists yet.
+- Use observable outcome/process checks, evaluator repeatability and substantive validity, and separate solver reliability. Critical false passes cannot be averaged away.
+- Evaluation should be proportionate: development, bounded adoption, and comparative research are different tiers. Include prospective human time, all-traffic catalog overhead, maintenance, failures, and retirement without charging each skill for the whole research project.
+- Operational timeouts and budget overruns are outcomes. Distinguish external outage, ambiguous missingness, and oracle failure; keep all attempts and rerun links. Match uncertainty to episodes, artifacts, briefs, and families.
+- Preserve hard authorization/safety constraints across creator references, package/dependencies, execution, and graders. Use inert fixtures and controlled sinks; report benign utility alongside attack outcomes.
 
-- **C1:** distinguish fitness for purpose, incremental value, adoption, and comparative superiority. The definition should admit equally good alternatives.
-- **C2:** specify the callable deliverable and supported runtime contract. A skill package does not itself register a native tool. Respect the distinction between user-only and model-driven invocation.
-- **C3:** reconcile SkillsBench v4, dated 14 June 2026, rather than presenting v1 as the whole current evidence picture. Scrutinize run selection and inferential claims; the new headline is not automatically stronger evidence. SWE-Skills-Bench's cost-efficiency ratio has a sign problem, and its linked repository returned 404 through web and GitHub API reads. SkillLearnBench remains a qualified process study, not a full-creator ranking.
-- **C4:** the Anthropic optimizer really selects on its held-out split. Its authors explicitly describe this as a development selection procedure; do not imply concealed leakage or an unbiased-generalization claim they did not make. The shared command directory creates a static concurrent-probe interference risk; runtime frequency is unknown. Preserve baseline fidelity and separate any repaired-harness diagnostic.
-- **C5:** define skill- and creator-level estimands, failures, abstention, feedback, selection, analysis units, and staged information access.
-- **C6:** distinguish observable access/action events from understanding; distinguish evaluator repeatability and validity from solver reliability.
-- **C7:** introduce proportionate evaluation tiers and a coherent prospective cost boundary, including catalog overhead and human effort.
-- **C8:** predeclare how timeouts, reruns, clustering, margins, and adaptive selection affect claims. A non-significant difference is not equivalence.
-- **C9:** include the creator and package supply chain in the threat model; test useful benign behavior as well as resistance to attacks.
+## Evidence cautions that must survive
 
-All nine implementation-file blob pins in the R1 manifest matched independently fetched public files. The new pinned integration guide is `docs/client-implementation/adding-skills-support.mdx` at Agent Skills commit `69ef37e9424c0a7ea9dd2293b559e43ec8176379`, blob `6c784309faec4ea27715e57734e1e0b5929c1977`. The critique contains direct links and code anchors.
+- Source register D1 reconciles historical SkillsBench v1 with current v4. Neither versions nor shared benchmark tasks are independent replications. Selection and uncertainty limitations prevent importing a headline as expected deployment benefit or ranking these exact creator implementations.
+- D2's accessible paper is a qualified lead. The linked SWE repository still returned 404 in R3; loading/raw trials are unverified. Its ratio is not an admissible general cost-quality rule.
+- D3 is useful process evidence with selection/reference dependence and an adapted creator. Judge repeatability does not establish behavioral safety or solver reliability.
+- Anthropic's authors explicitly describe validation selection and withhold that feedback from the improvement prompt. Do not invent hidden leakage or an unbiased-score claim. Independent confirmation or justified selection-aware inference is needed for the project's additional generalization claim.
+- Concurrent probe catalog interference is a statically supported risk with no measured incidence/effect. Preserve native baseline fidelity. A repair changing creator feedback is a separately labeled method; a common external evaluator may assess frozen artifacts.
+- The TMLR final text for M3 remains unread due to browser verification. Use the inspected pinned preprint for bounded methodology, not assumed final-version equivalence.
 
-These are review findings, not instructions to agree automatically. R3 must either make a justified revision, rebut an item with evidence, or explicitly defer an empirical question to its proper stage. No measured effect size exists for the newly identified probe risk.
+## R4 decisions and owners
 
-## Exact fresh-context prompt for the next substantive task
+| Decision | Required evidence or owner | If unavailable |
+|---|---|---|
+| Target creation families, prevalence, primary authoring/generator claim | User's intended use and research rationale | Propose explicit options; do not claim deployment representativeness |
+| Native call interface versus host-loaded workflow | Actual use contract; user if materially changed | Retain R3 scope with a pending decision |
+| Host/model/tool versions and baseline fidelity | Available authorized environments and public implementations | Document requirements and untested status; no simulated claim of execution |
+| Budget, horizon, adequacy, practical margins, critical harms | User/domain owner; scoped proposals can be researched | Mark pending approval/value choice; no paid calls |
+| Holdout custody and access enforcement | Real authorized custodian/environment and access controls | Exploratory public evaluation with correspondingly limited claims |
+| Sample allocation, repetitions, uncertainty, stopping | Pilot variance and feasible cost; analyst rationale | Design a bounded pilot, not arbitrary universal sample counts |
+| Grader calibration and human feedback | Validated fixtures, expertise availability, fair help policy | Narrow supported tasks or label measurement unqualified |
+
+R4 should complete a concrete proposed protocol and expose approval gates. It need not pretend every prerequisite exists to finish its design artifact. R5 implementation must wait for an adequately specified protocol and any material scope/resource decisions.
+
+## Exact fresh-context prompt for R4
 
 ```text
-Work on R3 only in GitHub repository danrjoyce/skills, branch research/skill-quality, draft PR #1. Inspect the current branch and repository guidance before writing. Read AGENTS.md, CLAUDE.md, .agents/invocation.md, projects/skill-quality/README.md, TASKS.md, HANDOFF.md, research/critique-01.md, the main analysis, and supporting evidence artifacts. Do not rely on the prior author's private reasoning.
+Work on R4 only in GitHub repository danrjoyce/skills, branch research/skill-quality, draft PR #1. Inspect the current remote branch and repository guidance before writing. Read AGENTS.md, CLAUDE.md, .agents/invocation.md, projects/skill-quality/README.md, TASKS.md, HANDOFF.md, the revised main analysis, research/revision-01.md, research/critique-01.md, and supporting source/audit/methodology/pin/verification records. Do not rely on prior private reasoning. If R4 already exists, read it and current status rather than duplicating it.
 
-Revise the foundations in response to critique C1-C9. Begin by resolving the distinction between fitness, usefulness, adoption, and superiority, and by declaring the initial callable product and supported runtime assumptions. A skill package does not automatically register a native function or MCP tool. Keep repository invocation conventions separate from claims about all hosts.
+Design the comparative evaluation before implementing a creator. First challenge the R3 framework's practical assumptions, especially its initial host-loaded callable contract, broader authoring-value versus generator-quality estimands, fallback scoring, paired/nested design, and real information boundary. Record any correction with evidence, not automatic agreement.
 
-Reconcile current primary evidence, including SkillsBench v4 versus the historical v1 account. Preserve version-specific claims and qualify run-selection and uncertainty limitations. Do not turn source-code observations, preprints, inaccessible implementation evidence, or reference-similarity scores into replicated outcome evidence. Treat the Anthropic selection procedure fairly: confirm the code, credit its intended training-feedback separation, and distinguish validation selection from final generalization. Record the static shared-catalog probe risk and its unmeasured practical effect without silently modifying or handicapping the baseline.
+Produce research/comparative-protocol.md with a concrete proposed primary claim and outcome, creation-family and downstream-task sampling frame, weights and units, strong baselines, faithful native versus adapted comparison labels, permissions/catalog/host requirements, creation and execution budgets, human clarification/feedback policy, all-attempt selection/failure/abstention accounting, and prospective cost horizon. Explain why selected families and comparators answer the user's aim. Keep user/domain value decisions and spending approvals explicit; do not invent them.
 
-Write a response ledger in research/revision-01.md for every C1-C9 item: accepted and revised, rejected with evidence, or deferred with a named next step. Revise how-to-determine-if-a-skill-is-good.md and supporting source/audit/methodology records as needed. Formalize the skill and creator estimands, failure and abstention treatment, information boundary, observable metrics, evaluator calibration, proportionate evaluation tiers, cost perspective, missing-data logic, and threat model. Use the critique's checkable acceptance criteria. Keep any unresolved decisions visible rather than choosing arbitrary universal thresholds.
+Specify the staged information-flow and actual holdout custody requirement, what each creator/solver/evaluator may see, artifact/method freeze points, contamination/reset checks, and an exploratory fallback if independent custody cannot be established. Publicly inspected tasks cannot be described as a sealed holdout. Do not publish future secret cases or answers in this public repository.
 
-R3 should settle a defensible initial measurement and decision framework, not run the full experiment. Do not implement the final meta-skill, invent a sealed holdout, run paid model experiments without the required authority, edit shipped skills or repository settings, merge, or bulk-sync upstream. Update README, TASKS, and HANDOFF with the revised artifacts and a precise R4 comparative-protocol prompt. Publish sequentially on the existing branch and verify remote bytes and changed-file scope.
+Define metric/oracle and trace contracts, deterministic and human/LLM grader calibration, critical false-pass tests, noncanonical valid solutions, delayed/substituted/user-only activation cases, benign/adversarial threat-model pairs, unsupported hosts, and severe noncompensating gates. Turn the Anthropic probe audit into a diagnostic plan preserving the native baseline; label any repaired feedback path as a different method. No empirical risk frequency is known yet.
 
-Keep one substantive task active. Do not start parallel research workers. Renew context conservatively around 50,000 to 60,000 tokens and before approximately 90,000; stop earlier at a coherent checkpoint. Report the revised artifacts and commit, material changes, remaining empirical and value decisions, verification limits, and the exact next task.
+Write explicit timeout/outage/unknown/oracle-failure and rerun rules; an attempt-ledger schema; paired/nested weighting and clustering; treatment of failed creation and unsupported outputs; intended confidence/decision regions for superiority, noninferiority, equivalence, or quality-cost tradeoff; a finite claim/multiplicity family; and a stopping rule that accounts for adaptive development. Propose a risk-proportionate pilot/variance and budget-sizing plan before choosing expensive sample counts. Use worked planning arithmetic where useful, labeled illustrative, and distinguish finite-suite from transported population claims.
+
+Include a go/no-go checklist and list the remaining user/resource/custody decisions that block an actual run. R4 is design only: no candidate skill implementation, paid model/benchmark run, real secret/destructive test, shipped-skill edit, repository-security change, merge, or bulk upstream sync. Safe local document/schema/arithmetic checks are allowed. Do not change frozen public baselines or historical critique records silently.
+
+Update README, TASKS, HANDOFF, and a verification record. End with a precise R5 prompt if the protocol is sufficiently specified, or a narrowly scoped prerequisite task if it is not. Publish on the existing branch and verify remote bytes, changed-file scope, links/anchors, JSON/schema examples, and arithmetic. Keep one substantive task active, no parallel research workers, and renew context conservatively around 50,000 to 60,000 tokens and before approximately 90,000. Report the artifact, verified commit/links, consequential design choices, unresolved approvals, and verification limits.
 ```
 
 ## Resume precautions
 
-Compare the current remote PR and branch with this handoff before writing. If R3 already exists, read its response ledger and current task status rather than duplicating it. Preserve the critique as the independent record; corrections to the main argument belong in the revision and its response ledger.
-
-Read-only inspection and source research do not imply permission to change security, create persistent credentials, or merge the PR. If a later experimental step needs money, private data, additional access, or a value judgment that the sources cannot supply, identify the exact decision and continue independent authorized work.
+Read-only source research does not imply permission for new credentials, paid experiments, private-data sharing, repository settings, or merging. Use existing authorized connectors/environments and check actual availability. Distinguish a design ready for review from a run ready to execute. Do not treat the parent task's publication permission as authority to spend or deploy.
