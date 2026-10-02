@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: first foundations draft written; publication checks in progress. Started 2026-10-02. No skill-performance experiment has been run.
+Status: R1 foundations complete; independent critique is next. Started 2026-10-02. No skill-performance experiment has been run.
 
 ## Purpose
 
@@ -26,6 +26,7 @@ This is a research project, not an installed skill. It does not change existing 
 - [Implementation audit](research/implementation-audit.md): exact public-code observations and methodological critique
 - [Implementation pins](research/implementation-pins.json): machine-readable commit and blob identifiers
 - [Methodology](research/methodology.md): search approach, verification, and unresolved questions
+- [R1 verification record](research/verification-r1.md): publication checks and their limits
 - [TASKS.md](TASKS.md): sequential task ledger and acceptance criteria
 - [HANDOFF.md](HANDOFF.md): current state and exact restart prompt
 

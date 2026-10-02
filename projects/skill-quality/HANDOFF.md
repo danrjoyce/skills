@@ -4,7 +4,7 @@ Updated: **2026-10-02 UTC**.
 
 ## Current state
 
-R1 has produced a substantive foundations draft and supporting research records. Publication and remote verification are the remaining R1 steps at this checkpoint. The branch is `research/skill-quality`; the review is [draft PR #1](https://github.com/danrjoyce/skills/pull/1), based on main at `3cca18b368ae95cdbdebbff572ccafa662551015`.
+R1 is complete. The substantive foundations draft and all eight original project files were remotely verified byte-for-byte at `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27`. The branch is `research/skill-quality`; the review is [draft PR #1](https://github.com/danrjoyce/skills/pull/1), based on main at `3cca18b368ae95cdbdebbff572ccafa662551015`. A later checkpoint commit updates this handoff, the ledger, README, and verification record only. Inspect the actual branch tip before writing.
 
 The project is research documentation only. No final meta-skill, performance benchmark, sealed holdout, or superiority result exists. No merge or bulk upstream synchronization is authorized by this checkpoint. Repository protection is a separate concern and is not established by this research.
 
@@ -16,6 +16,7 @@ The project is research documentation only. No final meta-skill, performance ben
 4. [Source-version manifest](research/implementation-pins.json)
 5. [Methodology and limitations](research/methodology.md)
 6. [Task ledger](TASKS.md)
+7. [R1 verification record](research/verification-r1.md)
 
 ## Durable findings and uncertainty
 
@@ -40,6 +41,6 @@ Write projects/skill-quality/research/critique-01.md with an overall verdict, pr
 Keep one substantive task active at a time. Do not start parallel research workers or bulk-sync upstream. Do not copy private or internal instruction text or unrelated personal information into the public repository. Renew context conservatively around 50,000 to 60,000 tokens and before approximately 90,000; stop earlier at a coherent checkpoint. Return the critique artifact and commit, the most important corrections, verification limits, and the exact next task.
 ```
 
-## If R1 publication was interrupted
+## Resume precautions
 
-First compare local or pending research content with the actual remote branch and PR. Finish remote byte and changed-path verification before marking R1 complete. Do not recreate the branch or duplicate the PR. Record the verified substantive commit in the ledger. Then proceed with the fresh-context critique as a new task, not by extending the original author's context.
+First compare the actual remote branch and PR with this checkpoint. Do not recreate the branch or duplicate the PR. Continue with the fresh-context critique as a new task, not by extending the original author's context. If another worker has already published R2, read its artifact and current ledger before acting.
