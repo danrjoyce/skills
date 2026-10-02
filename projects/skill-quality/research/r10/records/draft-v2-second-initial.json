@@ -1,0 +1,18 @@
+{
+  "draft.md": {
+    "bytes": 353,
+    "sha256": "51164fc86376bc35f12e759bef3c99c9b9cbb4a62a0dbed928d13d5535d72f4e"
+  },
+  "prompt.txt": {
+    "bytes": 3764,
+    "sha256": "6c15133928b7cf0c04b8882787bedaaa50cbbb6652343627c54da435d2ebf0d8"
+  },
+  "sources.md": {
+    "bytes": 580,
+    "sha256": "13db7f0454d2da749440999dbd80a1d63ba5f3263ba72a195bc8f10e9989315e"
+  },
+  "state-origin.json": {
+    "bytes": 202,
+    "sha256": "27a7d4931e717784c8d95aadc3b8ab32c732f10a773a519f4d7f28931d54e97f"
+  }
+}

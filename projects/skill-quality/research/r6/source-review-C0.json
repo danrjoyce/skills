@@ -1,0 +1,14 @@
+{
+  "disposition": "permitted_on_staged_synthetic_D1_inputs_only",
+  "observations": [
+    "Only Python standard-library imports; no network, process execution, dynamic eval, credential access or deletion.",
+    "Reads supplied CSV and creates only a caller-specified fresh output directory and three specified files.",
+    "CSV values are processed as data, not interpolated into commands.",
+    "Whole-file in-memory processing and unrestricted filesystem capabilities remain; this review is not a sandbox/security certification."
+  ],
+  "path": "scripts/normalize_inventory.py",
+  "reviewed_at_utc": "2026-10-02T17:37:19.650687+00:00",
+  "reviewer": "R6 coordinator, source inspection; not independent",
+  "scope": "entire exact generated script, before downstream execution permission",
+  "sha256": "0ef5aba7a928eefdc41f5797a8d905d1d6478df8599884efce311fd95dec1ac7"
+}

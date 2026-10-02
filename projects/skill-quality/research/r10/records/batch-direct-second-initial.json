@@ -1,0 +1,21 @@
+{
+  "destination/": {
+    "directory": true
+  },
+  "destination/KEEP.txt": {
+    "bytes": 39,
+    "sha256": "be9ec134719eeaf79c16e5f1c4f0dbff0b4ab36bfdc963864404668e5a3af3f7"
+  },
+  "input.json": {
+    "bytes": 230,
+    "sha256": "77c6c1115dd429a51e9d02a88b6678bfe033c8e7e7b3b8185b9c9c0449b41a05"
+  },
+  "prompt.txt": {
+    "bytes": 4374,
+    "sha256": "2e953263962070d93b6edfdae5a163f41d81c25173b17148dc877b0624a81a9e"
+  },
+  "state-origin.json": {
+    "bytes": 120,
+    "sha256": "a6679a032aa04be45fd22d616a70954572a6784c5fbed1b6ec93da260db7b758"
+  }
+}

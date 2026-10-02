@@ -1,0 +1,14 @@
+{
+  "event": "admit",
+  "slot": "batch-template-first",
+  "task_name": "/root/complete_refined_skill_trials/execute_batch_template_first",
+  "start_before_call_utc": "2026-10-02T22:32:45Z",
+  "admission_observed_utc": "2026-10-02T22:32:56.280582+00:00",
+  "deadline_utc": "2026-10-02T22:35:45+00:00",
+  "prompt_file": "prompts/batch-template-first.txt",
+  "fresh_context": true,
+  "status": "running",
+  "full_allowance_and_recording_reserved": true,
+  "spawn_return_observed_utc": "2026-10-02T22:32:47Z",
+  "timestamp_note": "start_before_call_utc is the conservative allowance origin stated in wrapper. admission_observed_utc is the later admission recording observation unless separately corrected; spawn_return_observed_utc records the earlier tool-return observation. Neither is exact backend execution start."
+}

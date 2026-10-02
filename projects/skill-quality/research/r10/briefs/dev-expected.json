@@ -1,0 +1,14 @@
+{
+  "amber.md": "# Amber lamp\n\nTags: home, warm\n",
+  "index.json": [
+    {
+      "id": "amber",
+      "title": "Amber lamp",
+      "tags": [
+        "home",
+        "warm"
+      ],
+      "file": "amber.md"
+    }
+  ]
+}

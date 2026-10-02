@@ -1,0 +1,6 @@
+{
+  "origin": "fixed synthetic fixture",
+  "fixture": "fixtures/batch/first",
+  "use": "first",
+  "fallback": false
+}

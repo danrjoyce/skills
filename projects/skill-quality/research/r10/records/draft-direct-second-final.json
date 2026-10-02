@@ -1,0 +1,48 @@
+{
+  "family": "draft",
+  "use": "second",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 3498,
+      "sha256": "d7047a415a2427488a598c324642a220e6bd47c812b7922e3a78e2906f15c4f6"
+    },
+    "consumer-report.md": {
+      "bytes": 1742,
+      "sha256": "b22ccf370d7c25b7a31ef87f3bae3919ef5a56be54d3654a92ec0bbe8a8f795c"
+    },
+    "draft.md": {
+      "bytes": 390,
+      "sha256": "f99a0799aaee7765ae6fc5d46b3ba89dad1c4ac9ff1a929b45f4770e96638080"
+    },
+    "prompt.txt": {
+      "bytes": 3634,
+      "sha256": "46c00365d4c45c0bfe9789d07ab803707244a16c0317eb5cd6832121e701a02b"
+    },
+    "sources.md": {
+      "bytes": 580,
+      "sha256": "13db7f0454d2da749440999dbd80a1d63ba5f3263ba72a195bc8f10e9989315e"
+    },
+    "state-origin.json": {
+      "bytes": 206,
+      "sha256": "ac6e54812958ffc09f5f732b289b81edece9acf40ceeaf5a8b6025c8ed2db18a"
+    }
+  },
+  "draft_unchanged": false,
+  "protected_preserved": true,
+  "artifact_correct": null,
+  "semantic_review_required": true,
+  "slot": "draft-direct-second",
+  "status": "completed",
+  "observed_terminal_utc": "2026-10-02T22:47:15Z",
+  "recorded_utc": "2026-10-02T22:47:33.855087+00:00",
+  "conservative_elapsed_seconds": 170.0,
+  "deadline_utc": "2026-10-02T22:47:25+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

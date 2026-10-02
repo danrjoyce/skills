@@ -1,0 +1,31 @@
+{
+  "blue-lake.md": "# Blue Lake\n\nTags: travel, water\n",
+  "cafe-kit.md": "# Café kit\n\nTags: (none)\n",
+  "red-fox.md": "# Red Fox\n\nTags: animal, forest\n",
+  "index.json": [
+    {
+      "id": "blue-lake",
+      "title": "Blue Lake",
+      "tags": [
+        "travel",
+        "water"
+      ],
+      "file": "blue-lake.md"
+    },
+    {
+      "id": "cafe-kit",
+      "title": "Café kit",
+      "tags": [],
+      "file": "cafe-kit.md"
+    },
+    {
+      "id": "red-fox",
+      "title": "Red Fox",
+      "tags": [
+        "animal",
+        "forest"
+      ],
+      "file": "red-fox.md"
+    }
+  ]
+}

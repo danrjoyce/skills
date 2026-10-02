@@ -1,0 +1,41 @@
+{
+  "archives": [
+    {
+      "decoded_bytes": 348620,
+      "decoded_sha256": "130935488943636a121b83e792b1ce3b09830116fc8828fe8268350bc2456e91",
+      "name": "baseline-source-bundle.json",
+      "publication_status": "retained_locally_not_uploaded",
+      "storage_bytes": 132233,
+      "storage_sha256": "8689f2d94f67b52ad64243464fb49b82e05a9f1ea0c7940122102678b6c9b825"
+    },
+    {
+      "decoded_bytes": 636540,
+      "decoded_sha256": "01049610248c9896cc36a0bb2dd6ce8ec17cb8b05a6aa903bcd18365d6acb9ad",
+      "name": "runtime-checkpoint-initial.json",
+      "publication_status": "retained_locally_not_uploaded",
+      "storage_bytes": 59321,
+      "storage_sha256": "06dfc7bccc299ac794da874ef11d31428e2d1224270361186a9c40a65d2b7c3b"
+    },
+    {
+      "decoded_bytes": 1203977,
+      "decoded_sha256": "d7ec1ed7e9cf00dce3f3dff944a1718ab1a4009b0f0aa1772fc74c873856e92b",
+      "name": "runtime-checkpoint.json",
+      "publication_status": "retained_locally_not_uploaded",
+      "storage_bytes": 154646,
+      "storage_sha256": "096aa0d367d315152787092f6f7135e72b961ca0373b28ebf2f5573d8573e73b"
+    }
+  ],
+  "limit": "Public files omit raw runtime snapshots, full author check outputs and original worker reports. Published case/semantic artifacts are explicitly curated synthetic research data; they contain no host/system instructions or unrelated workspace content.",
+  "public_evidence": [
+    "selected-packages.json",
+    "diagnostic-results.json",
+    "case-artifacts.json",
+    "semantic-annotations.json",
+    "semantic-controls.json",
+    "journal.jsonl",
+    "baseline-inventory.json",
+    "source-locations.json"
+  ],
+  "reason": "The public-source archive upload was denied by the authorization reviewer, including one same-payload retry with user transcript evidence. No alternative upload route was used. Two runtime archives were withheld proactively. No raw archive payload is included in this manifest.",
+  "status": "Reduced public evidence delivery; full archives retained locally"
+}

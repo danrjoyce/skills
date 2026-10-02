@@ -1,0 +1,25 @@
+{
+  "destination/": {
+    "directory": true
+  },
+  "destination/KEEP.txt": {
+    "bytes": 39,
+    "sha256": "be9ec134719eeaf79c16e5f1c4f0dbff0b4ab36bfdc963864404668e5a3af3f7"
+  },
+  "destination/red-fox.md": {
+    "bytes": 44,
+    "sha256": "6f5a4148761a5c36a4fa418feb54bd0f83ef66412f446ffaaddead9998e802ab"
+  },
+  "input.json": {
+    "bytes": 185,
+    "sha256": "f102b345791f2c1e2b657e6afdd49e239c5eab10dcbe69097c8c1a8665bd10f3"
+  },
+  "prompt.txt": {
+    "bytes": 4323,
+    "sha256": "c2b42984771c6808724497aaec61e729de2034620ad212deadc326a7a18e4f55"
+  },
+  "state-origin.json": {
+    "bytes": 124,
+    "sha256": "298b8dd4a8b18e4676bb91cca81a741dc884eeae05bf63b02924be13298d3907"
+  }
+}

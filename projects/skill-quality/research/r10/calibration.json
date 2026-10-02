@@ -1,0 +1,8 @@
+{
+  "missing_outputs_rejected": true,
+  "fixed_expected_batch_accepted": true,
+  "wrong_card_rejected": true,
+  "allowed_draft_edit_preserves_protected": true,
+  "protected_draft_change_rejected": true,
+  "scope": "Coordinator deterministic controls only, zero model trials"
+}

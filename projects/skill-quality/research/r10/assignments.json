@@ -1,0 +1,196 @@
+[
+  {
+    "slot": "author-batch-v2",
+    "role": "author",
+    "family": "batch",
+    "policy": "v2",
+    "cap_seconds": 600,
+    "status": "unrun"
+  },
+  {
+    "slot": "author-batch-template",
+    "role": "author",
+    "family": "batch",
+    "policy": "template",
+    "cap_seconds": 600,
+    "status": "unrun"
+  },
+  {
+    "slot": "author-draft-template",
+    "role": "author",
+    "family": "draft",
+    "policy": "template",
+    "cap_seconds": 600,
+    "status": "unrun"
+  },
+  {
+    "slot": "author-draft-v2",
+    "role": "author",
+    "family": "draft",
+    "policy": "v2",
+    "cap_seconds": 600,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-v2-first",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "v2",
+    "use": "first",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-v2-second",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "v2",
+    "use": "second",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-v2-boundary",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "v2",
+    "use": "boundary",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-template-first",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "template",
+    "use": "first",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-template-second",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "template",
+    "use": "second",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-template-boundary",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "template",
+    "use": "boundary",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-direct-first",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "direct",
+    "use": "first",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-direct-second",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "direct",
+    "use": "second",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-direct-boundary",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "direct",
+    "use": "boundary",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-v2-first",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "v2",
+    "use": "first",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-v2-second",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "v2",
+    "use": "second",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-v2-boundary",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "v2",
+    "use": "boundary",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-template-first",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "template",
+    "use": "first",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-template-second",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "template",
+    "use": "second",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "batch-template-boundary",
+    "role": "consumer",
+    "family": "batch",
+    "policy": "template",
+    "use": "boundary",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-direct-first",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "direct",
+    "use": "first",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-direct-second",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "direct",
+    "use": "second",
+    "cap_seconds": 180,
+    "status": "unrun"
+  },
+  {
+    "slot": "draft-direct-boundary",
+    "role": "consumer",
+    "family": "draft",
+    "policy": "direct",
+    "use": "boundary",
+    "cap_seconds": 180,
+    "status": "unrun"
+  }
+]

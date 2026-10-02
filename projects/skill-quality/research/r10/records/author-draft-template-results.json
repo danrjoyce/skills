@@ -1,0 +1,22 @@
+{
+  "passed": [
+    "D1 facts and exact expected bytes",
+    "missing replacement permission leaves all bytes unchanged",
+    "mixed unauthorized request leaves all bytes unchanged",
+    "missing section leaves all bytes unchanged",
+    "new heading in body leaves all bytes unchanged",
+    "stale digest leaves all bytes unchanged",
+    "title protected even if named in authority",
+    "duplicate headings refused unchanged",
+    "setext boundary ambiguity refused unchanged",
+    "unclosed fence refused unchanged",
+    "repeat use preserves actual preceding result",
+    "CRLF and absent final newline preserved outside scope",
+    "nested heading and its body stay protected",
+    "heading-like text inside closed fence stays protected",
+    "authorized development file updated and reread"
+  ],
+  "failed": [],
+  "checks": 15,
+  "expected_rejections": 9
+}

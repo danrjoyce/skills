@@ -1,0 +1,12 @@
+{
+  "authoritative_worker_tool_calls": null,
+  "campaign_started_at_utc": "2026-10-02T17:15:34+00:00",
+  "context_resumed_at_utc": "2026-10-02T18:26:42+00:00",
+  "continuation_completed_wait_seconds": 510.00600000000003,
+  "coordinator_calls": "All coordinator calls are not authoritatively exposed. Preserve null aggregate rather than invent exact count.",
+  "new_external_spend_usd": 0,
+  "prior_documented_wait_seconds": 480,
+  "source_review_O0": "source-review-O0.json",
+  "source_review_T0": "source-review-T0.json",
+  "unknown_stall_and_context_gap": "Conservatively charged to setup upper bound; no zeroing or invented outage deduction."
+}

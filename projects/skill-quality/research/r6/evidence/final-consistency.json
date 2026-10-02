@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "Local diagnostic evidence consistency, not telemetry/cap certification",
+  "fresh_worker_admissions": 17,
+  "downstream_scores_reproduced": 10,
+  "selected_initial_packages_unchanged": 4,
+  "semantic_artifact_hashes_valid": 4,
+  "primary_cells_unrun": 84,
+  "baseline_blob_identities_verified": 26,
+  "archive_entries": {
+    "runtime-checkpoint-initial.json": 215,
+    "runtime-checkpoint.json": 652
+  },
+  "known_timing_limits": [
+    "A0 creator reporting interrupted; final call count unavailable.",
+    "Semantic notification interval 244s versus 240s cap; actual completion time unknown."
+  ]
+}

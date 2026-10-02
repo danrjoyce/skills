@@ -1,0 +1,6 @@
+{
+  "origin": "fixed synthetic fixture",
+  "fixture": "fixtures/draft/boundary",
+  "use": "boundary",
+  "fallback": false
+}

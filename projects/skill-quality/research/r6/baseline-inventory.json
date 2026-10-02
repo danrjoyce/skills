@@ -1,0 +1,198 @@
+{
+  "A0": {
+    "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+    "creator_files": 18,
+    "excluded_runtime_dependencies": [
+      "claude CLI for native model/description optimization",
+      "human and graphical feedback/browser review"
+    ],
+    "license": "Apache-2.0 LICENSE.txt and root THIRD_PARTY_NOTICES.md retained",
+    "local_imports": [
+      "scripts.utils",
+      "scripts.generate_report",
+      "scripts.improve_description",
+      "scripts.run_eval",
+      "scripts.quick_validate"
+    ],
+    "python_dependencies": [
+      "standard library",
+      "PyYAML"
+    ],
+    "repository": "anthropics/skills",
+    "root_notice_files": 1,
+    "unresolved_required_local_resources": []
+  },
+  "O0": {
+    "commit": "49f948faa9258a0c61caceaf225e179651397431",
+    "creator_files": 7,
+    "license": "Apache-2.0 LICENSE.txt retained",
+    "local_imports": [
+      "generate_openai_yaml"
+    ],
+    "python_dependencies": [
+      "standard library",
+      "PyYAML"
+    ],
+    "repository": "openai/skills",
+    "unresolved_required_local_resources": []
+  },
+  "files": [
+    {
+      "bytes": 46162,
+      "git_blob_sha": "ffef92c48b351a3ed036556ed32dda934e8cf41a",
+      "path": "A/THIRD_PARTY_NOTICES.md",
+      "sha256": "a8ff7a84dee9dfb42ab448de281784387ceafdf63881b7c070ee2de7f6ed865c"
+    },
+    {
+      "bytes": 11345,
+      "git_blob_sha": "4f881c52d1f72f4cfb720e339e2d35c3058d01a9",
+      "path": "A/skills/skill-creator/LICENSE.txt",
+      "sha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+    },
+    {
+      "bytes": 33168,
+      "git_blob_sha": "65b3a402dbd09b8e83f9d637c6b553875189085c",
+      "path": "A/skills/skill-creator/SKILL.md",
+      "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf"
+    },
+    {
+      "bytes": 10376,
+      "git_blob_sha": "14e41d6068635f4dd3fb878fd1626312395dda63",
+      "path": "A/skills/skill-creator/agents/analyzer.md",
+      "sha256": "bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a"
+    },
+    {
+      "bytes": 7287,
+      "git_blob_sha": "80e00eb45db3ee53a132fc2ba97fd59a7339e563",
+      "path": "A/skills/skill-creator/agents/comparator.md",
+      "sha256": "fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e"
+    },
+    {
+      "bytes": 9049,
+      "git_blob_sha": "558ab05c0a9a8bb062ef4c51823d4d76c3acf7c4",
+      "path": "A/skills/skill-creator/agents/grader.md",
+      "sha256": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a"
+    },
+    {
+      "bytes": 7058,
+      "git_blob_sha": "938ff32aed9bffabf723bd5492d720f4736c8e4d",
+      "path": "A/skills/skill-creator/assets/eval_review.html",
+      "sha256": "ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452"
+    },
+    {
+      "bytes": 16365,
+      "git_blob_sha": "7fa5978631fed1ed545591dbb2b0eb21ce3f3d08",
+      "path": "A/skills/skill-creator/eval-viewer/generate_review.py",
+      "sha256": "fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb"
+    },
+    {
+      "bytes": 44998,
+      "git_blob_sha": "6d8e96348a02e66c3363d2ff3b3ae58ac11e6382",
+      "path": "A/skills/skill-creator/eval-viewer/viewer.html",
+      "sha256": "a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa"
+    },
+    {
+      "bytes": 12061,
+      "git_blob_sha": "b6eeaa2d4a34c1653069585c6c5603da39a5bdbe",
+      "path": "A/skills/skill-creator/references/schemas.md",
+      "sha256": "8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "A/skills/skill-creator/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 14386,
+      "git_blob_sha": "3e66e8c105be9bab9f0e9c61f0d1482619401580",
+      "path": "A/skills/skill-creator/scripts/aggregate_benchmark.py",
+      "sha256": "123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa"
+    },
+    {
+      "bytes": 12847,
+      "git_blob_sha": "959e30a0014ec165c41a2bb7420b7dfe1416bbac",
+      "path": "A/skills/skill-creator/scripts/generate_report.py",
+      "sha256": "13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453"
+    },
+    {
+      "bytes": 11116,
+      "git_blob_sha": "06bcec76122446986e3610c20a39c466de36f495",
+      "path": "A/skills/skill-creator/scripts/improve_description.py",
+      "sha256": "87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80"
+    },
+    {
+      "bytes": 4234,
+      "git_blob_sha": "f48eac444656ddc41204aac1760a217951ce609e",
+      "path": "A/skills/skill-creator/scripts/package_skill.py",
+      "sha256": "1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f"
+    },
+    {
+      "bytes": 3972,
+      "git_blob_sha": "ed8e1dddce77b16af13c6f36b3fe86c4ac7c590c",
+      "path": "A/skills/skill-creator/scripts/quick_validate.py",
+      "sha256": "67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365"
+    },
+    {
+      "bytes": 11464,
+      "git_blob_sha": "e58c70bea39d5b252a1e819f242bbdcdf20e8b87",
+      "path": "A/skills/skill-creator/scripts/run_eval.py",
+      "sha256": "43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f"
+    },
+    {
+      "bytes": 13605,
+      "git_blob_sha": "30a263d674ef19de11c756d6f7537f91a421909e",
+      "path": "A/skills/skill-creator/scripts/run_loop.py",
+      "sha256": "7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21"
+    },
+    {
+      "bytes": 1661,
+      "git_blob_sha": "51b6a07dd57174197a937034b7eecebd5768ff8a",
+      "path": "A/skills/skill-creator/scripts/utils.py",
+      "sha256": "3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1"
+    },
+    {
+      "bytes": 11358,
+      "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "path": "O/skills/.system/skill-creator/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 18664,
+      "git_blob_sha": "72bc0b97e7a6476254a9d5c424c9971748402ec3",
+      "path": "O/skills/.system/skill-creator/SKILL.md",
+      "sha256": "a17383bfb1448637ac1f757ad891ddb9676fa30b0eff620200f0e1cbc0cc0d50"
+    },
+    {
+      "bytes": 192,
+      "git_blob_sha": "f5ce09ed118b72908b7308fcfc1619f59e89f6ea",
+      "path": "O/skills/.system/skill-creator/agents/openai.yaml",
+      "sha256": "fcc3ba02bdf8d6df1f891637cf5336d2d7ef87bb8910fa622bd150c8e0d4c55b"
+    },
+    {
+      "bytes": 2130,
+      "git_blob_sha": "da5629f8de500ec6f81291d239a2d9c68d1d9044",
+      "path": "O/skills/.system/skill-creator/references/openai_yaml.md",
+      "sha256": "9fb5928b7f4a746fdb39df503ebbd7a659d5e64b47f85a60626aa1a03fd76b17"
+    },
+    {
+      "bytes": 6614,
+      "git_blob_sha": "1a9d784f8704999daf55a2b9036094949d9af3f8",
+      "path": "O/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
+      "sha256": "b8f6be33a9d72dd7a8da02e7a9fffea23dc79e94862e6dd6358b57a8899d8f73"
+    },
+    {
+      "bytes": 14483,
+      "git_blob_sha": "f90703eca8159a21a9684ed1df974c702d92f814",
+      "path": "O/skills/.system/skill-creator/scripts/init_skill.py",
+      "sha256": "bcb8982d3f033a094f2f1be43123ac8537e2562d25d8ba4d8ef2196ae514d96d"
+    },
+    {
+      "bytes": 3293,
+      "git_blob_sha": "0547b4041a5f58fa19892079a114a1df98286406",
+      "path": "O/skills/.system/skill-creator/scripts/quick_validate.py",
+      "sha256": "6cc9dc3199c935916cf6f73fcbbbb0e3bb1b58c8f5109fefa499978908164f51"
+    }
+  ],
+  "source_archive_sha256": "130935488943636a121b83e792b1ce3b09830116fc8828fe8268350bc2456e91"
+}

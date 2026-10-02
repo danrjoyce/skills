@@ -1,0 +1,13 @@
+{
+  "disposition": "permitted_on_staged_synthetic_D1_inputs_only",
+  "observations": [
+    "Python standard-library imports; no network, process execution, dynamic eval, credential access or deletion.",
+    "Reads supplied CSV; refuses symlink components; creates a caller-specified fresh output directory and only three files.",
+    "Whole-file memory and partial output after write errors remain; no race-free filesystem guarantees or sandbox."
+  ],
+  "path": "scripts/normalize_inventory.py",
+  "reviewed_at_utc": "2026-10-02T18:41:52.318423+00:00",
+  "reviewer": "R6 continuation coordinator, exact source inspection; not independent",
+  "scope": "Entire exact generated script before downstream execution permission",
+  "sha256": "4df3067db898003a1433053f7885478edb4a66f89fa1fbb19e5b9b51e2b3f02f"
+}

@@ -1,0 +1,81 @@
+{
+  "budget_arithmetic_minutes": {
+    "authors": 32,
+    "consumers": 36,
+    "experimental_stop": 90,
+    "final_recording_publication_reserve": 30,
+    "interim_overhead_at_maxima": 7,
+    "overall": 120,
+    "preparation_max": 15
+  },
+  "checks": {
+    "public_openai_validator": {
+      "blob_sha": "0547b4041a5f58fa19892079a114a1df98286406",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "output": "Skill is valid!",
+      "scope": "Limited naming/frontmatter profile; no native host or behavior",
+      "status": "passed"
+    },
+    "r4_documents_schema_arithmetic": {
+      "max_campaign_active_minutes": 616,
+      "max_tool_calls": 1760,
+      "max_worker_starts": 112,
+      "model_or_creator_trials_executed": 0,
+      "planned_downstream_episodes": 60,
+      "primary_eligible_cases": 6,
+      "relative_links_and_anchors": 295,
+      "scope": "R4 static design checks only",
+      "status": "passed"
+    },
+    "r5_preservation": {
+      "candidate_bytes": 22273,
+      "candidate_files": 6,
+      "candidate_tree_sha256": "4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683",
+      "limits": [
+        "Control consistency is not an independent rerun; use unit tests and qualify.py.",
+        "No native compatibility, live semantic grader or comparative performance finding."
+      ],
+      "model_trials": 0,
+      "preserved_historical_files": 15,
+      "scope": "R5 static freezes, syntax, metadata and recorded control consistency",
+      "status": "passed",
+      "support_files": 11
+    },
+    "r8_package_freeze": {
+      "entrypoint_whitespace_words": 664,
+      "files": [
+        {
+          "bytes": 4546,
+          "path": "SKILL.md",
+          "sha256": "07d314b1b320d07193753740557277a478f409d9904842473fe14d20a8735dfe"
+        },
+        {
+          "bytes": 119,
+          "path": "agents/openai.yaml",
+          "sha256": "d0cede36134d4aef65385956045be16b82725e0e3b20c1720fe09ca2aaed3d3b"
+        }
+      ],
+      "limits": [
+        "Assertions check the chosen two-file package, not skill quality.",
+        "No creator, helper, solver, semantic grader or native host is exercised.",
+        "No safety, usefulness, cost or comparative-performance inference."
+      ],
+      "new_model_trials": 0,
+      "package_bytes": 4665,
+      "scope": "static package and frozen byte identity",
+      "status": "passed",
+      "tree_sha256": "cd74d8380c5aefbdc3ae4b8b77e2fd59a74323c5ecbb714a17a20e972afe53a9",
+      "v1_tree_sha256": "4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683"
+    }
+  },
+  "limits": [
+    "No creator, generated helper, consumer, semantic reviewer or native activation executed.",
+    "Logical counterexamples are not observed behavioral passes.",
+    "No general superiority, safety-rate, full-action, exact cost or model-equality conclusion."
+  ],
+  "new_model_trials": 0,
+  "reviewed_commit": "08c73746c256fbed73910b13f09589b510e96231",
+  "scope": "Deterministic package and document checks only",
+  "starting_materialization_files": 121,
+  "starting_materialization_mismatches": 0
+}

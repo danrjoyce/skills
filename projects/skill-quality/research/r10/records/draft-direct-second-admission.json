@@ -1,0 +1,14 @@
+{
+  "event": "admit",
+  "slot": "draft-direct-second",
+  "task_name": "/root/complete_refined_skill_trials/execute_draft_direct_second",
+  "start_before_call_utc": "2026-10-02T22:44:25Z",
+  "admission_observed_utc": "2026-10-02T22:44:34.246416+00:00",
+  "deadline_utc": "2026-10-02T22:47:25+00:00",
+  "prompt_file": "prompts/draft-direct-second.txt",
+  "fresh_context": true,
+  "status": "running",
+  "full_allowance_and_recording_reserved": true,
+  "spawn_return_observed_utc": "2026-10-02T22:44:26Z",
+  "timestamp_note": "start_before_call_utc is the conservative allowance origin stated in wrapper. admission_observed_utc is the later admission recording observation unless separately corrected; spawn_return_observed_utc records the earlier tool-return observation. Neither is exact backend execution start."
+}

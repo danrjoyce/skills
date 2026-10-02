@@ -1,0 +1,72 @@
+{
+  "family": "batch",
+  "use": "first",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 2879,
+      "sha256": "53668d95601340657f34f39fcfc1bc1cc4c9833f7545bc9560b2ee33f034dc48"
+    },
+    "consumer-report.md": {
+      "bytes": 2070,
+      "sha256": "a8b50c5d51d011d98f14c1729f8e52a1cf6dcaf95d0ed7bdf84bbec2953113af"
+    },
+    "destination/": {
+      "directory": true
+    },
+    "destination/KEEP.txt": {
+      "bytes": 39,
+      "sha256": "be9ec134719eeaf79c16e5f1c4f0dbff0b4ab36bfdc963864404668e5a3af3f7"
+    },
+    "destination/blue-lake.md": {
+      "bytes": 33,
+      "sha256": "04196240978d45c3b08537b76faba956b0cf91fbec64a91da73f08697b9a971e"
+    },
+    "destination/cafe-kit.md": {
+      "bytes": 26,
+      "sha256": "022064ada350856a7e12527a1bc9236fbdb1b4340a238514f283c26be196d523"
+    },
+    "destination/index.json": {
+      "bytes": 273,
+      "sha256": "02df21749262105d12e552571d2a6fce84a0b1d56fad2e28cb7f912f524614ee"
+    },
+    "destination/red-fox.md": {
+      "bytes": 32,
+      "sha256": "d1dbd2369069bdc9f5129536d17e710090c17ece372b02fda85f9528e8ab58da"
+    },
+    "input.json": {
+      "bytes": 333,
+      "sha256": "fe7d2cf4c4f9db325abc5e9bcdbf7c8c6d64a7eb99c9d5caa9108c05fb840501"
+    },
+    "prompt.txt": {
+      "bytes": 4181,
+      "sha256": "51d7bd05704c17d83c60e1a42ab8174b2b5955fada0d78c8f97e57174301b21e"
+    },
+    "state-origin.json": {
+      "bytes": 118,
+      "sha256": "f27531fd1edc68bee2506532f946dffb73e36edd3f8904b3fe5cd3ae73b0c796"
+    }
+  },
+  "protected_preserved": true,
+  "target_checks": {
+    "blue-lake.md": true,
+    "cafe-kit.md": true,
+    "red-fox.md": true,
+    "index.json": true
+  },
+  "no_unexpected_destination_paths": true,
+  "artifact_correct": true,
+  "slot": "batch-direct-first",
+  "status": "completed",
+  "observed_terminal_utc": "2026-10-02T22:15:16Z",
+  "recorded_utc": "2026-10-02T22:15:25.779980+00:00",
+  "conservative_elapsed_seconds": 181.0,
+  "deadline_utc": "2026-10-02T22:15:15+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

@@ -1,0 +1,5 @@
+[
+  {"id": "blue-lake", "title": "Blue Lake", "tags": ["travel", "water"], "file": "blue-lake.md"},
+  {"id": "cafe-kit", "title": "Café kit", "tags": [], "file": "cafe-kit.md"},
+  {"id": "red-fox", "title": "Red Fox", "tags": ["animal", "forest"], "file": "red-fox.md"}
+]

@@ -1,0 +1,48 @@
+{
+  "family": "draft",
+  "use": "boundary",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 3324,
+      "sha256": "11930eb89422451219727c4f3642aea70b2e34886ed5bedc7053eb0ace412a3c"
+    },
+    "consumer-report.md": {
+      "bytes": 2051,
+      "sha256": "4f7d7c2248885d60f75079c806ff0ec3a011e6b3a08abeb25957da7533a1fde1"
+    },
+    "draft.md": {
+      "bytes": 263,
+      "sha256": "5c331c021a6840961a0d1e99e0f0bb55cf2b788586058a0d44a914707f1c3eac"
+    },
+    "prompt.txt": {
+      "bytes": 3515,
+      "sha256": "8e13fc1ba21f85939cbf28738dac0949167ca9eac31db2232a2159c5683e4bb1"
+    },
+    "sources.md": {
+      "bytes": 682,
+      "sha256": "9ba6af94639c87c7a2b23fa6b72fefe48139325332efc74fa84c20625fd6895c"
+    },
+    "state-origin.json": {
+      "bytes": 124,
+      "sha256": "fce435fd0f55ab29a3641a30e30b74f95be72bb0e34cbd8391e0ca052b6f537f"
+    }
+  },
+  "draft_unchanged": true,
+  "protected_preserved": true,
+  "artifact_correct": null,
+  "semantic_review_required": false,
+  "slot": "draft-direct-boundary",
+  "status": "completed",
+  "observed_terminal_utc": "2026-10-02T22:50:28Z",
+  "recorded_utc": "2026-10-02T22:50:37.310921+00:00",
+  "conservative_elapsed_seconds": 168.0,
+  "deadline_utc": "2026-10-02T22:50:40+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

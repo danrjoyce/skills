@@ -1,0 +1,8 @@
+{
+  "equal": true,
+  "generated_files_including_inventory": 394,
+  "inventory_rows": 393,
+  "label": "deterministic_local_requalification_not_model_performance",
+  "proof_a_inventory_sha256": "0305f6ef44a022cbee905c1f47c31235835e8fd6bc8364c2cbde6149bd3d691a",
+  "proof_b_inventory_sha256": "0305f6ef44a022cbee905c1f47c31235835e8fd6bc8364c2cbde6149bd3d691a"
+}

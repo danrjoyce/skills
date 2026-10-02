@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "R4 static design checks only",
+  "relative_links_and_anchors": 178,
+  "planned_downstream_episodes": 60,
+  "primary_eligible_cases": 6,
+  "max_worker_starts": 112,
+  "max_tool_calls": 1760,
+  "max_campaign_active_minutes": 616,
+  "model_or_creator_trials_executed": 0
+}

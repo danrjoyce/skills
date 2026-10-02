@@ -1,0 +1,26 @@
+[
+  {
+    "id": "red-fox",
+    "title": "Red Fox",
+    "tags": [
+      " Animal ",
+      "forest",
+      "ANIMAL",
+      ""
+    ]
+  },
+  {
+    "id": "cafe-kit",
+    "title": "Café kit",
+    "tags": []
+  },
+  {
+    "id": "blue-lake",
+    "title": "Blue Lake",
+    "tags": [
+      " Water",
+      "travel ",
+      "water"
+    ]
+  }
+]

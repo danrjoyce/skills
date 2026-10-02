@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "git_blob_sha": "e8ae5360df949f35e831e883f83388b71ba6b8d9",
+      "path": "how-to-determine-if-a-skill-is-good.md",
+      "sha256": "49ba95297e7bf1b23e5049ab38ab9c9f32dbc4593c0e06d806111cb3db26ac6f"
+    },
+    {
+      "git_blob_sha": "c7a9b681ca9e370a4e856b4818c0c7f12c8c1af4",
+      "path": "research/comparative-protocol.md",
+      "sha256": "ad3620fa5e55e1986bdf94d57cf6633dd7bc9ca773ed2f88cde8fb8218534e3b"
+    },
+    {
+      "git_blob_sha": "26ce3d2dc6b6c7af6542bbef98b92aa4e715350c",
+      "path": "research/critique-01.md",
+      "sha256": "2a8362d8b69625bc73244a2ca072d078d33fdfe407df9c870db8f0235bdcafad"
+    },
+    {
+      "git_blob_sha": "295a5eafa082e198951b7f8b7d71043c60e2cc4d",
+      "path": "research/evaluation-fixtures.md",
+      "sha256": "12068baa41478366e8801f1eceb911b077efdf0fde47a4edfc19ad37e596d867"
+    },
+    {
+      "git_blob_sha": "7bc413e5fd9bd9727fccbdabd1fa1f2a060c5c00",
+      "path": "research/evaluation.schema.json",
+      "sha256": "138dc4cac85e6d9087b983ad8eb69b56bc3c7dbf2da30b8e4a97e040ed965c37"
+    },
+    {
+      "git_blob_sha": "70e7161b0eb74bbb93a2e0b6a4dd07326cb68193",
+      "path": "research/implementation-audit.md",
+      "sha256": "463fe5934b9cec5ef597c955b1e9b5ee7364d9ee9ef5b15971dd3e72a54880d4"
+    },
+    {
+      "git_blob_sha": "c049615b8ef2dab5ae0a3c412dde95f4f7741765",
+      "path": "research/implementation-pins.json",
+      "sha256": "efab845ae9107dcbbf81492d568bf8189971ba44b3b0acdb8ef1c5f081996fa2"
+    },
+    {
+      "git_blob_sha": "d7913182cd5495e61f8087d8be6a4157d9a2ca36",
+      "path": "research/methodology.md",
+      "sha256": "08cf2c3fd32f6e886c83d9319c73ff21e9a100e3040f433a3b6c5bc20d316106"
+    },
+    {
+      "git_blob_sha": "5320f9769e44f2a2b9fcbbde996f6e1cdc8925bc",
+      "path": "research/pilot-manifest.json",
+      "sha256": "e24ccaa41da152a7cf0fb2173906160b0fa73ff7e2e852675623af832ebdb646"
+    },
+    {
+      "git_blob_sha": "75209e7e957a5d8385fac07de953d122b62834d5",
+      "path": "research/revision-01.md",
+      "sha256": "955afea4938cd55be87969f4137820592b4283f07e8ce05706c1dccc992c56f7"
+    },
+    {
+      "git_blob_sha": "e9b87aae0a574b38c9e0f347b222cb0368a2eb09",
+      "path": "research/source-register.md",
+      "sha256": "bec1b3206039772bfe50595c9483b0e419c20c6c85c0a8691dd2c3567dda3931"
+    },
+    {
+      "git_blob_sha": "c6b31aca0df8a4da57b8980e4d822d9a89278e66",
+      "path": "research/verification-r1.md",
+      "sha256": "4b7060030b25f2f909fb8ba7cd23a770b661e53d45539b8671df78f9f34c2329"
+    },
+    {
+      "git_blob_sha": "5f594af567e86e6b3332222b49b0912bf7f53994",
+      "path": "research/verification-r3.md",
+      "sha256": "3a84695c727ae7e39dc39c242ca714fea57ddd60b12f46fc690e9289913947e6"
+    },
+    {
+      "git_blob_sha": "b0be426bc6ce4bc15088d50a497fc96cad839899",
+      "path": "research/verification-r4.md",
+      "sha256": "8fbf70a177815835e8878074723da6aafd61fcbd687b37fe8c82089907713a17"
+    },
+    {
+      "git_blob_sha": "30c10d863bae16087a426da448e0572cb8d1d4ea",
+      "path": "research/verify-r4.py",
+      "sha256": "58eb6d3ed541e0757290845d8ac3f7a51d7feb1ba16303ddbcf19fa55ffd3713"
+    }
+  ],
+  "purpose": "Original R1-R4 research artifacts remain byte-identical; README/TASKS/HANDOFF are current tracking documents.",
+  "source_commit": "ed3e468139f6f90eb8c954989ea95a123c161801"
+}

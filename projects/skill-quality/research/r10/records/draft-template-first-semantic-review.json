@@ -1,0 +1,16 @@
+{
+  "slot": "draft-template-first",
+  "artifact_correct": true,
+  "source_claims_checked": {
+    "pilot_approved_2026-10-14": true,
+    "nine_of_twelve_confirmed": true,
+    "release_undated_capacity_review": true,
+    "S2_citations": true
+  },
+  "unsupported_claims_observed": false,
+  "protected_preserved": true,
+  "reviewer": "unblinded coordinator",
+  "scope": "Only authorized Summary and Schedule bodies; source claims compared manually with frozen claims.json and S2",
+  "report_complete": false,
+  "action_history_complete": "unknown"
+}

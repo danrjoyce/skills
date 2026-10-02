@@ -1,0 +1,64 @@
+{
+  "date_utc": "2026-10-02",
+  "files": [
+    {
+      "bytes": 5842,
+      "path": "support/adapter.py",
+      "sha256": "48c1cbc71173a36359515e006b5417cb9a38fcbfebc36c118b37cf4213c67653"
+    },
+    {
+      "bytes": 24995,
+      "path": "support/build_fixtures.py",
+      "sha256": "f1cb81a472191127b4c27678a98435a23f6219f4f411c30fadc6f6f173e572ba"
+    },
+    {
+      "bytes": 3632,
+      "path": "support/common.py",
+      "sha256": "62df1174e34b53019a197783e043924c71f751ed7933a8c743867c61686de5a5"
+    },
+    {
+      "bytes": 13974,
+      "path": "support/controls.py",
+      "sha256": "6b308bd752b3f5c3b3ce1f6f1cb4133b8e04cf4c624e7206399d956caa3e2b0e"
+    },
+    {
+      "bytes": 22902,
+      "path": "support/oracles.py",
+      "sha256": "77861b72058ba3ae8ce23bb2f07a5b8c1c5a8a629890b0cc584300fa7f8d065f"
+    },
+    {
+      "bytes": 6491,
+      "path": "support/qualify.py",
+      "sha256": "e3464ac1f3fcca9caa03f8103e1bf7edf3a4537058337dc0eefa3d63bb6823de"
+    },
+    {
+      "bytes": 28718,
+      "path": "support/records.py",
+      "sha256": "a277fdfe9e0a7b6908c1ef8ab865fc8d1b436f7e8d5aeb1b54df7400f631b98a"
+    },
+    {
+      "bytes": 2949,
+      "path": "support/routing.py",
+      "sha256": "ac784c11d5104fb0ebb059e9dd51d2ba9a3ba3c33a841c92c6a715dea0cfb33d"
+    },
+    {
+      "bytes": 21502,
+      "path": "tests/test_negative.py",
+      "sha256": "88b571c253f3837c703b4fad732cb59ab3db202a515e66d2c9bdee2f0c24cd07"
+    },
+    {
+      "bytes": 13275,
+      "path": "tests/test_support.py",
+      "sha256": "f70f69b7bccd7cb275e92773d6134ce27a94da6fc33274abdba324ff798830f2"
+    },
+    {
+      "bytes": 3612,
+      "path": "verify.py",
+      "sha256": "badf61d4699f12bd549cfef5009952b1c251cdf7503ba44c819bcbf3777280a2"
+    }
+  ],
+  "model_trials": 0,
+  "stage": "R5 reviewed local support freeze",
+  "tree_digest_algorithm": "sha256 of compact sorted-key UTF-8 files array; ensure_ascii=false; no terminal newline",
+  "tree_sha256": "9411bd28fc23ddb740aa7339a0f707ea6367e55b1b6b4b48cc737cce12906545"
+}

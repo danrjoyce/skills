@@ -1,0 +1,42 @@
+{
+  "authoritative_worker_tool_calls": null,
+  "campaign_active_limit_seconds": 36960,
+  "campaign_scheduling_stop_seconds": 39600,
+  "campaign_started_at_utc": "2026-10-02T17:15:34+00:00",
+  "campaign_wall_seconds": 1907.650207,
+  "cap_status": "Wall/package/storage bounds observed below limits; authoritative call and exact active-time enforcement unverified.",
+  "confirmed_worker_start_ids": [
+    "qualify-discovery-01",
+    "create-C0-D1-diagnostic",
+    "create-T0-D1-diagnostic"
+  ],
+  "coordinator_active_seconds": null,
+  "coordinator_active_upper_seconds": 1427.650207,
+  "count_detail": {
+    "C0_creation": {
+      "leaf": 14,
+      "orchestration": 11
+    },
+    "T0_creation": {
+      "leaf": 7,
+      "orchestration": 7
+    },
+    "loading_qualification": {
+      "leaf": 2,
+      "orchestration": 2
+    }
+  },
+  "model_dollar_equivalent_cost": null,
+  "new_external_spend_usd": 0,
+  "observed_at_utc": "2026-10-02T17:47:21.650214+00:00",
+  "observed_completed_wait_seconds_deducted": 480,
+  "package_sizes": {
+    "C0": 11023,
+    "T0": 11382
+  },
+  "sequential_status": "observed_admission_and_terminal_messages_nonoverlapping",
+  "setup_limit_seconds": 7200,
+  "upper_bound_method": "All coordinator wall time charged except five completed explicit wait intervals totaling 480 seconds. The terminated wait is conservatively not deducted. This upper bound includes coordinator/worker overlap outside waits.",
+  "worker_reported_leaf_calls": 23,
+  "worker_reported_orchestration_calls": 20
+}

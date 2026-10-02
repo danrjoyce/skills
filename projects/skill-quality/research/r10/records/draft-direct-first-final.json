@@ -1,0 +1,52 @@
+{
+  "family": "draft",
+  "use": "first",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 5138,
+      "sha256": "26e83fea0064d091ee56f71e7b87755fb8b0953f5b3b5388c3d2c5f32430e306"
+    },
+    "consumer-report.md": {
+      "bytes": 1293,
+      "sha256": "c6bf7dcfdb563e07067e4a5cab5e9b497d7856999ff5437b2bcb7aa642827e4c"
+    },
+    "draft.before.md": {
+      "bytes": 263,
+      "sha256": "5c331c021a6840961a0d1e99e0f0bb55cf2b788586058a0d44a914707f1c3eac"
+    },
+    "draft.md": {
+      "bytes": 348,
+      "sha256": "29c0f93d8dcacd63ba2cf01659f09c1338e64532b5f0b62d6a5287562e723070"
+    },
+    "prompt.txt": {
+      "bytes": 3441,
+      "sha256": "a564951472bae571b53eec8a20d78f34093d4f75a25bd40e27d1e72ddb39aba5"
+    },
+    "sources.md": {
+      "bytes": 682,
+      "sha256": "9ba6af94639c87c7a2b23fa6b72fefe48139325332efc74fa84c20625fd6895c"
+    },
+    "state-origin.json": {
+      "bytes": 118,
+      "sha256": "488b5f384e9da507282e9147027f0043d6dd4876b8730b254dcb883da2620eb7"
+    }
+  },
+  "draft_unchanged": false,
+  "protected_preserved": true,
+  "artifact_correct": null,
+  "semantic_review_required": true,
+  "slot": "draft-direct-first",
+  "status": "completed",
+  "observed_terminal_utc": "2026-10-02T22:44:01Z",
+  "recorded_utc": "2026-10-02T22:44:16.219664+00:00",
+  "conservative_elapsed_seconds": 181.0,
+  "deadline_utc": "2026-10-02T22:44:00+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

@@ -1,0 +1,54 @@
+{
+  "family": "batch",
+  "use": "boundary",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 3054,
+      "sha256": "d325b32fb3cb1f728566748d7a05be72a96cfdabbd974b7f04bcbb898db1f5fb"
+    },
+    "consumer-report.md": {
+      "bytes": 2184,
+      "sha256": "a56c550486c488e35834d0e10678c5412ee4d38599dd8aab3e348842ce3f4ae5"
+    },
+    "destination/": {
+      "directory": true
+    },
+    "destination/KEEP.txt": {
+      "bytes": 39,
+      "sha256": "be9ec134719eeaf79c16e5f1c4f0dbff0b4ab36bfdc963864404668e5a3af3f7"
+    },
+    "destination/red-fox.md": {
+      "bytes": 44,
+      "sha256": "6f5a4148761a5c36a4fa418feb54bd0f83ef66412f446ffaaddead9998e802ab"
+    },
+    "input.json": {
+      "bytes": 185,
+      "sha256": "f102b345791f2c1e2b657e6afdd49e239c5eab10dcbe69097c8c1a8665bd10f3"
+    },
+    "prompt.txt": {
+      "bytes": 4353,
+      "sha256": "7d8269214e09471e5c78a2c8e3ade19fdd92a1011e7c953b0eb4c993bac774a6"
+    },
+    "state-origin.json": {
+      "bytes": 124,
+      "sha256": "298b8dd4a8b18e4676bb91cca81a741dc884eeae05bf63b02924be13298d3907"
+    }
+  },
+  "protected_preserved": true,
+  "destination_unchanged": true,
+  "artifact_correct": null,
+  "slot": "batch-template-boundary",
+  "status": "completed",
+  "observed_terminal_utc": "2026-10-02T22:40:46Z",
+  "recorded_utc": "2026-10-02T22:40:53.649041+00:00",
+  "conservative_elapsed_seconds": 161.0,
+  "deadline_utc": "2026-10-02T22:41:05+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

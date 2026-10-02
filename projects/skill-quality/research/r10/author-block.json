@@ -1,0 +1,172 @@
+{
+  "as_of_utc": "2026-10-02T21:49:32.434435+00:00",
+  "state": "author block complete; consumer block unrun",
+  "fresh_admissions": 4,
+  "selected_packages": 4,
+  "completed_author_notifications": 2,
+  "interrupted_author_reporting": 2,
+  "consumer_admissions": 0,
+  "fixed_remaining_consumer_slots": 18,
+  "package_source_changed_after_selection": false,
+  "original_50_file_freeze_still_matches": true,
+  "experimental_stop_utc": "2026-10-02T23:28:00Z",
+  "publication_stop_utc": "2026-10-02T23:58:00Z",
+  "terminals": [
+    {
+      "event": "terminal",
+      "slot": "author-batch-v2",
+      "observed_utc": "2026-10-02T21:16:11Z",
+      "status": "completed",
+      "conservative_elapsed_seconds": 495,
+      "package_produced": true,
+      "report_completed": true,
+      "package_manifest": {
+        "SKILL.md": {
+          "bytes": 3953,
+          "sha256": "f1583e658673e9f6c2eec1c9a0100feb4510c27a8273040a83e529f7e374ccee"
+        },
+        "scripts/": {
+          "directory": true
+        },
+        "scripts/export_catalogue.py": {
+          "bytes": 6127,
+          "sha256": "e5b041684a15f3fb67dc38304d04f1b909da9bdf0b46bf6d2a5c97b4a53fd612"
+        }
+      },
+      "development_runs_attributed": 14,
+      "development_passes_attributed": 14,
+      "failed_checks_attributed": 0,
+      "repairs_attributed": 0,
+      "tool_calls_self_reported": 11,
+      "complete_action_history": "unknown",
+      "task_clarification_or_repair": 0,
+      "harness_reviews": 1,
+      "harness_deadline_reminders": 1
+    },
+    {
+      "event": "terminal",
+      "slot": "author-batch-template",
+      "observed_utc": "2026-10-02T21:25:48Z",
+      "status": "completed",
+      "conservative_elapsed_seconds": 544,
+      "package_produced": true,
+      "report_completed": true,
+      "package_manifest": {
+        "SKILL.md": {
+          "bytes": 4838,
+          "sha256": "ee1af9037dde72025dd52bdae330c2d748a8a581b74d2077e66741285ff7adba"
+        },
+        "scripts/": {
+          "directory": true
+        },
+        "scripts/export_catalogue.py": {
+          "bytes": 6169,
+          "sha256": "32f401b0048c1d9a98433602dbb9ad23447a0c5fe2b9cbbe2d9d86e34b0574c8"
+        },
+        "tests/": {
+          "directory": true
+        },
+        "tests/check_export.py": {
+          "bytes": 7141,
+          "sha256": "0d44ecfe71c0a8e7f63b65c3ce3ae2c5cefe1a38c42463862df3705880e7a97e"
+        }
+      },
+      "development_runs_attributed": 24,
+      "development_passes_attributed": 24,
+      "failed_checks_attributed": 0,
+      "repairs_attributed": 0,
+      "complete_action_history": "unknown",
+      "task_clarification_or_repair": 0,
+      "harness_reviews": 1,
+      "harness_deadline_reminders": 1
+    },
+    {
+      "event": "terminal",
+      "slot": "author-draft-template",
+      "observed_utc": "2026-10-02T21:36:26Z",
+      "status": "interrupted_at_deadline",
+      "conservative_elapsed_seconds": 616,
+      "deadline_utc": "2026-10-02T21:36:10Z",
+      "interrupt_requested_utc": "2026-10-02T21:36:12Z",
+      "interrupt_returned_utc": "2026-10-02T21:36:15Z",
+      "timing_caveat": "Stop request was 2 seconds after deadline; interrupted status confirmed 16 seconds after. Exact cessation instant unknown.",
+      "package_produced": true,
+      "report_file_present": true,
+      "report_completed": "unconfirmed; final notification absent",
+      "package_manifest": {
+        "SKILL.md": {
+          "bytes": 6821,
+          "sha256": "b764794050aa4b705ba74b036fc586110038527f560406b66ee70dec4ba1fc88"
+        },
+        "scripts/": {
+          "directory": true
+        },
+        "scripts/replace_sections.py": {
+          "bytes": 6853,
+          "sha256": "5e9bcb8da1de7d00ea49e33ba354549231992763b80888d623ba4b80886065f0"
+        }
+      },
+      "development_runner_attempts_attributed": 2,
+      "development_checks_attributed": 29,
+      "development_passes_attributed": 28,
+      "failed_checks_attributed": 1,
+      "autonomous_repairs_attributed": 1,
+      "packaged_helper_repairs_attributed": 0,
+      "tool_calls_self_reported": 15,
+      "complete_action_history": "unknown",
+      "task_clarification_or_repair": 0,
+      "harness_reviews": 2,
+      "harness_deadline_reminders": 1
+    },
+    {
+      "event": "terminal",
+      "slot": "author-draft-v2",
+      "observed_utc": "2026-10-02T21:47:29Z",
+      "status": "interrupted_at_deadline",
+      "conservative_elapsed_seconds": 621,
+      "deadline_utc": "2026-10-02T21:47:08Z",
+      "interrupt_request_window_utc": [
+        "2026-10-02T21:47:06Z",
+        "2026-10-02T21:47:09Z"
+      ],
+      "interrupt_returned_utc": "2026-10-02T21:47:09Z",
+      "timing_caveat": "Stop request is bracketed by observations spanning 2 seconds before to 1 second after deadline; interrupted status confirmed 21 seconds after. Exact request and cessation instants unknown.",
+      "package_produced": true,
+      "report_file_present": true,
+      "report_completed": "unconfirmed; final notification absent",
+      "package_manifest": {
+        "SKILL.md": {
+          "bytes": 6295,
+          "sha256": "42752548e2ae9dc07bde85dea78a203af34f89f8c0a0463bdb15a2a7c0bdfafb"
+        },
+        "scripts/": {
+          "directory": true
+        },
+        "scripts/update_sections.py": {
+          "bytes": 7886,
+          "sha256": "74bd512ef05e85228472a0ac63f84e705251c7db0463490004ba075689f1c695"
+        }
+      },
+      "development_runner_attempts_attributed": 1,
+      "helper_cli_runs_attributed": 4,
+      "assertion_passes_attributed": 18,
+      "expected_in_memory_rejections_attributed": 3,
+      "failed_checks_attributed": 0,
+      "pre_execution_static_revisions_attributed": 1,
+      "packaged_helper_repairs_attributed": 0,
+      "tool_calls_self_reported": "unconfirmed at stop",
+      "complete_action_history": "unknown",
+      "task_clarification_or_repair": 0,
+      "harness_reviews": 2,
+      "harness_deadline_reminders": 1
+    }
+  ],
+  "public_prompt_curation": "prompt-curation.json",
+  "limitations": [
+    "Author development results are not fresh-consumer outcomes.",
+    "Author runs and counters are partly attributed; complete action history and serving/cost telemetry remain unknown.",
+    "Draft reporting was interrupted despite packages and result artifacts existing.",
+    "The original exact-byte checker had a newline-normalization flaw; its new version was fixed and disclosed before any consumer output.",
+    "The v2 draft approval/source-capture race was resolved with complete reread before execution; initial source snapshot timing is disclosed."
+  ]
+}

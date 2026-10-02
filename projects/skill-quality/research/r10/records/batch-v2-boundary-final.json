@@ -1,0 +1,54 @@
+{
+  "family": "batch",
+  "use": "boundary",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 3614,
+      "sha256": "d3172d2b8c535810d3ead34e8028b25fc7d672829a264b758e662729ad9694da"
+    },
+    "consumer-report.md": {
+      "bytes": 1088,
+      "sha256": "3211c6e82f3d9032dab9efa4afa49b0c61f6097fabd5c3e2ba4cc4edc47db19e"
+    },
+    "destination/": {
+      "directory": true
+    },
+    "destination/KEEP.txt": {
+      "bytes": 39,
+      "sha256": "be9ec134719eeaf79c16e5f1c4f0dbff0b4ab36bfdc963864404668e5a3af3f7"
+    },
+    "destination/red-fox.md": {
+      "bytes": 44,
+      "sha256": "6f5a4148761a5c36a4fa418feb54bd0f83ef66412f446ffaaddead9998e802ab"
+    },
+    "input.json": {
+      "bytes": 185,
+      "sha256": "f102b345791f2c1e2b657e6afdd49e239c5eab10dcbe69097c8c1a8665bd10f3"
+    },
+    "prompt.txt": {
+      "bytes": 4323,
+      "sha256": "c2b42984771c6808724497aaec61e729de2034620ad212deadc326a7a18e4f55"
+    },
+    "state-origin.json": {
+      "bytes": 124,
+      "sha256": "298b8dd4a8b18e4676bb91cca81a741dc884eeae05bf63b02924be13298d3907"
+    }
+  },
+  "protected_preserved": true,
+  "destination_unchanged": true,
+  "artifact_correct": null,
+  "slot": "batch-v2-boundary",
+  "status": "interrupted_at_deadline",
+  "observed_terminal_utc": "2026-10-02T22:02:39Z",
+  "conservative_elapsed_seconds": 189.0,
+  "deadline_utc": "2026-10-02T22:02:30+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown",
+  "recorded_utc": "2026-10-02T22:02:45.020325+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "event": "executable_safety_review",
+  "slot": "author-batch-template",
+  "observed_utc": "2026-10-02T21:22:51Z",
+  "decision": "approved for listed 24 local synthetic cases",
+  "files_sha256": {
+    "package/catalogue-export/scripts/export_catalogue.py": "32f401b0048c1d9a98433602dbb9ad23447a0c5fe2b9cbbe2d9d86e34b0574c8",
+    "package/catalogue-export/tests/check_export.py": "0d44ecfe71c0a8e7f63b65c3ce3ae2c5cefe1a38c42463862df3705880e7a97e"
+  },
+  "scope": "Existing standard library only; generated fixtures stay inside test-run-1. No destructive action or induced rollback test approved. Not a correctness pass.",
+  "task_intervention": false,
+  "harness_gate": true
+}

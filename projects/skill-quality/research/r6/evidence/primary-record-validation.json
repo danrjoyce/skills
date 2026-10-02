@@ -1,0 +1,9 @@
+{
+  "limit": "Record validity is not experiment execution or primary readiness.",
+  "records": 84,
+  "snapshots": 168,
+  "started": 0,
+  "status": "unrun_gate",
+  "valid": true,
+  "validator": "unchanged R5 records.journal_read with original evaluation.schema.json"
+}

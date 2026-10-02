@@ -1,0 +1,172 @@
+[
+  {
+    "id": "M1",
+    "input_sha256": {
+      "input/contract.json": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29",
+      "input/sources.json": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15",
+      "task.md": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+    },
+    "output_sha256": {
+      "output/brief.md": "63fac705184ba531d8cec74d29d5cef298597a734d880de912f6f84a2804dc3c",
+      "output/claims.json": "edc2ca1c8be2f387a2ee86ef63912b209db7016d2ba847bf27255ee0904af9fd",
+      "output/decision.json": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+    },
+    "predicates": [
+      {
+        "evidence_refs": [
+          "M1/input/sources.json:S1/needs",
+          "M1/input/sources.json:S2/aster",
+          "M1/input/sources.json:S2/birch",
+          "M1/input/sources.json:S3/correction",
+          "M1/input/sources.json:S4/result",
+          "M1/output/claims.json:decision,old,lab,a-storage,a-offline,a-price,b-storage,b-offline,b-price"
+        ],
+        "id": "ledger_semantics",
+        "reason": "The ledger covers both options' current storage, offline status and price. Claim a-storage correctly uses S3/correction for Aster's 6 GiB; old marks the 8 GiB in S2/aster superseded without discarding that section's still-current offline and price facts. Birch's 16 GiB, offline false and 30 credits match S2/birch. Claim lab matches S4/result and retains setup L and guarantee false. Claim decision quotes S1/needs and names a-storage, a-offline, b-storage and b-offline as support: Aster fails storage and Birch fails offline, so no_option follows. All cited sections and quotes are relevant to their claim subjects. Reversed claim order does not change support or coverage.",
+        "status": "pass"
+      },
+      {
+        "evidence_refs": [
+          "M1/input/sources.json:S1/needs",
+          "M1/input/sources.json:S2/aster",
+          "M1/input/sources.json:S2/birch",
+          "M1/input/sources.json:S3/correction",
+          "M1/input/sources.json:S4/result",
+          "M1/output/brief.md:paragraphs 1-3",
+          "M1/output/decision.json:decision,reasons,next_question"
+        ],
+        "id": "report_semantics",
+        "reason": "The opening 'neither Aster nor Birch should be selected under these constraints' and decision.json's no_option follow S1/needs, S3/correction and S2/birch. The second paragraph resolves the earlier 8 GiB versus corrected 6 GiB conflict, preserves offline capability, and correctly treats 30 versus 40 credits as non-decisive. The final paragraph's '90 units per second on setup L' and absence of a Birch measurement match S4/result without asserting universal performance. Its uncertainty about other configurations and request for evidence of offline operation plus at least 8 GiB are warranted by the closed packet. Starting with the next information need is a valid organizational alternative, and the brief contains the required decision, conflict and uncertainty coverage without unsupported factual assertions.",
+        "status": "pass"
+      }
+    ]
+  },
+  {
+    "id": "M2",
+    "input_sha256": {
+      "input/contract.json": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29",
+      "input/sources.json": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15",
+      "task.md": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+    },
+    "output_sha256": {
+      "output/brief.md": "35e041ca29228a4b9e759012d0618d28d2e28e8d80c4dd913afe3b5868aba5fa",
+      "output/claims.json": "3df5751547377c2894ea72c634bcccd6dba28ae19ff01fba16e9ba1b5681c130",
+      "output/decision.json": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+    },
+    "predicates": [
+      {
+        "evidence_refs": [
+          "M2/input/sources.json:S1/needs",
+          "M2/input/sources.json:S2/aster",
+          "M2/input/sources.json:S2/birch",
+          "M2/input/sources.json:S3/correction",
+          "M2/input/sources.json:S4/result",
+          "M2/output/claims.json:a-storage,a-offline,a-price,b-storage,b-offline,b-price,old,lab,decision"
+        ],
+        "id": "ledger_semantics",
+        "reason": "Claims a-storage, a-offline and a-price correctly record current Aster storage 6 GiB from S3/correction, offline true and 40 credits from the unaffected portions of S2/aster. Claims b-storage, b-offline and b-price match S2/birch. Claim old correctly marks S2/aster's 8 GiB superseded; lab matches S4/result and retains setup L with no guarantee. All quotes are relevant to their stated subjects and predicates. Claim decision explicitly names the four storage/offline claims and quotes S1/needs, supporting no_option because each option fails a mandatory condition. The prose defect is not present in this ledger.",
+        "status": "pass"
+      },
+      {
+        "evidence_refs": [
+          "M2/input/sources.json:S1/needs",
+          "M2/input/sources.json:S2/birch",
+          "M2/input/sources.json:S4/result",
+          "M2/output/brief.md:paragraph 4, 'Choose Birch regardless of offline requirements.'",
+          "M2/output/brief.md:paragraph 4, 'Aster is guaranteed to reach 90 units per second in every setting.'",
+          "M2/output/brief.md:paragraphs 1-3",
+          "M2/output/decision.json:decision"
+        ],
+        "id": "report_semantics",
+        "reason": "The appended final paragraph states 'Choose Birch regardless of offline requirements.' That directly contradicts S1/needs' mandatory offline condition, S2/birch's offline no, the brief's opening and third-paragraph recommendation to choose neither, and decision.json's no_option. The same appended paragraph states 'Aster is guaranteed to reach 90 units per second in every setting.' S4/result supports only an observation on lab setup L; it supplies no universal guarantee. This also contradicts the earlier report sentence 'That observation does not guarantee universal performance.' Correct preceding paragraphs and a correct structured decision do not cure these unsupported and contradictory prose assertions.",
+        "status": "fail"
+      }
+    ]
+  },
+  {
+    "id": "M3",
+    "input_sha256": {
+      "input/contract.json": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29",
+      "input/sources.json": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15",
+      "task.md": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+    },
+    "output_sha256": {
+      "output/brief.md": "ee1b77598951deabb59a5f49149fa016e2a8f61ebe6af59839ae5444a3d5b7ec",
+      "output/claims.json": "3df5751547377c2894ea72c634bcccd6dba28ae19ff01fba16e9ba1b5681c130",
+      "output/decision.json": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+    },
+    "predicates": [
+      {
+        "evidence_refs": [
+          "M3/input/sources.json:S1/needs",
+          "M3/input/sources.json:S2/aster",
+          "M3/input/sources.json:S2/birch",
+          "M3/input/sources.json:S3/correction",
+          "M3/input/sources.json:S4/result",
+          "M3/output/claims.json:a-storage,a-offline,a-price,b-storage,b-offline,b-price,old,lab,decision"
+        ],
+        "id": "ledger_semantics",
+        "reason": "The six current storage/offline/price claims accurately distinguish Aster's 6 GiB correction in S3/correction from its unchanged offline true and 40-credit facts in S2/aster, and Birch's 16 GiB, offline false and 30-credit facts in S2/birch. Claim old preserves the earlier 8 GiB as superseded. Claim lab records S4/result's 90 units/s specifically on setup L with guarantee false. The exact quoted sections entail their associated claims. Claim decision uses S1/needs and explicitly names the four current storage/offline claim IDs, which support no_option; required coverage and inference support are present.",
+        "status": "pass"
+      },
+      {
+        "evidence_refs": [
+          "M3/input/sources.json:S1/needs",
+          "M3/input/sources.json:S2/aster",
+          "M3/input/sources.json:S2/birch",
+          "M3/input/sources.json:S3/correction",
+          "M3/input/sources.json:S4/result",
+          "M3/output/brief.md:paragraphs 1-3",
+          "M3/output/decision.json:decision,reasons,next_question"
+        ],
+        "id": "report_semantics",
+        "reason": "The opening 'Neither option meets both mandatory requirements' is entailed by S1/needs, Aster's corrected 6 GiB in S3/correction and Birch's offline no in S2/birch. The report resolves supersession narrowly and correctly retains prices of 40 and 30 credits as context. Its second paragraph gives the 90 units/s observation on setup L, explicitly declines a universal guarantee and reports no Birch result, matching S4/result. The closing uncertainty about another configuration and next question about offline operation plus at least 8 GiB are appropriate. decision.json's no_option, reasons reference and next_question agree with the report and the supported ledger. No unsupported factual assertion or unresolved contradiction is present.",
+        "status": "pass"
+      }
+    ]
+  },
+  {
+    "id": "M4",
+    "input_sha256": {
+      "input/contract.json": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29",
+      "input/sources.json": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15",
+      "task.md": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+    },
+    "output_sha256": {
+      "output/brief.md": "ee1b77598951deabb59a5f49149fa016e2a8f61ebe6af59839ae5444a3d5b7ec",
+      "output/claims.json": "2c01aead43a48e00dbba0ac2443b6b378e046cf185c7649e81e71664a077149f",
+      "output/decision.json": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+    },
+    "predicates": [
+      {
+        "evidence_refs": [
+          "M4/output/claims.json:a-storage",
+          "M4/input/sources.json:S2/birch",
+          "M4/input/sources.json:S3/correction",
+          "M4/input/sources.json:S1/needs",
+          "M4/output/claims.json:decision/support_claims",
+          "M4/output/claims.json:a-offline",
+          "M4/output/brief.md:paragraph 1, 'corrected storage is 6 GiB'"
+        ],
+        "id": "ledger_semantics",
+        "reason": "Claim a-storage asserts subject Aster, storage_gib 16, supported, while quoting S2/birch: 'Birch: storage 16 GiB; offline no; list price 30 fictional credits.' The quote is exact but concerns the wrong option and does not entail Aster storage. S3/correction explicitly gives current Aster storage as 6 GiB, which is omitted from the ledger. The decision inference names this incorrect a-storage plus a-offline true, so its stated support would make Aster meet S1/needs' 8 GiB and offline requirements rather than establish no_option. The ledger also contradicts the report's accurate 'corrected storage is 6 GiB.' Other current claims, the superseded 8 GiB claim and the setup-limited lab claim are supported, but they do not repair the missing correct current-storage claim or broken inference.",
+        "status": "fail"
+      },
+      {
+        "evidence_refs": [
+          "M4/input/sources.json:S1/needs",
+          "M4/input/sources.json:S2/aster",
+          "M4/input/sources.json:S2/birch",
+          "M4/input/sources.json:S3/correction",
+          "M4/input/sources.json:S4/result",
+          "M4/output/brief.md:paragraphs 1-3",
+          "M4/output/decision.json:decision,next_question",
+          "M4/output/claims.json:a-storage,decision"
+        ],
+        "id": "report_semantics",
+        "reason": "Judged against the source packet separately from ledger correctness, the report accurately says Aster has corrected storage 6 GiB and offline operation, while Birch has 16 GiB and no offline operation; S3/correction, S2/aster and S2/birch entail these passages. Thus 'Neither option meets both mandatory requirements' and decision.json's no_option follow S1/needs. The report correctly supersedes only the 8 GiB storage figure, retains the 40/30-credit prices, confines 90 units/s to setup L, denies a universal guarantee and notes the missing Birch transfer result in accordance with S4/result. Its uncertainty and next information need are appropriate. The conflict with claims.json's a-storage and the resulting defective support chain are real ledger failures, recorded separately above; the report itself does not repeat the false 16 GiB Aster assertion.",
+        "status": "pass"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "disposition": "permitted_on_staged_synthetic_D1_inputs_only",
+  "observations": [
+    "Python standard library only; no network, process execution, eval or credential access.",
+    "Reads supplied CSV and creates three declared files under caller-supplied new directory.",
+    "On an output write exception, rollback unlinks only files tracked as created by this invocation and attempts to remove its newly created directory. This is not general deletion permission.",
+    "Whole-input memory use and filesystem races remain outside the review; no sandbox or full safety certification."
+  ],
+  "path": "scripts/normalize_inventory.py",
+  "reviewed_at_utc": "2026-10-02T18:30:48.145039+00:00",
+  "reviewer": "R6 continuation coordinator, exact source inspection; not independent",
+  "scope": "Entire exact generated script before downstream execution permission",
+  "sha256": "76e1cb0af87b1acd9a16938690c8ee479cee2892b34e3bd3ba1e28c52e037cae"
+}

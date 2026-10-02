@@ -1,0 +1,70 @@
+{
+  "creator_methods": [
+    "C0",
+    "T0",
+    "O0",
+    "A0"
+  ],
+  "downstream": [
+    {
+      "case_id": "D1-edge",
+      "method_id": "T0",
+      "order_index": 30,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-edge",
+      "method_id": "O0",
+      "order_index": 31,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-edge",
+      "method_id": "A0",
+      "order_index": 32,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-edge",
+      "method_id": "C0",
+      "order_index": 33,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-edge",
+      "method_id": "N0",
+      "order_index": 34,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-ordinary",
+      "method_id": "N0",
+      "order_index": 50,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-ordinary",
+      "method_id": "T0",
+      "order_index": 51,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-ordinary",
+      "method_id": "O0",
+      "order_index": 52,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-ordinary",
+      "method_id": "A0",
+      "order_index": 53,
+      "package_insertion_index": 2
+    },
+    {
+      "case_id": "D1-ordinary",
+      "method_id": "C0",
+      "order_index": 54,
+      "package_insertion_index": 2
+    }
+  ]
+}

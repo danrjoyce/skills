@@ -1,0 +1,16 @@
+{
+  "disposition": "permitted_on_staged_synthetic_D1_inputs_only",
+  "final_package_unchanged": true,
+  "final_verified_at_utc": "2026-10-02T18:58:12.317738+00:00",
+  "observations": [
+    "Standard-library imports; no network, process execution, dynamic eval or credential access.",
+    "Reads input CSV, validates and renders before creating destination and three files.",
+    "Rollback deletes only its tracked newly created files and attempts to remove its new directory.",
+    "Memory use, filesystem races and interrupted partial outputs are not fully contained; not a sandbox."
+  ],
+  "path": "scripts/normalize_inventory.py",
+  "reviewed_at_utc": "2026-10-02T18:53:02.629003+00:00",
+  "reviewer": "R6 continuation coordinator, exact source inspection; not independent",
+  "scope": "Entire exact generated script before synthetic development execution",
+  "sha256": "921cfde6e9378062c111e2e3b1540403bd7a9bae98570b0bf36e1962e0df24cc"
+}

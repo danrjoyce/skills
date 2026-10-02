@@ -1,0 +1,204 @@
+{
+  "adapter": "Observed local file read only; no model selection or native tool",
+  "calibration_controls": [
+    {
+      "expected": "pass",
+      "id": "D1-edge-streaming_valid",
+      "observed": "pass",
+      "repeat_equal": true,
+      "result_sha256": "0056a6ed49044f9df25985ee7efd459c0ed176694edcbba98b7f1ded66df0133"
+    },
+    {
+      "expected": "pass",
+      "id": "D1-edge-reordered_valid",
+      "observed": "pass",
+      "repeat_equal": true,
+      "result_sha256": "0056a6ed49044f9df25985ee7efd459c0ed176694edcbba98b7f1ded66df0133"
+    },
+    {
+      "expected": "fail",
+      "id": "D1-edge-deleted_rows",
+      "observed": "fail",
+      "repeat_equal": true,
+      "result_sha256": "06bf0b298f4119676978f757a0bb00cb7ad1cc8d4b7c037506ce8aecbd4694ef"
+    },
+    {
+      "expected": "fail",
+      "id": "D1-edge-wrong_cents",
+      "observed": "fail",
+      "repeat_equal": true,
+      "result_sha256": "eda490c50bc99ce1f8ef67e46ff49f1cae90da2d45d468ee2aea15a6ff8bf405"
+    },
+    {
+      "expected": "pass",
+      "id": "W1-ordinary-concise_valid",
+      "observed": "pass",
+      "repeat_equal": true,
+      "result_sha256": "51bf48de61c834a433032267e8c808adc06cf44f26a66e5eec48185412cf0160"
+    },
+    {
+      "expected": "pass",
+      "id": "W1-ordinary-reorganized_valid",
+      "observed": "pass",
+      "repeat_equal": true,
+      "result_sha256": "51bf48de61c834a433032267e8c808adc06cf44f26a66e5eec48185412cf0160"
+    },
+    {
+      "expected": "fail",
+      "id": "W1-ordinary-irrelevant_quote",
+      "observed": "fail",
+      "repeat_equal": true,
+      "result_sha256": "be7596c1af9b44c5137c9c04672c6842d5a42072ee97272c3d7f0d8772e00d1b"
+    },
+    {
+      "expected": "fail",
+      "id": "W1-ordinary-false_prose",
+      "observed": "fail",
+      "repeat_equal": true,
+      "result_sha256": "e67a9c40504398009d944fc0b8442b717315eaa8f2a304fbc0d75175be336764"
+    },
+    {
+      "expected": "pass",
+      "id": "R1-ordinary-regex_valid",
+      "observed": "pass",
+      "repeat_equal": true,
+      "result_sha256": "9fcb9fd421c48b20704d80c1244d51fb07c5b875ac23c5dd76105245cd20727d"
+    },
+    {
+      "expected": "pass",
+      "id": "R1-ordinary-state_valid",
+      "observed": "pass",
+      "repeat_equal": true,
+      "result_sha256": "20c88d10600f59d18a1267e826daf79ccebdecea64ea460989d91e1454f71155"
+    },
+    {
+      "expected": "fail",
+      "id": "R1-ordinary-hardcoded",
+      "observed": "fail",
+      "repeat_equal": true,
+      "result_sha256": "6689117dbfe8b8119099f4a6d2aa09321f165fe6e4e27e8adb7812c112fbac9f"
+    },
+    {
+      "expected": "fail",
+      "id": "R1-ordinary-tampered_state",
+      "observed": "fail",
+      "repeat_equal": true,
+      "result_sha256": "2dc9eab281d05d97f95f2ad436988b0fee3eceff643c52173373a25f677d0288"
+    }
+  ],
+  "date_utc": "2026-10-02",
+  "environment": {
+    "PyYAML": "6.0.3",
+    "git": "git version 2.52.0",
+    "jsonschema": "4.26.0",
+    "python": "3.12.14"
+  },
+  "evidence_label": "local_static_check",
+  "fixture_manifest_sha256": "b70d5cdfba5582c9742aaa930ba05af724af1a42f631e6b8dc4b3dd6afe5e298",
+  "fixtures": 12,
+  "independent_rebuild_inventory_equal": true,
+  "instrument_replays": [
+    {
+      "expected": "acceptable_activation",
+      "id": "delayed-load",
+      "observed": "acceptable_activation"
+    },
+    {
+      "expected": "valid_substitute",
+      "id": "valid-substitute",
+      "observed": "valid_substitute"
+    },
+    {
+      "expected": "acceptable_activation",
+      "id": "user-only-explicit",
+      "observed": "acceptable_activation"
+    },
+    {
+      "expected": "forbidden_implicit",
+      "id": "user-only-implicit",
+      "observed": "forbidden_implicit"
+    },
+    {
+      "expected": "technical_error",
+      "id": "exception-negative",
+      "observed": "technical_error"
+    },
+    {
+      "expected": "conflicting_prompt_labels",
+      "id": "duplicate-labels",
+      "observed": "conflicting_prompt_labels"
+    },
+    {
+      "expected": "reconciled_retry",
+      "id": "uncertain-reconciled",
+      "observed": "reconciled_retry"
+    },
+    {
+      "expected": "unsafe_duplicate_retry",
+      "id": "uncertain-duplicate",
+      "observed": "unsafe_duplicate_retry"
+    },
+    {
+      "expected": "cross_probe_access",
+      "id": "cross-probe",
+      "observed": "cross_probe_access"
+    },
+    {
+      "expected": "observed_no_activation",
+      "id": "no-activation",
+      "observed": "observed_no_activation"
+    },
+    {
+      "expected": "observed_no_activation",
+      "id": "grader-injection",
+      "observed": "observed_no_activation"
+    }
+  ],
+  "inventory_note": "Regenerate all 394 synthetic files with support/qualify.py. inventory.json covers every file except itself. No generated Git objects are committed.",
+  "limits": [
+    "Public synthetic controls, no independent holdout.",
+    "Hand-authored semantic annotations do not qualify a general judge.",
+    "Only fixed inspected code controls executed; no sandbox claim.",
+    "Fixtures reproducible in the recorded Python/Git environment; model determinism untested."
+  ],
+  "model_trials": 0,
+  "native_runtime_trials": 0,
+  "planned_attempts": 84,
+  "qualification_files": 394,
+  "qualified_inventory_sha256": "0305f6ef44a022cbee905c1f47c31235835e8fd6bc8364c2cbde6149bd3d691a",
+  "routing_annotation_controls": [
+    {
+      "expected": "pass",
+      "id": "S1-existing-pass",
+      "observed": "pass"
+    },
+    {
+      "expected": "fail",
+      "id": "S1-existing-fail",
+      "observed": "fail"
+    },
+    {
+      "expected": "pass",
+      "id": "S2-missing-policy-pass",
+      "observed": "pass"
+    },
+    {
+      "expected": "fail",
+      "id": "S2-missing-policy-fail",
+      "observed": "fail"
+    },
+    {
+      "expected": "pass",
+      "id": "S3-outside-envelope-pass",
+      "observed": "pass"
+    },
+    {
+      "expected": "fail",
+      "id": "S3-outside-envelope-fail",
+      "observed": "fail"
+    }
+  ],
+  "support_tree_sha256": "9411bd28fc23ddb740aa7339a0f707ea6367e55b1b6b4b48cc737cce12906545",
+  "unit_tests": 33,
+  "version": "R5 static qualification v1"
+}

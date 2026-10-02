@@ -1,0 +1,22 @@
+{
+  "brief.md": {
+    "bytes": 1873,
+    "sha256": "afe09ad5b453b6495992ce16556aeb7dc703e81702343a38cd9d767c02676ba8"
+  },
+  "dev-draft.md": {
+    "bytes": 130,
+    "sha256": "bf24f88f539b70fde8effe19d6f9f46c3cf1cba21b7df79b2f0444778b4e3b28"
+  },
+  "dev-sources.md": {
+    "bytes": 153,
+    "sha256": "ca82d39fad81cfbed4d5e61d0bca895a11ce03c6460a8febad1f932a1eda7d76"
+  },
+  "policy.txt": {
+    "bytes": 580,
+    "sha256": "c352e947d2d6136d4209325073964d87d041fa1c5149572f77b437934225e22e"
+  },
+  "prompt.txt": {
+    "bytes": 2723,
+    "sha256": "169facbb37b2754504da143df4ddcc69b2efa11f5f8f41c5b1f1701c9c08b3f3"
+  }
+}

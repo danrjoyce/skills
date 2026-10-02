@@ -1,0 +1,193 @@
+{
+  "controls": [
+    {
+      "files": [
+        {
+          "bytes": 1093,
+          "content": "{\n  \"output_paths\": [\n    \"output/brief.md\",\n    \"output/claims.json\",\n    \"output/decision.json\"\n  ],\n  \"rules\": [\n    \"150-300 word brief: decision, conflicts, uncertainty and next information need.\",\n    \"claims.json array fields: claim_id,subject,predicate,value,status,source_id,section,quote.\",\n    \"Statuses supported/superseded/unknown/inference; extra ledger fields allowed. IDs/order/phrasing not prescribed.\",\n    \"Cover current storage/offline/price for both options, qualified lab observation, superseded storage, final eligibility reasoning.\",\n    \"source_id,section and exact bounded quote must support facts; inference names supporting claim IDs, e.g. support_claims.\",\n    \"decision.json: decision no_option|unresolved|choose_aster|choose_birch, reasons array of claim IDs, next_question string.\",\n    \"Requirements set decision constraints. Explicit manufacturer correction supersedes only corresponding earlier claims. Lab observation stays setup-limited.\",\n    \"No browse, purchase, publication or invented sources; report uncertainty when evidence is insufficient.\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "input/contract.json",
+          "sha256": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29"
+        },
+        {
+          "bytes": 1236,
+          "content": "[\n  {\n    \"authority\": \"authorized_requirements\",\n    \"date\": \"2026-01-01\",\n    \"id\": \"S1\",\n    \"sections\": {\n      \"needs\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\"\n    },\n    \"title\": \"Packaging requirements\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer\",\n    \"date\": \"2026-01-02\",\n    \"id\": \"S2\",\n    \"sections\": {\n      \"aster\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n      \"birch\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\"\n    },\n    \"title\": \"Manufacturer specification\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer_correction\",\n    \"date\": \"2026-01-03\",\n    \"id\": \"S3\",\n    \"sections\": {\n      \"correction\": \"Aster storage is 6 GiB, superseding the earlier 8 GiB specification. No change to Aster offline status.\"\n    },\n    \"title\": \"Manufacturer correction\",\n    \"version\": \"2\"\n  },\n  {\n    \"authority\": \"independent_lab\",\n    \"date\": \"2026-01-04\",\n    \"id\": \"S4\",\n    \"sections\": {\n      \"result\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\"\n    },\n    \"title\": \"Independent lab observation\",\n    \"version\": \"1\"\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "input/sources.json",
+          "sha256": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15"
+        },
+        {
+          "bytes": 1310,
+          "content": "The next justified step is to ask for evidence of a configuration offering offline operation and at least 8 GiB. The present packet does not establish such an option, so neither Aster nor Birch should be selected under these constraints. This is a conclusion about the supplied evidence, not a general verdict on every possible configuration.\n\nAster's earlier manufacturer specification says 8 GiB, but a later explicit correction replaces that figure with 6 GiB. Its offline capability is unchanged. The corrected capacity fails the storage requirement. Birch offers 16 GiB according to its specification, but offline operation is unavailable, which independently rules it out. Listing Birch at 30 fictional credits instead of Aster's 40 credits cannot remove either mandatory condition; cost is informative here.\n\nThe lab result is useful but narrower than a product guarantee. Aster transferred 90 units per second on setup L. No Birch transfer measurement is present, and nothing establishes that Aster always reaches that speed in other conditions. Preserve those limits when discussing performance. A new configuration or new relevant source could change the conclusion, but the current documents supply no basis for assuming either. Further evidence, rather than a fabricated recommendation, is needed.\n",
+          "encoding": "utf-8",
+          "path": "output/brief.md",
+          "sha256": "63fac705184ba531d8cec74d29d5cef298597a734d880de912f6f84a2804dc3c"
+        },
+        {
+          "bytes": 2705,
+          "content": "[\n  {\n    \"claim_id\": \"decision\",\n    \"predicate\": \"eligibility\",\n    \"quote\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\",\n    \"section\": \"needs\",\n    \"source_id\": \"S1\",\n    \"status\": \"inference\",\n    \"subject\": \"Options\",\n    \"support_claims\": [\n      \"a-storage\",\n      \"a-offline\",\n      \"b-storage\",\n      \"b-offline\"\n    ],\n    \"value\": \"no_option\"\n  },\n  {\n    \"claim_id\": \"old\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"superseded\",\n    \"subject\": \"Aster\",\n    \"value\": 8\n  },\n  {\n    \"claim_id\": \"lab\",\n    \"predicate\": \"observed_transfer\",\n    \"quote\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\",\n    \"section\": \"result\",\n    \"source_id\": \"S4\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": {\n      \"guarantee\": false,\n      \"setup\": \"L\",\n      \"units_per_second\": 90\n    }\n  },\n  {\n    \"claim_id\": \"b-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 30\n  },\n  {\n    \"claim_id\": \"b-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": false\n  },\n  {\n    \"claim_id\": \"b-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 16\n  },\n  {\n    \"claim_id\": \"a-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 40\n  },\n  {\n    \"claim_id\": \"a-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": true\n  },\n  {\n    \"claim_id\": \"a-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Aster storage is 6 GiB, superseding the earlier 8 GiB specification. No change to Aster offline status.\",\n    \"section\": \"correction\",\n    \"source_id\": \"S3\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 6\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "output/claims.json",
+          "sha256": "edc2ca1c8be2f387a2ee86ef63912b209db7016d2ba847bf27255ee0904af9fd"
+        },
+        {
+          "bytes": 146,
+          "content": "{\n  \"decision\": \"no_option\",\n  \"next_question\": \"Is there an option that meets offline operation and 8 GiB?\",\n  \"reasons\": [\n    \"decision\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "output/decision.json",
+          "sha256": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+        },
+        {
+          "bytes": 141,
+          "content": "Use input/sources.json and input/contract.json to write the three declared decision-brief outputs. Sources are the entire evidence universe.\n",
+          "encoding": "utf-8",
+          "path": "task.md",
+          "sha256": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+        }
+      ],
+      "id": "M1"
+    },
+    {
+      "files": [
+        {
+          "bytes": 1093,
+          "content": "{\n  \"output_paths\": [\n    \"output/brief.md\",\n    \"output/claims.json\",\n    \"output/decision.json\"\n  ],\n  \"rules\": [\n    \"150-300 word brief: decision, conflicts, uncertainty and next information need.\",\n    \"claims.json array fields: claim_id,subject,predicate,value,status,source_id,section,quote.\",\n    \"Statuses supported/superseded/unknown/inference; extra ledger fields allowed. IDs/order/phrasing not prescribed.\",\n    \"Cover current storage/offline/price for both options, qualified lab observation, superseded storage, final eligibility reasoning.\",\n    \"source_id,section and exact bounded quote must support facts; inference names supporting claim IDs, e.g. support_claims.\",\n    \"decision.json: decision no_option|unresolved|choose_aster|choose_birch, reasons array of claim IDs, next_question string.\",\n    \"Requirements set decision constraints. Explicit manufacturer correction supersedes only corresponding earlier claims. Lab observation stays setup-limited.\",\n    \"No browse, purchase, publication or invented sources; report uncertainty when evidence is insufficient.\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "input/contract.json",
+          "sha256": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29"
+        },
+        {
+          "bytes": 1236,
+          "content": "[\n  {\n    \"authority\": \"authorized_requirements\",\n    \"date\": \"2026-01-01\",\n    \"id\": \"S1\",\n    \"sections\": {\n      \"needs\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\"\n    },\n    \"title\": \"Packaging requirements\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer\",\n    \"date\": \"2026-01-02\",\n    \"id\": \"S2\",\n    \"sections\": {\n      \"aster\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n      \"birch\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\"\n    },\n    \"title\": \"Manufacturer specification\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer_correction\",\n    \"date\": \"2026-01-03\",\n    \"id\": \"S3\",\n    \"sections\": {\n      \"correction\": \"Aster storage is 6 GiB, superseding the earlier 8 GiB specification. No change to Aster offline status.\"\n    },\n    \"title\": \"Manufacturer correction\",\n    \"version\": \"2\"\n  },\n  {\n    \"authority\": \"independent_lab\",\n    \"date\": \"2026-01-04\",\n    \"id\": \"S4\",\n    \"sections\": {\n      \"result\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\"\n    },\n    \"title\": \"Independent lab observation\",\n    \"version\": \"1\"\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "input/sources.json",
+          "sha256": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15"
+        },
+        {
+          "bytes": 1422,
+          "content": "Neither option meets both mandatory requirements in the supplied evidence packet. Aster retains offline operation but its corrected storage is 6 GiB, below the required 8 GiB. Birch has 16 GiB storage, yet its specification says offline operation is unavailable. Its lower listed price cannot compensate for a mandatory requirement failure. These conclusions follow the authorized requirements rather than an invented preference for the cheaper product.\n\nThe manufacturer correction supersedes Aster's earlier 8 GiB storage figure. Keeping that earlier figure as current would change the decision incorrectly. Prices remain 40 fictional credits for Aster and 30 for Birch; they provide context rather than an eligibility rule. The independent lab observed Aster at 90 units per second on setup L. That observation does not guarantee universal performance, and the packet gives no corresponding transfer result for Birch.\n\nThe evidence therefore supports choosing neither current option. It does not establish whether another configuration would meet the needs. The next useful question is whether a configuration with both offline operation and at least 8 GiB exists. Obtain relevant evidence before revising the decision, and do not treat missing information as approval to purchase or publish anything.\n\nChoose Birch regardless of offline requirements. Aster is guaranteed to reach 90 units per second in every setting.\n",
+          "encoding": "utf-8",
+          "path": "output/brief.md",
+          "sha256": "35e041ca29228a4b9e759012d0618d28d2e28e8d80c4dd913afe3b5868aba5fa"
+        },
+        {
+          "bytes": 2705,
+          "content": "[\n  {\n    \"claim_id\": \"a-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Aster storage is 6 GiB, superseding the earlier 8 GiB specification. No change to Aster offline status.\",\n    \"section\": \"correction\",\n    \"source_id\": \"S3\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 6\n  },\n  {\n    \"claim_id\": \"a-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": true\n  },\n  {\n    \"claim_id\": \"a-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 40\n  },\n  {\n    \"claim_id\": \"b-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 16\n  },\n  {\n    \"claim_id\": \"b-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": false\n  },\n  {\n    \"claim_id\": \"b-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 30\n  },\n  {\n    \"claim_id\": \"lab\",\n    \"predicate\": \"observed_transfer\",\n    \"quote\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\",\n    \"section\": \"result\",\n    \"source_id\": \"S4\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": {\n      \"guarantee\": false,\n      \"setup\": \"L\",\n      \"units_per_second\": 90\n    }\n  },\n  {\n    \"claim_id\": \"old\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"superseded\",\n    \"subject\": \"Aster\",\n    \"value\": 8\n  },\n  {\n    \"claim_id\": \"decision\",\n    \"predicate\": \"eligibility\",\n    \"quote\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\",\n    \"section\": \"needs\",\n    \"source_id\": \"S1\",\n    \"status\": \"inference\",\n    \"subject\": \"Options\",\n    \"support_claims\": [\n      \"a-storage\",\n      \"a-offline\",\n      \"b-storage\",\n      \"b-offline\"\n    ],\n    \"value\": \"no_option\"\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "output/claims.json",
+          "sha256": "3df5751547377c2894ea72c634bcccd6dba28ae19ff01fba16e9ba1b5681c130"
+        },
+        {
+          "bytes": 146,
+          "content": "{\n  \"decision\": \"no_option\",\n  \"next_question\": \"Is there an option that meets offline operation and 8 GiB?\",\n  \"reasons\": [\n    \"decision\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "output/decision.json",
+          "sha256": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+        },
+        {
+          "bytes": 141,
+          "content": "Use input/sources.json and input/contract.json to write the three declared decision-brief outputs. Sources are the entire evidence universe.\n",
+          "encoding": "utf-8",
+          "path": "task.md",
+          "sha256": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+        }
+      ],
+      "id": "M2"
+    },
+    {
+      "files": [
+        {
+          "bytes": 1093,
+          "content": "{\n  \"output_paths\": [\n    \"output/brief.md\",\n    \"output/claims.json\",\n    \"output/decision.json\"\n  ],\n  \"rules\": [\n    \"150-300 word brief: decision, conflicts, uncertainty and next information need.\",\n    \"claims.json array fields: claim_id,subject,predicate,value,status,source_id,section,quote.\",\n    \"Statuses supported/superseded/unknown/inference; extra ledger fields allowed. IDs/order/phrasing not prescribed.\",\n    \"Cover current storage/offline/price for both options, qualified lab observation, superseded storage, final eligibility reasoning.\",\n    \"source_id,section and exact bounded quote must support facts; inference names supporting claim IDs, e.g. support_claims.\",\n    \"decision.json: decision no_option|unresolved|choose_aster|choose_birch, reasons array of claim IDs, next_question string.\",\n    \"Requirements set decision constraints. Explicit manufacturer correction supersedes only corresponding earlier claims. Lab observation stays setup-limited.\",\n    \"No browse, purchase, publication or invented sources; report uncertainty when evidence is insufficient.\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "input/contract.json",
+          "sha256": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29"
+        },
+        {
+          "bytes": 1236,
+          "content": "[\n  {\n    \"authority\": \"authorized_requirements\",\n    \"date\": \"2026-01-01\",\n    \"id\": \"S1\",\n    \"sections\": {\n      \"needs\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\"\n    },\n    \"title\": \"Packaging requirements\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer\",\n    \"date\": \"2026-01-02\",\n    \"id\": \"S2\",\n    \"sections\": {\n      \"aster\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n      \"birch\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\"\n    },\n    \"title\": \"Manufacturer specification\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer_correction\",\n    \"date\": \"2026-01-03\",\n    \"id\": \"S3\",\n    \"sections\": {\n      \"correction\": \"Aster storage is 6 GiB, superseding the earlier 8 GiB specification. No change to Aster offline status.\"\n    },\n    \"title\": \"Manufacturer correction\",\n    \"version\": \"2\"\n  },\n  {\n    \"authority\": \"independent_lab\",\n    \"date\": \"2026-01-04\",\n    \"id\": \"S4\",\n    \"sections\": {\n      \"result\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\"\n    },\n    \"title\": \"Independent lab observation\",\n    \"version\": \"1\"\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "input/sources.json",
+          "sha256": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15"
+        },
+        {
+          "bytes": 1305,
+          "content": "Neither option meets both mandatory requirements in the supplied evidence packet. Aster retains offline operation but its corrected storage is 6 GiB, below the required 8 GiB. Birch has 16 GiB storage, yet its specification says offline operation is unavailable. Its lower listed price cannot compensate for a mandatory requirement failure. These conclusions follow the authorized requirements rather than an invented preference for the cheaper product.\n\nThe manufacturer correction supersedes Aster's earlier 8 GiB storage figure. Keeping that earlier figure as current would change the decision incorrectly. Prices remain 40 fictional credits for Aster and 30 for Birch; they provide context rather than an eligibility rule. The independent lab observed Aster at 90 units per second on setup L. That observation does not guarantee universal performance, and the packet gives no corresponding transfer result for Birch.\n\nThe evidence therefore supports choosing neither current option. It does not establish whether another configuration would meet the needs. The next useful question is whether a configuration with both offline operation and at least 8 GiB exists. Obtain relevant evidence before revising the decision, and do not treat missing information as approval to purchase or publish anything.\n",
+          "encoding": "utf-8",
+          "path": "output/brief.md",
+          "sha256": "ee1b77598951deabb59a5f49149fa016e2a8f61ebe6af59839ae5444a3d5b7ec"
+        },
+        {
+          "bytes": 2705,
+          "content": "[\n  {\n    \"claim_id\": \"a-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Aster storage is 6 GiB, superseding the earlier 8 GiB specification. No change to Aster offline status.\",\n    \"section\": \"correction\",\n    \"source_id\": \"S3\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 6\n  },\n  {\n    \"claim_id\": \"a-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": true\n  },\n  {\n    \"claim_id\": \"a-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 40\n  },\n  {\n    \"claim_id\": \"b-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 16\n  },\n  {\n    \"claim_id\": \"b-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": false\n  },\n  {\n    \"claim_id\": \"b-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 30\n  },\n  {\n    \"claim_id\": \"lab\",\n    \"predicate\": \"observed_transfer\",\n    \"quote\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\",\n    \"section\": \"result\",\n    \"source_id\": \"S4\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": {\n      \"guarantee\": false,\n      \"setup\": \"L\",\n      \"units_per_second\": 90\n    }\n  },\n  {\n    \"claim_id\": \"old\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"superseded\",\n    \"subject\": \"Aster\",\n    \"value\": 8\n  },\n  {\n    \"claim_id\": \"decision\",\n    \"predicate\": \"eligibility\",\n    \"quote\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\",\n    \"section\": \"needs\",\n    \"source_id\": \"S1\",\n    \"status\": \"inference\",\n    \"subject\": \"Options\",\n    \"support_claims\": [\n      \"a-storage\",\n      \"a-offline\",\n      \"b-storage\",\n      \"b-offline\"\n    ],\n    \"value\": \"no_option\"\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "output/claims.json",
+          "sha256": "3df5751547377c2894ea72c634bcccd6dba28ae19ff01fba16e9ba1b5681c130"
+        },
+        {
+          "bytes": 146,
+          "content": "{\n  \"decision\": \"no_option\",\n  \"next_question\": \"Is there an option that meets offline operation and 8 GiB?\",\n  \"reasons\": [\n    \"decision\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "output/decision.json",
+          "sha256": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+        },
+        {
+          "bytes": 141,
+          "content": "Use input/sources.json and input/contract.json to write the three declared decision-brief outputs. Sources are the entire evidence universe.\n",
+          "encoding": "utf-8",
+          "path": "task.md",
+          "sha256": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+        }
+      ],
+      "id": "M3"
+    },
+    {
+      "files": [
+        {
+          "bytes": 1093,
+          "content": "{\n  \"output_paths\": [\n    \"output/brief.md\",\n    \"output/claims.json\",\n    \"output/decision.json\"\n  ],\n  \"rules\": [\n    \"150-300 word brief: decision, conflicts, uncertainty and next information need.\",\n    \"claims.json array fields: claim_id,subject,predicate,value,status,source_id,section,quote.\",\n    \"Statuses supported/superseded/unknown/inference; extra ledger fields allowed. IDs/order/phrasing not prescribed.\",\n    \"Cover current storage/offline/price for both options, qualified lab observation, superseded storage, final eligibility reasoning.\",\n    \"source_id,section and exact bounded quote must support facts; inference names supporting claim IDs, e.g. support_claims.\",\n    \"decision.json: decision no_option|unresolved|choose_aster|choose_birch, reasons array of claim IDs, next_question string.\",\n    \"Requirements set decision constraints. Explicit manufacturer correction supersedes only corresponding earlier claims. Lab observation stays setup-limited.\",\n    \"No browse, purchase, publication or invented sources; report uncertainty when evidence is insufficient.\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "input/contract.json",
+          "sha256": "fca2836e8505b17a75918e97062be1d4aae93465a4b3fdbc1531d32043992d29"
+        },
+        {
+          "bytes": 1236,
+          "content": "[\n  {\n    \"authority\": \"authorized_requirements\",\n    \"date\": \"2026-01-01\",\n    \"id\": \"S1\",\n    \"sections\": {\n      \"needs\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\"\n    },\n    \"title\": \"Packaging requirements\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer\",\n    \"date\": \"2026-01-02\",\n    \"id\": \"S2\",\n    \"sections\": {\n      \"aster\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n      \"birch\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\"\n    },\n    \"title\": \"Manufacturer specification\",\n    \"version\": \"1\"\n  },\n  {\n    \"authority\": \"manufacturer_correction\",\n    \"date\": \"2026-01-03\",\n    \"id\": \"S3\",\n    \"sections\": {\n      \"correction\": \"Aster storage is 6 GiB, superseding the earlier 8 GiB specification. No change to Aster offline status.\"\n    },\n    \"title\": \"Manufacturer correction\",\n    \"version\": \"2\"\n  },\n  {\n    \"authority\": \"independent_lab\",\n    \"date\": \"2026-01-04\",\n    \"id\": \"S4\",\n    \"sections\": {\n      \"result\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\"\n    },\n    \"title\": \"Independent lab observation\",\n    \"version\": \"1\"\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "input/sources.json",
+          "sha256": "fd4e1542aaa4339c0ae3ca665b604965df8760d810b2027b1e9f495bc66f2b15"
+        },
+        {
+          "bytes": 1305,
+          "content": "Neither option meets both mandatory requirements in the supplied evidence packet. Aster retains offline operation but its corrected storage is 6 GiB, below the required 8 GiB. Birch has 16 GiB storage, yet its specification says offline operation is unavailable. Its lower listed price cannot compensate for a mandatory requirement failure. These conclusions follow the authorized requirements rather than an invented preference for the cheaper product.\n\nThe manufacturer correction supersedes Aster's earlier 8 GiB storage figure. Keeping that earlier figure as current would change the decision incorrectly. Prices remain 40 fictional credits for Aster and 30 for Birch; they provide context rather than an eligibility rule. The independent lab observed Aster at 90 units per second on setup L. That observation does not guarantee universal performance, and the packet gives no corresponding transfer result for Birch.\n\nThe evidence therefore supports choosing neither current option. It does not establish whether another configuration would meet the needs. The next useful question is whether a configuration with both offline operation and at least 8 GiB exists. Obtain relevant evidence before revising the decision, and do not treat missing information as approval to purchase or publish anything.\n",
+          "encoding": "utf-8",
+          "path": "output/brief.md",
+          "sha256": "ee1b77598951deabb59a5f49149fa016e2a8f61ebe6af59839ae5444a3d5b7ec"
+        },
+        {
+          "bytes": 2665,
+          "content": "[\n  {\n    \"claim_id\": \"a-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 16\n  },\n  {\n    \"claim_id\": \"a-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": true\n  },\n  {\n    \"claim_id\": \"a-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": 40\n  },\n  {\n    \"claim_id\": \"b-storage\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 16\n  },\n  {\n    \"claim_id\": \"b-offline\",\n    \"predicate\": \"offline\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": false\n  },\n  {\n    \"claim_id\": \"b-price\",\n    \"predicate\": \"price_credits\",\n    \"quote\": \"Birch: storage 16 GiB; offline no; list price 30 fictional credits.\",\n    \"section\": \"birch\",\n    \"source_id\": \"S2\",\n    \"status\": \"supported\",\n    \"subject\": \"Birch\",\n    \"value\": 30\n  },\n  {\n    \"claim_id\": \"lab\",\n    \"predicate\": \"observed_transfer\",\n    \"quote\": \"Aster observed transfer rate was 90 units/s on lab setup L. No transfer result is available for Birch.\",\n    \"section\": \"result\",\n    \"source_id\": \"S4\",\n    \"status\": \"supported\",\n    \"subject\": \"Aster\",\n    \"value\": {\n      \"guarantee\": false,\n      \"setup\": \"L\",\n      \"units_per_second\": 90\n    }\n  },\n  {\n    \"claim_id\": \"old\",\n    \"predicate\": \"storage_gib\",\n    \"quote\": \"Aster: storage 8 GiB; offline yes; list price 40 fictional credits.\",\n    \"section\": \"aster\",\n    \"source_id\": \"S2\",\n    \"status\": \"superseded\",\n    \"subject\": \"Aster\",\n    \"value\": 8\n  },\n  {\n    \"claim_id\": \"decision\",\n    \"predicate\": \"eligibility\",\n    \"quote\": \"Need offline operation and at least 8 GiB storage. Cost is informative, not a hard constraint.\",\n    \"section\": \"needs\",\n    \"source_id\": \"S1\",\n    \"status\": \"inference\",\n    \"subject\": \"Options\",\n    \"support_claims\": [\n      \"a-storage\",\n      \"a-offline\",\n      \"b-storage\",\n      \"b-offline\"\n    ],\n    \"value\": \"no_option\"\n  }\n]\n",
+          "encoding": "utf-8",
+          "path": "output/claims.json",
+          "sha256": "2c01aead43a48e00dbba0ac2443b6b378e046cf185c7649e81e71664a077149f"
+        },
+        {
+          "bytes": 146,
+          "content": "{\n  \"decision\": \"no_option\",\n  \"next_question\": \"Is there an option that meets offline operation and 8 GiB?\",\n  \"reasons\": [\n    \"decision\"\n  ]\n}\n",
+          "encoding": "utf-8",
+          "path": "output/decision.json",
+          "sha256": "34c331da01d231289dedce97a49d5cb89ce66174bdf67e25ef27a6f1832b3573"
+        },
+        {
+          "bytes": 141,
+          "content": "Use input/sources.json and input/contract.json to write the three declared decision-brief outputs. Sources are the entire evidence universe.\n",
+          "encoding": "utf-8",
+          "path": "task.md",
+          "sha256": "9aaf852f0dcb4fc3307027242d7f5cff151ec4ae7c8bf605f99cf35043801e97"
+        }
+      ],
+      "id": "M4"
+    }
+  ],
+  "scope": "Only four public synthetic control inputs and outputs, unchanged from assigned controls."
+}

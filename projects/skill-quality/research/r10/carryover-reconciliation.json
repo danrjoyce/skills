@@ -1,0 +1,32 @@
+{
+  "note": "All second-use draft baselines were the correct actual first output, even when first-use reporting was interrupted. Correct refers to artifact correctness, not complete timed-task success. Starting origin records remain unchanged.",
+  "transitions": [
+    {
+      "slot": "draft-v2-second",
+      "baseline_equals_actual_first_output": true,
+      "baseline_sha256": "51164fc86376bc35f12e759bef3c99c9b9cbb4a62a0dbed928d13d5535d72f4e",
+      "first_artifact_correct": true,
+      "first_terminal_status": "interrupted_at_deadline",
+      "first_report_file_present": true,
+      "fallback_used": false
+    },
+    {
+      "slot": "draft-template-second",
+      "baseline_equals_actual_first_output": true,
+      "baseline_sha256": "74e2b7530392b3af83c0e73f86929bc7e9cbc2b2baac39ea5e0d7e5780c3f0d4",
+      "first_artifact_correct": true,
+      "first_terminal_status": "interrupted_at_deadline",
+      "first_report_file_present": false,
+      "fallback_used": false
+    },
+    {
+      "slot": "draft-direct-second",
+      "baseline_equals_actual_first_output": true,
+      "baseline_sha256": "29c0f93d8dcacd63ba2cf01659f09c1338e64532b5f0b62d6a5287562e723070",
+      "first_artifact_correct": true,
+      "first_terminal_status": "completed",
+      "first_report_file_present": true,
+      "fallback_used": false
+    }
+  ]
+}

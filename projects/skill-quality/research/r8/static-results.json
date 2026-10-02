@@ -1,0 +1,26 @@
+{
+  "entrypoint_whitespace_words": 664,
+  "files": [
+    {
+      "bytes": 4546,
+      "path": "SKILL.md",
+      "sha256": "07d314b1b320d07193753740557277a478f409d9904842473fe14d20a8735dfe"
+    },
+    {
+      "bytes": 119,
+      "path": "agents/openai.yaml",
+      "sha256": "d0cede36134d4aef65385956045be16b82725e0e3b20c1720fe09ca2aaed3d3b"
+    }
+  ],
+  "limits": [
+    "Assertions check the chosen two-file package, not skill quality.",
+    "No creator, helper, solver, semantic grader or native host is exercised.",
+    "No safety, usefulness, cost or comparative-performance inference."
+  ],
+  "new_model_trials": 0,
+  "package_bytes": 4665,
+  "scope": "static package and frozen byte identity",
+  "status": "passed",
+  "tree_sha256": "cd74d8380c5aefbdc3ae4b8b77e2fd59a74323c5ecbb714a17a20e972afe53a9",
+  "v1_tree_sha256": "4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683"
+}
