@@ -23,7 +23,9 @@ A0's report-writing was interrupted at its deadline, retaining its completed ini
 
 ## Publication
 
-Substantive R6 publication and independent remote-byte/path verification are pending in this initial record. The following tracking-only update will record the exact substantive commit, verified path scope and CI observations. No absence of CI will be described as a pass.
+Substantive commit: `7833edd1edb6dc038fa30cbb90bf1ec4ac5f5ad2`. The branch head was verified at that commit. All 102 published project files were independently fetched by Git blob identity and matched local bytes exactly. The complete untruncated tree and commit comparison show exactly 60 intended project changes: 57 additions and three tracking-file edits. Every prior nontracking artifact and every path outside this project remains unchanged. The three withheld archive payloads are absent from the remote tree.
+
+For this exact substantive commit, GitHub returned zero workflow runs, zero commit statuses and zero check runs. This is not a CI pass. The final tracking-only commit records these checks and a later conservative resource snapshot; its bytes/head and exact-commit CI are checked separately before completion. Curated public artifacts replay all ten mechanical reports with the unchanged oracle. Final R4 link checking covered 185 relative links/anchors; R5 and R6 checks passed.
 
 The publication envelope is representational only: `r6/archive-io.py decode INPUT OUTPUT` recovers exact archived JSON. Full source and selected-package identities remain explicit. The three compressed archives are retained locally, not uploaded; source-archive publication was denied twice and no alternate route was used. Curated case/semantic artifacts and exact selected packages are public. Raw snapshots, author check outputs and original worker reports remain a remote evidence gap. No hidden host instructions, private installed skill bodies, credentials or unrelated workspace content are intentionally included.
 

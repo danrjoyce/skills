@@ -3,7 +3,7 @@
   "authoritative_global_tool_calls": null,
   "campaign_started_at_utc": "2026-10-02T17:15:34+00:00",
   "campaign_total_limit_seconds": 36960,
-  "campaign_wall_seconds": 8376.435987,
+  "campaign_wall_seconds": 9903.846013,
   "completed_explicit_wait_seconds_deducted": 2770.0280000000002,
   "confirmed_fresh_worker_start_ids": [
     "qualify-discovery-01",
@@ -25,18 +25,21 @@
     "qualify-semantics-01"
   ],
   "confirmed_fresh_worker_starts": 17,
-  "coordinator_active_upper_seconds": 5606.4079870000005,
+  "coordinator_active_upper_seconds": 7133.818013,
   "coordinator_exact_active_seconds": null,
   "dollar_equivalent_cost": null,
   "limits": "Setup upper bound is conservative rather than exact active time. All-call cap remains unverified. A0 final author call count unavailable after interruption.",
   "model_identifier": null,
   "new_external_spend_usd": 0,
-  "observed_at_utc": "2026-10-02T19:35:10.435987+00:00",
+  "observed_at_utc": "2026-10-02T20:00:37.846013+00:00",
+  "post_snapshot_work": "Final tracking publication/verification follows; exact active coordinator time remains unknown. No further experiment is authorized in this context.",
+  "publication_scope": "Three compressed archives withheld after authorization denial; reduced public evidence verified.",
   "scheduling_stop_seconds": 39600,
   "sequential_status": "One substantive worker observed at a time; A0 paused for one development solver and then resumed. A0 interrupted at deadline. No authoritative per-boundary process trace.",
   "setup_limit_seconds": 7200,
   "storage_bytes_declared_runtime_plus_two_proof_bundles": 2212528,
   "storage_limit_bytes": 262144000,
+  "substantive_commit": "7833edd1edb6dc038fa30cbb90bf1ec4ac5f5ad2",
   "tokens": null,
   "upper_bound_method": "All elapsed coordinator wall time since original campaign start charged except explicitly completed logged waits, including prior 480 seconds. Unknown publication stall and context gap remain charged. Includes worker/coordinator overlap outside waits."
 }

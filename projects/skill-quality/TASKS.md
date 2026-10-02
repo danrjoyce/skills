@@ -71,3 +71,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R6 paused for conservative context renewal with all three started workers terminal. Candidate/support and original R1-R4 evidence remain unchanged. Selected C0/T0 artifacts and all known attempts are retained in the runtime archive. O0/A0, ten downstream cells, live semantic qualification and final report remain pending; R7 has not started.
 
 - 2026-10-02: R6 bounded diagnostic completed without candidate tuning. All ten downstream attempts retained. Complete action and exact cost telemetry remain unknown; no superiority or native-performance finding. R7 begins only in fresh context after verified publication.
+
+- 2026-10-02: R6 substantive commit `7833edd1edb6dc038fa30cbb90bf1ec4ac5f5ad2` verified across all 102 published project files, with exactly 60 intended changed paths and no outside changes. Exact-commit workflow/status/check-run queries returned zero, not a CI pass. Three compressed archives remain local after the disclosed authorization denial; curated synthetic replay evidence and pinned source URLs/hashes are published.
