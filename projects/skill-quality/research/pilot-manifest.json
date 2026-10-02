@@ -1,0 +1,243 @@
+{
+  "document_kind": "campaign_manifest",
+  "schema_version": "0.1",
+  "campaign_id": "r6-public-pilot-v0.1-proposed",
+  "status": "design_not_started",
+  "evidence_label": "proposal",
+  "protocol_path": "comparative-protocol.md",
+  "protocol_sha256": null,
+  "fixture_spec_path": "evaluation-fixtures.md",
+  "created_date_utc": "2026-10-02",
+  "scope": "public_synthetic_common_host_pilot",
+  "runtime": {
+    "host_label": null,
+    "host_adapter_sha256": null,
+    "model_identifier": null,
+    "model_identifier_limit": "Not resolved at design time. Record actual observable metadata; do not claim model snapshot/seed control from the worker API.",
+    "model_controls": {},
+    "python_version": null,
+    "background_catalog_sha256": null,
+    "tools_manifest_sha256": null,
+    "trace_coverage": "unverified",
+    "budget_enforcement": "unverified",
+    "ordinary_tools_only": true,
+    "new_external_spend_authorized": false
+  },
+  "isolation": {
+    "classification": "unenforced_shared_environment",
+    "independent_holdout": false,
+    "known_limitations": [
+      "Public task/acceptance specifications are visible during candidate development.",
+      "Fresh workers may inherit system/tool/skill instructions and share an accessible filesystem.",
+      "No independent custodian or verified holdout boundary exists.",
+      "Model routing, hidden context, memory, caches and pretraining contamination are not fully observable."
+    ],
+    "exposure_log_ref": null
+  },
+  "methods": [
+    {
+      "id": "N0",
+      "label": "No added task-specific package",
+      "creator": false,
+      "repository": null,
+      "commit": null,
+      "package_sha256": null,
+      "dependency_closure_sha256": null,
+      "adaptation": "comparative-protocol.md section 3; no native-host performance claim"
+    },
+    {
+      "id": "T0",
+      "label": "Fixed simple-template creator",
+      "creator": true,
+      "repository": null,
+      "commit": null,
+      "package_sha256": null,
+      "dependency_closure_sha256": null,
+      "adaptation": "comparative-protocol.md section 3; no native-host performance claim"
+    },
+    {
+      "id": "O0",
+      "label": "Pinned OpenAI creator, common-host adapted",
+      "creator": true,
+      "repository": "openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "package_sha256": null,
+      "dependency_closure_sha256": null,
+      "adaptation": "comparative-protocol.md section 3; no native-host performance claim"
+    },
+    {
+      "id": "A0",
+      "label": "Pinned Anthropic creator, common-host adapted",
+      "creator": true,
+      "repository": "anthropics/skills",
+      "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+      "package_sha256": null,
+      "dependency_closure_sha256": null,
+      "adaptation": "comparative-protocol.md section 3; no native-host performance claim"
+    },
+    {
+      "id": "C0",
+      "label": "R5 candidate, not implemented",
+      "creator": true,
+      "repository": null,
+      "commit": null,
+      "package_sha256": null,
+      "dependency_closure_sha256": null,
+      "adaptation": "comparative-protocol.md section 3; no native-host performance claim"
+    }
+  ],
+  "core_briefs": [
+    {
+      "id": "D1",
+      "family": "data",
+      "family_weight": 0.3333333333333333,
+      "generation_repeats": 1,
+      "solver_repeats": 1,
+      "invocation_mode": "model_invocable"
+    },
+    {
+      "id": "W1",
+      "family": "writing",
+      "family_weight": 0.3333333333333333,
+      "generation_repeats": 1,
+      "solver_repeats": 1,
+      "invocation_mode": "model_invocable"
+    },
+    {
+      "id": "R1",
+      "family": "repository",
+      "family_weight": 0.3333333333333333,
+      "generation_repeats": 1,
+      "solver_repeats": 1,
+      "invocation_mode": "model_invocable"
+    }
+  ],
+  "downstream_cases": [
+    {
+      "case_id": "D1-ordinary",
+      "brief_id": "D1",
+      "family": "data",
+      "stratum": "eligible_ordinary",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0.16666666666666666
+    },
+    {
+      "case_id": "D1-edge",
+      "brief_id": "D1",
+      "family": "data",
+      "stratum": "eligible_edge",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0.16666666666666666
+    },
+    {
+      "case_id": "D1-attack",
+      "brief_id": "D1",
+      "family": "data",
+      "stratum": "attack",
+      "paired_benign_case_id": "D1-ordinary",
+      "primary_case_weight": 0
+    },
+    {
+      "case_id": "D1-near-negative",
+      "brief_id": "D1",
+      "family": "data",
+      "stratum": "near_negative",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0
+    },
+    {
+      "case_id": "W1-ordinary",
+      "brief_id": "W1",
+      "family": "writing",
+      "stratum": "eligible_ordinary",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0.16666666666666666
+    },
+    {
+      "case_id": "W1-edge",
+      "brief_id": "W1",
+      "family": "writing",
+      "stratum": "eligible_edge",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0.16666666666666666
+    },
+    {
+      "case_id": "W1-attack",
+      "brief_id": "W1",
+      "family": "writing",
+      "stratum": "attack",
+      "paired_benign_case_id": "W1-ordinary",
+      "primary_case_weight": 0
+    },
+    {
+      "case_id": "W1-near-negative",
+      "brief_id": "W1",
+      "family": "writing",
+      "stratum": "near_negative",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0
+    },
+    {
+      "case_id": "R1-ordinary",
+      "brief_id": "R1",
+      "family": "repository",
+      "stratum": "eligible_ordinary",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0.16666666666666666
+    },
+    {
+      "case_id": "R1-edge",
+      "brief_id": "R1",
+      "family": "repository",
+      "stratum": "eligible_edge",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0.16666666666666666
+    },
+    {
+      "case_id": "R1-attack",
+      "brief_id": "R1",
+      "family": "repository",
+      "stratum": "attack",
+      "paired_benign_case_id": "R1-ordinary",
+      "primary_case_weight": 0
+    },
+    {
+      "case_id": "R1-near-negative",
+      "brief_id": "R1",
+      "family": "repository",
+      "stratum": "near_negative",
+      "paired_benign_case_id": null,
+      "primary_case_weight": 0
+    }
+  ],
+  "sentinels": [
+    "S1-existing",
+    "S2-missing-policy",
+    "S3-outside-envelope"
+  ],
+  "budget": {
+    "new_external_spend_usd": 0,
+    "creator_policies": 12,
+    "sentinel_policies": 12,
+    "downstream_episodes": 60,
+    "technical_reruns_max": 4,
+    "worker_starts_max": 112,
+    "tool_calls_max": 1760,
+    "execution_minutes_max": 496,
+    "setup_review_minutes_max": 120,
+    "campaign_minutes_max": 616,
+    "scheduling_stop_minutes": 660,
+    "storage_mib_max": 250,
+    "package_mib_max": 2
+  },
+  "freeze_artifacts": [],
+  "unresolved_fields": [
+    "R5 candidate package and commit",
+    "Complete public baseline resources and transitive dependency inventory",
+    "Actual host/model/tool observations and adapter",
+    "Built fixture bytes, seeds, answer bank, catalog, and order file",
+    "Qualified oracle/control artifacts and trace-coverage statement",
+    "Exposure log and safe reset procedure"
+  ],
+  "deviations": []
+}

@@ -1,0 +1,1411 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Skill-quality exploratory evaluation records v0.1",
+  "description": "Design and evidence records only; schema validity does not establish correct execution, isolation or measurement. Cross-record semantic checks are in evaluation-fixtures.md and comparative-protocol.md.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/manifest"
+    },
+    {
+      "$ref": "#/$defs/fixture"
+    },
+    {
+      "$ref": "#/$defs/attempt"
+    }
+  ],
+  "$defs": {
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "document_kind": {
+          "const": "campaign_manifest"
+        },
+        "schema_version": {
+          "const": "0.1"
+        },
+        "campaign_id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "design_not_started",
+            "ready",
+            "running",
+            "closed"
+          ]
+        },
+        "evidence_label": {
+          "enum": [
+            "proposal",
+            "exploratory_runtime_observation"
+          ]
+        },
+        "protocol_path": {
+          "type": "string"
+        },
+        "protocol_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fixture_spec_path": {
+          "type": "string"
+        },
+        "created_date_utc": {
+          "type": "string",
+          "format": "date"
+        },
+        "scope": {
+          "const": "public_synthetic_common_host_pilot"
+        },
+        "runtime": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "host_label": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "host_adapter_sha256": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "model_identifier": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "model_identifier_limit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "model_controls": {
+              "type": "object"
+            },
+            "python_version": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "background_catalog_sha256": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "tools_manifest_sha256": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "trace_coverage": {
+              "enum": [
+                "unverified",
+                "partial",
+                "complete_for_declared_invariants"
+              ]
+            },
+            "budget_enforcement": {
+              "enum": [
+                "unverified",
+                "supervisory",
+                "hard"
+              ]
+            },
+            "ordinary_tools_only": {
+              "const": true
+            },
+            "new_external_spend_authorized": {
+              "const": false
+            }
+          },
+          "required": [
+            "host_label",
+            "host_adapter_sha256",
+            "model_identifier",
+            "model_identifier_limit",
+            "model_controls",
+            "python_version",
+            "background_catalog_sha256",
+            "tools_manifest_sha256",
+            "trace_coverage",
+            "budget_enforcement",
+            "ordinary_tools_only",
+            "new_external_spend_authorized"
+          ]
+        },
+        "isolation": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "classification": {
+              "const": "unenforced_shared_environment"
+            },
+            "independent_holdout": {
+              "const": false
+            },
+            "known_limitations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "exposure_log_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "classification",
+            "independent_holdout",
+            "known_limitations",
+            "exposure_log_ref"
+          ]
+        },
+        "methods": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "enum": [
+                  "N0",
+                  "T0",
+                  "O0",
+                  "A0",
+                  "C0"
+                ]
+              },
+              "label": {
+                "type": "string"
+              },
+              "creator": {
+                "type": "boolean"
+              },
+              "repository": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "commit": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[0-9a-f]{40}$"
+              },
+              "package_sha256": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "dependency_closure_sha256": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "adaptation": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "creator",
+              "repository",
+              "commit",
+              "package_sha256",
+              "dependency_closure_sha256",
+              "adaptation"
+            ]
+          }
+        },
+        "core_briefs": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "enum": [
+                  "D1",
+                  "W1",
+                  "R1"
+                ]
+              },
+              "family": {
+                "enum": [
+                  "data",
+                  "writing",
+                  "repository"
+                ]
+              },
+              "family_weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "generation_repeats": {
+                "const": 1
+              },
+              "solver_repeats": {
+                "const": 1
+              },
+              "invocation_mode": {
+                "const": "model_invocable"
+              }
+            },
+            "required": [
+              "id",
+              "family",
+              "family_weight",
+              "generation_repeats",
+              "solver_repeats",
+              "invocation_mode"
+            ]
+          }
+        },
+        "downstream_cases": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {
+                "type": "string"
+              },
+              "brief_id": {
+                "type": "string"
+              },
+              "family": {
+                "enum": [
+                  "data",
+                  "writing",
+                  "repository"
+                ]
+              },
+              "stratum": {
+                "enum": [
+                  "eligible_ordinary",
+                  "eligible_edge",
+                  "attack",
+                  "near_negative"
+                ]
+              },
+              "paired_benign_case_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "primary_case_weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "case_id",
+              "brief_id",
+              "family",
+              "stratum",
+              "paired_benign_case_id",
+              "primary_case_weight"
+            ]
+          }
+        },
+        "sentinels": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "enum": [
+              "S1-existing",
+              "S2-missing-policy",
+              "S3-outside-envelope"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "budget": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "new_external_spend_usd": {
+              "const": 0
+            },
+            "creator_policies": {
+              "const": 12
+            },
+            "sentinel_policies": {
+              "const": 12
+            },
+            "downstream_episodes": {
+              "const": 60
+            },
+            "technical_reruns_max": {
+              "const": 4
+            },
+            "worker_starts_max": {
+              "const": 112
+            },
+            "tool_calls_max": {
+              "const": 1760
+            },
+            "execution_minutes_max": {
+              "const": 496
+            },
+            "setup_review_minutes_max": {
+              "const": 120
+            },
+            "campaign_minutes_max": {
+              "const": 616
+            },
+            "scheduling_stop_minutes": {
+              "const": 660
+            },
+            "storage_mib_max": {
+              "const": 250
+            },
+            "package_mib_max": {
+              "const": 2
+            }
+          },
+          "required": [
+            "new_external_spend_usd",
+            "creator_policies",
+            "sentinel_policies",
+            "downstream_episodes",
+            "technical_reruns_max",
+            "worker_starts_max",
+            "tool_calls_max",
+            "execution_minutes_max",
+            "setup_review_minutes_max",
+            "campaign_minutes_max",
+            "scheduling_stop_minutes",
+            "storage_mib_max",
+            "package_mib_max"
+          ]
+        },
+        "freeze_artifacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "role": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "role"
+            ]
+          }
+        },
+        "unresolved_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "deviations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "date_utc": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "description": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "affected_estimands": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "date_utc",
+              "description",
+              "reason",
+              "affected_estimands"
+            ]
+          }
+        }
+      },
+      "required": [
+        "document_kind",
+        "schema_version",
+        "campaign_id",
+        "status",
+        "evidence_label",
+        "protocol_path",
+        "protocol_sha256",
+        "fixture_spec_path",
+        "created_date_utc",
+        "scope",
+        "runtime",
+        "isolation",
+        "methods",
+        "core_briefs",
+        "downstream_cases",
+        "sentinels",
+        "budget",
+        "freeze_artifacts",
+        "unresolved_fields",
+        "deviations"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "ready",
+                  "running",
+                  "closed"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "protocol_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "runtime": {
+                "properties": {
+                  "host_label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "host_adapter_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "background_catalog_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "tools_manifest_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "budget_enforcement": {
+                    "enum": [
+                      "supervisory",
+                      "hard"
+                    ]
+                  }
+                }
+              },
+              "freeze_artifacts": {
+                "minItems": 1
+              },
+              "unresolved_fields": {
+                "maxItems": 0
+              },
+              "methods": {
+                "items": {
+                  "if": {
+                    "properties": {
+                      "creator": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "package_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "dependency_closure_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "fixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "document_kind": {
+          "const": "fixture_record"
+        },
+        "schema_version": {
+          "const": "0.1"
+        },
+        "fixture_id": {
+          "type": "string"
+        },
+        "brief_id": {
+          "type": "string"
+        },
+        "family": {
+          "enum": [
+            "data",
+            "writing",
+            "repository",
+            "routing",
+            "instrument"
+          ]
+        },
+        "purpose": {
+          "enum": [
+            "development",
+            "public_pilot",
+            "oracle_calibration",
+            "synthetic_trace"
+          ]
+        },
+        "stratum": {
+          "type": "string"
+        },
+        "synthetic_only": {
+          "const": true
+        },
+        "visibility": {
+          "const": "public_exploratory"
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "builder_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "paired_benign_fixture_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "input_files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "role": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "role"
+            ]
+          }
+        },
+        "task_request": {
+          "type": "string"
+        },
+        "authorized_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "prohibited_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "invocation": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "mode": {
+              "enum": [
+                "model_invocable",
+                "explicit_user_only",
+                "no_loader_negative"
+              ]
+            },
+            "acceptable_choices": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "window_end": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "mode",
+            "acceptable_choices",
+            "window_end"
+          ]
+        },
+        "oracle": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "version_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "predicates": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "required": {
+                    "type": "boolean"
+                  },
+                  "mechanical": {
+                    "type": "boolean"
+                  },
+                  "critical": {
+                    "type": "boolean"
+                  },
+                  "evidence_contract": {
+                    "type": "string"
+                  },
+                  "known_counterexample": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "description",
+                  "required",
+                  "mechanical",
+                  "critical",
+                  "evidence_contract",
+                  "known_counterexample"
+                ]
+              }
+            },
+            "acceptable_alternatives": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "qualification_record_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "version_sha256",
+            "predicates",
+            "acceptable_alternatives",
+            "qualification_record_ref"
+          ]
+        },
+        "independent_holdout": {
+          "const": false
+        }
+      },
+      "required": [
+        "document_kind",
+        "schema_version",
+        "fixture_id",
+        "brief_id",
+        "family",
+        "purpose",
+        "stratum",
+        "synthetic_only",
+        "visibility",
+        "seed",
+        "builder_sha256",
+        "paired_benign_fixture_id",
+        "input_files",
+        "task_request",
+        "authorized_paths",
+        "prohibited_actions",
+        "invocation",
+        "oracle",
+        "independent_holdout"
+      ]
+    },
+    "attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "document_kind": {
+          "const": "attempt_record"
+        },
+        "schema_version": {
+          "const": "0.1"
+        },
+        "campaign_id": {
+          "type": "string"
+        },
+        "attempt_id": {
+          "type": "string"
+        },
+        "method_id": {
+          "enum": [
+            "N0",
+            "T0",
+            "O0",
+            "A0",
+            "C0"
+          ]
+        },
+        "brief_id": {
+          "type": "string"
+        },
+        "family": {
+          "enum": [
+            "data",
+            "writing",
+            "repository",
+            "routing",
+            "instrument"
+          ]
+        },
+        "case_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phase": {
+          "enum": [
+            "creation",
+            "development_probe",
+            "sentinel",
+            "downstream",
+            "qualification"
+          ]
+        },
+        "generation_index": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "repeat_index": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "parent_attempt_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rerun_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fallback_observation_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "record_state": {
+          "enum": [
+            "planned",
+            "running",
+            "terminal"
+          ]
+        },
+        "execution_status": {
+          "enum": [
+            "not_started",
+            "running",
+            "completed",
+            "failed",
+            "over_budget",
+            "external_outage",
+            "unknown",
+            "oracle_invalid",
+            "blocked",
+            "unrun_gate"
+          ]
+        },
+        "creator_status": {
+          "enum": [
+            null,
+            "produced",
+            "alternative",
+            "clarification_needed",
+            "unsupported",
+            "over_budget",
+            "failed"
+          ]
+        },
+        "selected_artifact_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "input_manifest_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "oracle_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "order_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "started_at_utc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "stopped_at_utc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "evidence_label": {
+          "enum": [
+            "planned_only",
+            "local_static_check",
+            "synthetic_trace_replay",
+            "exploratory_runtime_observation"
+          ]
+        },
+        "authorized_success": {
+          "enum": [
+            "not_scored",
+            "pass",
+            "fail",
+            "unknown"
+          ]
+        },
+        "fallback_used": {
+          "type": "boolean"
+        },
+        "predicates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "status": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "unknown",
+                  "not_applicable"
+                ]
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "required",
+              "status",
+              "evidence_refs",
+              "reason"
+            ]
+          }
+        },
+        "violations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "severity": {
+                "enum": [
+                  "critical",
+                  "noncritical"
+                ]
+              },
+              "state": {
+                "enum": [
+                  "attempted",
+                  "blocked",
+                  "completed",
+                  "unknown"
+                ]
+              },
+              "boundary": {
+                "type": "string"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "severity",
+              "state",
+              "boundary",
+              "evidence_refs",
+              "description"
+            ]
+          }
+        },
+        "cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "active_seconds": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "wall_seconds": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "tool_calls": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "input_tokens": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "output_tokens": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "cached_tokens": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "human_minutes": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "new_external_spend_usd": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "currency_estimate": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "measurement_limitations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "active_seconds",
+            "wall_seconds",
+            "tool_calls",
+            "input_tokens",
+            "output_tokens",
+            "cached_tokens",
+            "human_minutes",
+            "new_external_spend_usd",
+            "currency_estimate",
+            "measurement_limitations"
+          ]
+        },
+        "trace_coverage": {
+          "enum": [
+            "unverified",
+            "partial",
+            "complete_for_declared_invariants"
+          ]
+        },
+        "trace_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "output_files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "role": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "role"
+            ]
+          }
+        },
+        "clarifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string"
+              },
+              "answer_bank_ref": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "answer",
+              "answer_bank_ref"
+            ]
+          }
+        },
+        "selection_rationale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "missingness_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "known_contamination": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "budget_overshoot": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "document_kind",
+        "schema_version",
+        "campaign_id",
+        "attempt_id",
+        "method_id",
+        "brief_id",
+        "family",
+        "case_id",
+        "phase",
+        "generation_index",
+        "repeat_index",
+        "parent_attempt_id",
+        "rerun_of",
+        "fallback_observation_id",
+        "record_state",
+        "execution_status",
+        "creator_status",
+        "selected_artifact_sha256",
+        "input_manifest_sha256",
+        "oracle_sha256",
+        "order_index",
+        "started_at_utc",
+        "stopped_at_utc",
+        "evidence_label",
+        "authorized_success",
+        "fallback_used",
+        "predicates",
+        "violations",
+        "cost",
+        "trace_coverage",
+        "trace_refs",
+        "output_files",
+        "clarifications",
+        "selection_rationale",
+        "missingness_reason",
+        "known_contamination",
+        "budget_overshoot",
+        "notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "record_state": {
+                "const": "planned"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "execution_status": {
+                "const": "not_started"
+              },
+              "evidence_label": {
+                "const": "planned_only"
+              },
+              "authorized_success": {
+                "const": "not_scored"
+              },
+              "started_at_utc": {
+                "type": "null"
+              },
+              "stopped_at_utc": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "authorized_success": {
+                "const": "pass"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "record_state": {
+                "const": "terminal"
+              },
+              "execution_status": {
+                "const": "completed"
+              },
+              "trace_coverage": {
+                "const": "complete_for_declared_invariants"
+              },
+              "predicates": {
+                "minItems": 1,
+                "items": {
+                  "if": {
+                    "properties": {
+                      "required": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      }
+                    }
+                  }
+                }
+              },
+              "violations": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "authorized_success": {
+                "const": "unknown"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "missingness_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

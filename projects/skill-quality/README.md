@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: R1 foundations, R2 independent critique, and R3 conceptual revision complete; R4 comparative-protocol design is next. Started 2026-10-02. No skill-performance experiment has been run.
+Status: R1-R4 complete through comparative-protocol design; R5 research-candidate implementation is next. Started 2026-10-02. No skill-performance experiment has been run.
 
 ## Purpose
 
@@ -24,6 +24,10 @@ This is a research project, not an installed skill. It does not change existing 
 - [How to determine if a skill is good](how-to-determine-if-a-skill-is-good.md): the revised measurement and decision framework
 - [Independent critique](research/critique-01.md): nine prioritized findings, verified code/source checks, and revision acceptance criteria
 - [R3 response ledger](research/revision-01.md): C1-C9 dispositions, independently checked evidence, and remaining decisions
+- [Comparative evaluation protocol](research/comparative-protocol.md): bounded no-extra-spend pilot, explicit comparison policies, information limits, and separately gated confirmation plan
+- [Fixture/task specifications](research/evaluation-fixtures.md): synthetic task contracts, answer banks, and oracle controls for R5
+- [Pilot design manifest](research/pilot-manifest.json) and [record schema](research/evaluation.schema.json): not-started machine-readable design, fixture and attempt contracts
+- [R4 static checker](research/verify-r4.py) and [verification record](research/verification-r4.md): reproducible document/schema/arithmetic checks, not a model experiment
 - [R3 verification record](research/verification-r3.md): checks and publication limits
 - [Source register](research/source-register.md): evidence quality, claim scope, and limitations
 - [Implementation audit](research/implementation-audit.md): exact public-code observations and methodological critique

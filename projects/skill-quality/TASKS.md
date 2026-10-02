@@ -27,12 +27,15 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - Completed: [C1-C9 response ledger](research/revision-01.md), revised main framework, source dispositions/version reconciliation, expanded static implementation audit, integration-guide pin, methodology, and R4 prompt.
    - Separates fitness/adoption/superiority, defines the initial host-loaded workflow, nested creator-policy estimands and information boundaries, observable metrics, risk-proportionate costs, missingness/inference rules, and supply-chain threat model.
    - All ten public blob pins independently matched. Empirical questions are deferred explicitly, not marked solved. No creator or benchmark was executed. Publication checks: [R3 verification](research/verification-r3.md).
-4. **R4: Design the comparative evaluation. PENDING**
-   - Declare creation-task and downstream-task distributions, baselines, budgets, holdout ownership, grading calibration, safety gates, uncertainty analysis, and stopping rules before implementation.
-   - Distinguish testing a creator from testing a skill it creates.
+4. **R4: Design the comparative evaluation. COMPLETED**
+   - [Protocol](research/comparative-protocol.md), [synthetic fixture specifications](research/evaluation-fixtures.md), [record schema](research/evaluation.schema.json), and [not-started pilot manifest](research/pilot-manifest.json) define the two-level comparison.
+   - Proposes a USD 0 new-spend common-host exploratory pilot: three core briefs, four creator policies plus no-added-package control, 60 downstream episodes, 12 short routing policies, exact resource caps and all-attempt accounting.
+   - Preserves native-baseline fidelity limits, shared-environment contamination, absent independent custody, incomplete telemetry and model nondeterminism. Stronger confirmation has explicit units, power assumptions, margins and resource gates.
+   - Local schema/link/arithmetic checks are recorded in [R4 verification](research/verification-r4.md). No creator implementation, model trial, calibrated runtime grader, native compatibility result or superiority finding exists.
 5. **R5: Implement a candidate skill-creation skill. PENDING**
-   - Follow repository packaging and invocation rules.
-   - Implement only requirements justified by the research and protocol.
+   - Implement a standard research-only package at `projects/skill-quality/candidate/evidence-skill-creator/`, with repository-consistent invocation metadata, without installation or promotion.
+   - Implement only justified authoring requirements and minimal synthetic fixture/recording support; run deterministic local checks only.
+   - Freeze candidate, adapter and development support with exact version/evidence labels for R6; do not execute a model comparison during R5.
 6. **R6: Run comparative tests and adversarial validation. PENDING**
    - Use isolated environments and frozen baselines.
    - Archive outcomes, costs, artifacts, failures, and confidence limits.
@@ -52,3 +55,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R3 revised from `ca27f690562c7440458dc50cdc0f01b5073f08ad`, preserving R2 critique and R1 verification unchanged. Conceptual acceptance criteria addressed; runtime/benefit/custody and actual resource/value decisions remain open. R4 is next in fresh context; no R5 implementation or paid experiment is authorized by this checkpoint.
 
 - 2026-10-02: R3 substantive revision `90b16afb072f1d2ecfd7297664b7281c33e33e9e` verified byte-for-byte across all 12 project files. GitHub comparison showed exactly ten intended project-document/pin changes and no unrelated paths. No workflow/status/check run was reported for this commit; local research validation passed. The tracking-only checkpoint records these checks.
+
+- 2026-10-02: R4 designed from `ff852c9e979302c937aceb82f8dca557294c8e73`. Provisional engineering choices resolve routine scope decisions so R5 can proceed; paid/native confirmation, independent custody and owner-validated adoption margins remain gated. The first pilot is expressly public and exploratory, not an independent holdout. No experiment was run.
