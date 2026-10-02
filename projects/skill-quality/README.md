@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: R1-R5 complete through a frozen research candidate and deterministic local support. R6 preflight is next in fresh context. Started 2026-10-02. No creator/model performance experiment has been run.
+Status: R1-R5 complete. R6 bounded diagnostic complete; original primary campaign remains methodology-gated and unrun. N0 passed both public D1 artifact checks; all four generated packages failed both on an existing-output-directory incompatibility. R7 independent critique is next in fresh context. Started 2026-10-02.
 
 ## Purpose
 
@@ -20,6 +20,8 @@ This is a research project, not an installed skill. It does not change existing 
 - Publish incremental work on a research branch and draft pull request. Do not merge.
 
 ## Navigation
+
+- [R6 final bounded report](research/r6/report.md), [predeclared diagnostic](research/r6/diagnostic-protocol.md), [attempt journal](research/r6/journal.jsonl), [retained source-archive manifest](research/r6/retained-evidence-manifest.json), [retained runtime-archive manifest](research/r6/retained-evidence-manifest.json), and [exact R7 critique prompt](research/r6/continuation.md)
 
 - [Research candidate](candidate/evidence-skill-creator/SKILL.md): six-file model-invocable creator, uninstalled and behaviorally unproven
 - [R5 guide](research/r5/README.md), [design/traceability](research/r5/design.md), [qualification summary](research/r5/qualification.json) and [verification](research/verification-r5.md): local support, 33 tests, twelve oracle controls twice, and explicit runtime limits

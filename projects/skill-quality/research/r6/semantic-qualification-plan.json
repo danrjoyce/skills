@@ -1,0 +1,41 @@
+{
+  "assignment_inventory_sha256": "5c0bce411fc02d90a4ae752e59c13d913dbf5bb88e5e1b9c5cd0a08f66fc07e1",
+  "expected": {
+    "M1": {
+      "ledger_semantics": "pass",
+      "report_semantics": "pass"
+    },
+    "M2": {
+      "ledger_semantics": "pass",
+      "report_semantics": "fail"
+    },
+    "M3": {
+      "ledger_semantics": "pass",
+      "report_semantics": "pass"
+    },
+    "M4": {
+      "ledger_semantics": "fail",
+      "report_semantics": "pass"
+    }
+  },
+  "gold_source": "R5 fixed W1-ordinary controls; expected labels declared before live review",
+  "neutral_labels": [
+    [
+      "M1",
+      "reorganized_valid"
+    ],
+    [
+      "M2",
+      "false_prose"
+    ],
+    [
+      "M3",
+      "concise_valid"
+    ],
+    [
+      "M4",
+      "irrelevant_quote"
+    ]
+  ],
+  "reviewer_context": "fresh fork none, identities neutralized; accessible shared files/public controls mean not independently blind custody"
+}

@@ -38,10 +38,11 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - Completed: six-file [research candidate](candidate/evidence-skill-creator/SKILL.md), [design/traceability](research/r5/design.md), [local fixture/oracle/adapter/record support](research/r5/README.md), original/revised candidate and support freezes, protocol clarifications and reproducible calibration evidence.
    - Verification: 33 tests; twelve oracle controls twice, eleven instrument replays and six fixed routing annotations; two identical 394-file evidence bundles; public pinned validator, syntax/metadata/hash/link checks. See [R5 verification](research/verification-r5.md).
    - One generic inspector defect repaired with disclosed freeze revision; all five other candidate files unchanged. Zero model trials. Native activation, live grader qualification, full source closures and execution supervision remain R6 preflight gates.
-6. **R6: Run comparative tests and adversarial validation. PENDING**
+6. **R6: Run comparative tests and adversarial validation. BOUNDED DIAGNOSTIC COMPLETE; PRIMARY BLOCKED**
    - Qualify the actual common-host environment and full pinned baseline closures before launch. Use fresh reset state, while disclosing shared-environment exposure; do not pretend isolation is enforced.
    - Follow the USD 0 ceiling and all caps in the exact [R6 handoff](HANDOFF.md); primary discovery must not be silently replaced by explicit loading. A blocked-preflight report is an honest outcome.
    - Archive outcomes, costs, artifacts, failures, and confidence limits.
+   - R6 final: 17 fresh worker admissions, four frozen D1 packages, one A0 development solver, ten fixed downstream cells, loading qualification and four-artifact semantic qualification. N0 artifact correctness 2/2; C0/T0/O0/A0 each 0/2 on an existing-output-directory incompatibility. No retries, repairs or fallback. A0 documentation cutoff and semantic timing uncertainty retained. Original 84 primary cells remain methodology-gated/unrun. See the [final report](research/r6/report.md), [verification](research/verification-r6.md), and [exact R7 critique prompt](research/r6/continuation.md).
 7. **R7: Critique, refine, and report the bounded result. PENDING**
    - Fresh-context review and held-out confirmation.
    - State where the candidate improves, ties, loses, or remains unproven.
@@ -66,3 +67,7 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R5 implemented from `ed3e468139f6f90eb8c954989ea95a123c161801`. Candidate workflow froze before fixture details; fresh-context review strengthened evidence custody, Git semantic-state checks, malformed-input handling and failure/fallback/cap accounting. Original fifteen nontracking research files remain byte-identical. Candidate tree: `4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683`. R6 is next in fresh context; no runtime comparison or native compatibility claim. Publication checks: [R5 verification](research/verification-r5.md).
 
 - 2026-10-02: R5 substantive commit `94b572a5592076284a99ae5a4640f7ed109d8aef` independently verified byte-for-byte across all 45 project files. Full-tree/commit comparison found exactly 30 intended project changes; original-main comparison contains only project additions. No workflow run, status or check run returned. Final tracking-only checkpoint records these checks, with no candidate/support change.
+
+- 2026-10-02: R6 paused for conservative context renewal with all three started workers terminal. Candidate/support and original R1-R4 evidence remain unchanged. Selected C0/T0 artifacts and all known attempts are retained in the runtime archive. O0/A0, ten downstream cells, live semantic qualification and final report remain pending; R7 has not started.
+
+- 2026-10-02: R6 bounded diagnostic completed without candidate tuning. All ten downstream attempts retained. Complete action and exact cost telemetry remain unknown; no superiority or native-performance finding. R7 begins only in fresh context after verified publication.

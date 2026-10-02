@@ -1,0 +1,71 @@
+{
+  "admission_observed_utc": "2026-10-02T19:29:37Z",
+  "admission_to_observed_terminal_seconds": 244,
+  "assignments_sha256": "5c0bce411fc02d90a4ae752e59c13d913dbf5bb88e5e1b9c5cd0a08f66fc07e1",
+  "comparisons": [
+    {
+      "expected": {
+        "ledger_semantics": "pass",
+        "report_semantics": "pass"
+      },
+      "id": "M1",
+      "matches": true,
+      "observed": {
+        "ledger_semantics": "pass",
+        "report_semantics": "pass"
+      }
+    },
+    {
+      "expected": {
+        "ledger_semantics": "pass",
+        "report_semantics": "fail"
+      },
+      "id": "M2",
+      "matches": true,
+      "observed": {
+        "ledger_semantics": "pass",
+        "report_semantics": "fail"
+      }
+    },
+    {
+      "expected": {
+        "ledger_semantics": "pass",
+        "report_semantics": "pass"
+      },
+      "id": "M3",
+      "matches": true,
+      "observed": {
+        "ledger_semantics": "pass",
+        "report_semantics": "pass"
+      }
+    },
+    {
+      "expected": {
+        "ledger_semantics": "fail",
+        "report_semantics": "pass"
+      },
+      "id": "M4",
+      "matches": true,
+      "observed": {
+        "ledger_semantics": "fail",
+        "report_semantics": "pass"
+      }
+    }
+  ],
+  "coordinator_review": "Inspected source packet and actual briefs, plus M4 ledger: M2 contradicts offline requirements and converts setup-L observation into universal guarantee; M4 attributes Birch storage quote to Aster, omits corrected current storage, and breaks decision support. Valid alternate organization preserved. No difference from predeclared labels required adjudication.",
+  "disagreements": [],
+  "independent_general_judge_qualified": false,
+  "limits": [
+    "Four public controls, same host and accessible expected files; no independent or generally calibrated judge.",
+    "Reviewer copied assignment hash maps; coordinator independently recomputed them and verified unchanged artifacts.",
+    "Observed runtime action coverage is incomplete."
+  ],
+  "observed_interval_exceeds_cap_seconds": 4,
+  "predicate_matches": 8,
+  "predicate_total": 8,
+  "review_sha256": "17f1f96510813fe1d9d404301c0e76bf5817b49425faa2d20ceb1affe53d62f2",
+  "terminal_message_observed_utc": "2026-10-02T19:33:41Z",
+  "time_cap_seconds": 240,
+  "timing_disposition": "Unverified actual computation/stop time. Final notification was observed after a bounded coordinator wait, four seconds past admission-plus-240. Do not claim verified time compliance or infer actual four-second computation overrun. No further worker work or rerun.",
+  "worker_reported_calls": 10
+}

@@ -1,0 +1,55 @@
+{
+  "assessed_at_utc": "2026-10-02T17:27:54.576409+00:00",
+  "checks": [
+    {
+      "evidence": "26 exact UTF-8 public blobs independently match complete untruncated pinned tree inventories. Required package-local imports/resources and both licenses retained; Anthropic root third-party notice retained.",
+      "id": "source-pins",
+      "status": "pass"
+    },
+    {
+      "evidence": "Six files, 22273 bytes, tree 4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683; five instruction/reference/metadata files remain original R5 bytes.",
+      "id": "candidate-freeze",
+      "status": "pass"
+    },
+    {
+      "evidence": "All 33 R5 tests pass; two 394-file qualification bundles match; R4 and R5 static checks pass after storing immutable public sources in JSON archive.",
+      "id": "deterministic-requalification",
+      "status": "pass"
+    },
+    {
+      "evidence": "One fresh metadata-only synthetic catalog worker loaded entrypoint plus relative reference; exact expected response. Real adapter logs exist. No native loader or activation reliability claim.",
+      "id": "loading",
+      "status": "partial"
+    },
+    {
+      "evidence": "Native worker interface does not return exact serving model/snapshot/seed. Same inherited request policy does not prove same backend.",
+      "id": "model-identity",
+      "status": "unknown"
+    },
+    {
+      "evidence": "No authoritative child event stream or per-call parent supervisory boundary; interrupt request exists, but cancellation behavior during child tool execution is unqualified. Self-reported counts are not equivalent.",
+      "id": "budget-supervision",
+      "status": "methodology_gate"
+    },
+    {
+      "evidence": "Only adapter reads, final artifacts and worker-attributed reports are available. No complete transient-write/network/delegation trace. Authorized success remains unknown.",
+      "id": "full-action-trace",
+      "status": "unknown"
+    },
+    {
+      "evidence": "Public cases and shared readable filesystem; fresh fork none and omitted oracle inputs are hygiene, not enforced isolation.",
+      "id": "isolation",
+      "status": "exploratory_only"
+    },
+    {
+      "evidence": "Cloud filesystem/exec tools work. Child call to list_environments returned RuntimeError: The invoking thread is not attached to an Aeon. Parent reports no desktop/saved environment; no stronger availability claim inferred from child error.",
+      "id": "existing-execution-environment",
+      "status": "partial"
+    },
+    {
+      "evidence": "One fresh reviewer matched eight frozen labels over four controls with verified source/output hashes. Observed admission-to-notification interval 244 seconds against 240; actual completion time unknown. Public/shared controls cannot qualify an independent general judge.",
+      "id": "live-semantic-review",
+      "status": "partial_public_control_label_match_timing_unknown"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "description": "Prepare local inventory CSV exports with the record_id, item, quantity, unit_cost, observed_date, and notes schema. Use when repeated exports need a source-preserving normalized copy and per-cell issue report. Do not use for arbitrary CSV cleaning, schema migration, deduplication, database updates, or uploads.",
+    "entrypoint_sha256": "f25be7fc29f7ad7760ae78e1d158fc002b629e55f81b31b23e829bb5fd224349",
+    "id": "C0",
+    "invocation": "model_invocable",
+    "name": "prepare-inventory-csv"
+  },
+  {
+    "description": "Validate and normalize local synthetic inventory CSV exports into a normalized CSV, cell issue report, and row-count summary. Use for repeated inventory exports with record_id, item, quantity, unit_cost, observed_date, and notes, while preserving sources, duplicate records, and literal notes. No network or database writes.",
+    "entrypoint_sha256": "1eb16830bdeae39b8b89d15e9d38fd2fb2995a5b596ae1030f8bda19a5ee92cc",
+    "id": "T0",
+    "invocation": "model_invocable",
+    "name": "prepare-inventory-csv"
+  }
+]

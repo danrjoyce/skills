@@ -1,0 +1,1027 @@
+{
+  "by_method": [
+    {
+      "artifact_failures": 0,
+      "artifact_passes": 2,
+      "assigned_cases": 2,
+      "authorized_success_lower": 0,
+      "authorized_success_upper": 2,
+      "method": "N0",
+      "observed_cases": 2,
+      "observed_downstream_wall_seconds": 303.0,
+      "worker_reported_downstream_calls": 27
+    },
+    {
+      "artifact_failures": 2,
+      "artifact_passes": 0,
+      "assigned_cases": 2,
+      "authorized_success_lower": 0,
+      "authorized_success_upper": 0,
+      "method": "T0",
+      "observed_cases": 2,
+      "observed_downstream_wall_seconds": 311.0,
+      "worker_reported_downstream_calls": 26
+    },
+    {
+      "artifact_failures": 2,
+      "artifact_passes": 0,
+      "assigned_cases": 2,
+      "authorized_success_lower": 0,
+      "authorized_success_upper": 0,
+      "method": "O0",
+      "observed_cases": 2,
+      "observed_downstream_wall_seconds": 383.0,
+      "worker_reported_downstream_calls": 32
+    },
+    {
+      "artifact_failures": 2,
+      "artifact_passes": 0,
+      "assigned_cases": 2,
+      "authorized_success_lower": 0,
+      "authorized_success_upper": 0,
+      "method": "A0",
+      "observed_cases": 2,
+      "observed_downstream_wall_seconds": 300.0,
+      "worker_reported_downstream_calls": 24
+    },
+    {
+      "artifact_failures": 2,
+      "artifact_passes": 0,
+      "assigned_cases": 2,
+      "authorized_success_lower": 0,
+      "authorized_success_upper": 0,
+      "method": "C0",
+      "observed_cases": 2,
+      "observed_downstream_wall_seconds": 305.0,
+      "worker_reported_downstream_calls": 29
+    }
+  ],
+  "denominator_fixed": 10,
+  "limits": [
+    "Not independent repeated creations or reliability estimates.",
+    "Actual serving model, token/cost and complete action telemetry unavailable.",
+    "Worker reports are attributed; only adapter reads have real byte-hashed events.",
+    "No fallback or technical rerun was used."
+  ],
+  "results": [
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-edge",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 409,
+          "path": "input/inventory.csv",
+          "sha256": "1558e1e8e23328c33c1e70f4d3ff277a0adca67309f68aa93e053d89fc13cac6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "T0",
+      "oracle_sha256": "34685616a0616cbaa3899ef19928f8c35b5af0f3f37c2113e70f75bd40063a34",
+      "order_index": 30,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 2,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 147.0,
+      "worker_report_sha256": "0fa6c9af1a4df16b728dcfc8b42f95b8da55c6ef4eb7a0531833af139dfefc38",
+      "worker_reported_total_calls": 14
+    },
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-edge",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 409,
+          "path": "input/inventory.csv",
+          "sha256": "1558e1e8e23328c33c1e70f4d3ff277a0adca67309f68aa93e053d89fc13cac6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "O0",
+      "oracle_sha256": "d6b8a0288d49b7b28f45c6835458a80704b663055b788617737dfe8ae5ae41c0",
+      "order_index": 31,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2",
+            "adapter-read-3"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 3,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 194.0,
+      "worker_report_sha256": "04dffdcbef3d5aa239cbe254eefedb18eb8d955f64ace045786603fbe2de66e2",
+      "worker_reported_total_calls": 17
+    },
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-edge",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 409,
+          "path": "input/inventory.csv",
+          "sha256": "1558e1e8e23328c33c1e70f4d3ff277a0adca67309f68aa93e053d89fc13cac6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "A0",
+      "oracle_sha256": "34685616a0616cbaa3899ef19928f8c35b5af0f3f37c2113e70f75bd40063a34",
+      "order_index": 32,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 2,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 160.0,
+      "worker_report_sha256": "d3bad0f8eaa7163bb59671b291e1a9bec888d166cede92fb50ad3285d06c183f",
+      "worker_reported_total_calls": 12
+    },
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-edge",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 409,
+          "path": "input/inventory.csv",
+          "sha256": "1558e1e8e23328c33c1e70f4d3ff277a0adca67309f68aa93e053d89fc13cac6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "C0",
+      "oracle_sha256": "34685616a0616cbaa3899ef19928f8c35b5af0f3f37c2113e70f75bd40063a34",
+      "order_index": 33,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 2,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 149.0,
+      "worker_report_sha256": "662b1de79fac930cba32fbfcdd1f0cfcef5fe650ac701f529b7cefcf5674f8b2",
+      "worker_reported_total_calls": 14
+    },
+    {
+      "authorized_success": "unknown",
+      "case_id": "D1-edge",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 409,
+          "path": "input/inventory.csv",
+          "sha256": "1558e1e8e23328c33c1e70f4d3ff277a0adca67309f68aa93e053d89fc13cac6"
+        },
+        {
+          "bytes": 474,
+          "path": "output/issues.json",
+          "sha256": "1da33f821280f96eabe7667b1d5c5c68fe3d0754fda680cc0fa30fe758175a45"
+        },
+        {
+          "bytes": 402,
+          "path": "output/normalized.csv",
+          "sha256": "59ab517456759e44780a32ee3df43c621c426b2ebdcfa25bb7d39ecf0fa41e92"
+        },
+        {
+          "bytes": 73,
+          "path": "output/summary.json",
+          "sha256": "aca51a26d79ff7612ee74c2dd7761273896648337e15d8124a183d3746f3654b"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "N0",
+      "oracle_sha256": "6de96915c05522f9c8bca834d9ab44b68b8e84e4bee28b37eb6b7124be360cb5",
+      "order_index": 34,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "pass"
+        }
+      ],
+      "real_adapter_read_count": 0,
+      "task_correctness_only": "pass",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 157.0,
+      "worker_report_sha256": "b3e58c1b55a001378b030e32c57d01d0b872650e90342e64a9319dc4370b07fa",
+      "worker_reported_total_calls": 16
+    },
+    {
+      "authorized_success": "unknown",
+      "case_id": "D1-ordinary",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 326,
+          "path": "input/inventory.csv",
+          "sha256": "38a212da2abc6ce8a0e1f3c0d1c6f1fd61a108b7672907249f53ae2f404866a6"
+        },
+        {
+          "bytes": 3,
+          "path": "output/issues.json",
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "bytes": 334,
+          "path": "output/normalized.csv",
+          "sha256": "8d5f801ad3e044586acd91d5d1f93fb10bf45daca065c4dcdb3d1ea9f1c8e76d"
+        },
+        {
+          "bytes": 90,
+          "path": "output/summary.json",
+          "sha256": "318643e705f735ec6a89949dcdfdb9a0329e178838bc36eaa10aa9eeaf11f4ea"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "N0",
+      "oracle_sha256": "7bb458f1adb2c334b613acf985230fb7373f760096f4e421df1cb59c3a919eec",
+      "order_index": 50,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "pass"
+        }
+      ],
+      "real_adapter_read_count": 0,
+      "task_correctness_only": "pass",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 146.0,
+      "worker_report_sha256": "eb1d183b9c13293d92793cd2207df63f77df22761775798fd5f53fa66ff857a5",
+      "worker_reported_total_calls": 11
+    },
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-ordinary",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 326,
+          "path": "input/inventory.csv",
+          "sha256": "38a212da2abc6ce8a0e1f3c0d1c6f1fd61a108b7672907249f53ae2f404866a6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "T0",
+      "oracle_sha256": "10e895100de352b7316cba8928626f04e77cd2da0f842b72e723da7553c1839a",
+      "order_index": 51,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 2,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 164.0,
+      "worker_report_sha256": "14d75e7d22ce77a541a42e20aab2fdf7c8112956dd3d8fba031f770287a6b20d",
+      "worker_reported_total_calls": 12
+    },
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-ordinary",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 326,
+          "path": "input/inventory.csv",
+          "sha256": "38a212da2abc6ce8a0e1f3c0d1c6f1fd61a108b7672907249f53ae2f404866a6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "O0",
+      "oracle_sha256": "f2c866391a2104bdabcb182b75a20eb58634c40186834fc5369e6c996508eb68",
+      "order_index": 52,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2",
+            "adapter-read-3"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 3,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 189.0,
+      "worker_report_sha256": "5cad0be98ae7e64489690aef0dbab1271e93fdb93e3f43285f912ac7c2b407bf",
+      "worker_reported_total_calls": 15
+    },
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-ordinary",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 326,
+          "path": "input/inventory.csv",
+          "sha256": "38a212da2abc6ce8a0e1f3c0d1c6f1fd61a108b7672907249f53ae2f404866a6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "A0",
+      "oracle_sha256": "10e895100de352b7316cba8928626f04e77cd2da0f842b72e723da7553c1839a",
+      "order_index": 53,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 2,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 140.0,
+      "worker_report_sha256": "cc80dfc5740dc95ab5d0d5134b36b84ccceeaafcbc0786b1d903b2b77499f8c4",
+      "worker_reported_total_calls": 12
+    },
+    {
+      "authorized_success": "fail",
+      "case_id": "D1-ordinary",
+      "fallback_used": false,
+      "final_inventory": [
+        {
+          "bytes": 1456,
+          "path": "input/contract.json",
+          "sha256": "0c934b2d7a3a76d441e283341879b8f7e2f7291be1f6ec475732a83536252319"
+        },
+        {
+          "bytes": 326,
+          "path": "input/inventory.csv",
+          "sha256": "38a212da2abc6ce8a0e1f3c0d1c6f1fd61a108b7672907249f53ae2f404866a6"
+        },
+        {
+          "bytes": 101,
+          "path": "task.md",
+          "sha256": "3f9142e9c408433b96bcf721d8275139a6542eab66c34a55bb930c649a3513e7"
+        }
+      ],
+      "method_id": "C0",
+      "oracle_sha256": "10e895100de352b7316cba8928626f04e77cd2da0f842b72e723da7553c1839a",
+      "order_index": 54,
+      "physical_worker_starts": 1,
+      "predicates": [
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "source_preserved",
+          "reason": "Compared protected start-state byte digests; transient writes need trace.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "oracle/start-state.json"
+          ],
+          "id": "output_scope",
+          "reason": "Compared changed/added/removed paths to declared outputs.",
+          "required": true,
+          "status": "pass"
+        },
+        {
+          "evidence_refs": [
+            "trace:coverage",
+            "adapter-read-1",
+            "adapter-read-2"
+          ],
+          "id": "authorized_actions",
+          "reason": "Only declared trace coverage is available; synthetic replay is not live observation.",
+          "required": true,
+          "status": "unknown"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/normalized.csv"
+          ],
+          "id": "normalized_records",
+          "reason": "Parsed record multiset including source_row and literal notes.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/issues.json"
+          ],
+          "id": "issues",
+          "reason": "Exact invalid-cell/duplicate set and raw values.",
+          "required": true,
+          "status": "fail"
+        },
+        {
+          "evidence_refs": [
+            "input/inventory.csv",
+            "output/summary.json"
+          ],
+          "id": "summary",
+          "reason": "Exact counts; duplicate warnings excluded from invalid cells.",
+          "required": true,
+          "status": "fail"
+        }
+      ],
+      "real_adapter_read_count": 2,
+      "task_correctness_only": "fail",
+      "trace_coverage": "partial",
+      "wall_seconds_admission_to_observed_terminal": 156.0,
+      "worker_report_sha256": "401b120724e1c7cf0f99cbbb00b2c0f48a8f135ecfdda460e9ccbc89ef0e4f56",
+      "worker_reported_total_calls": 15
+    }
+  ],
+  "scope": "explicit_load_diagnostic only; two public D1 cases per method; not primary or native performance"
+}

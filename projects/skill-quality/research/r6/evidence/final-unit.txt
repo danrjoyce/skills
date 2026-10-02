@@ -1,0 +1,38 @@
+test_18_multiline_inspection_requires_parser_and_preserves_frozen_workflow (test_negative.BoundarySuite.test_18_multiline_inspection_requires_parser_and_preserves_frozen_workflow) ... ok
+test_19_git_cache_allowed_but_staging_and_history_protected (test_negative.BoundarySuite.test_19_git_cache_allowed_but_staging_and_history_protected) ... ok
+test_20_adapter_duplicate_alias_malformed_and_no_loader (test_negative.BoundarySuite.test_20_adapter_duplicate_alias_malformed_and_no_loader) ... ok
+test_21_trace_malformed_or_duplicate_cannot_pass (test_negative.BoundarySuite.test_21_trace_malformed_or_duplicate_cannot_pass) ... ok
+test_22_review_binds_input_output_and_external_response (test_negative.BoundarySuite.test_22_review_binds_input_output_and_external_response) ... ok
+test_23_all_nonproduction_routes_share_fallback_without_extra_starts (test_negative.BoundarySuite.test_23_all_nonproduction_routes_share_fallback_without_extra_starts) ... ok
+test_24_fallback_parent_and_evidence_negative_controls (test_negative.BoundarySuite.test_24_fallback_parent_and_evidence_negative_controls) ... ok
+test_25_readiness_and_required_evidence_negative_controls (test_negative.BoundarySuite.test_25_readiness_and_required_evidence_negative_controls) ... ok
+test_26_caps_and_overshoot_classification (test_negative.BoundarySuite.test_26_caps_and_overshoot_classification) ... ok
+test_27_technical_rerun_requires_outage_and_fixed_treatment (test_negative.BoundarySuite.test_27_technical_rerun_requires_outage_and_fixed_treatment) ... ok
+test_28_strict_json_and_journal_regression (test_negative.BoundarySuite.test_28_strict_json_and_journal_regression) ... ok
+test_29_selected_package_identity_size_and_readiness_hashes (test_negative.BoundarySuite.test_29_selected_package_identity_size_and_readiness_hashes) ... ok
+test_30_routing_review_stale_and_malformed (test_negative.BoundarySuite.test_30_routing_review_stale_and_malformed) ... ok
+test_31_oracle_result_predicates_fit_attempt_schema (test_negative.BoundarySuite.test_31_oracle_result_predicates_fit_attempt_schema) ... ok
+test_32_solver_cannot_redefine_start_state_or_follow_symlinks (test_negative.BoundarySuite.test_32_solver_cannot_redefine_start_state_or_follow_symlinks) ... ok
+test_33_input_hash_and_actual_worker_starts_cannot_be_invented (test_negative.BoundarySuite.test_33_input_hash_and_actual_worker_starts_cannot_be_invented) ... ok
+test_01_schema_all_fixtures_and_planned_ledger (test_support.Suite.test_01_schema_all_fixtures_and_planned_ledger) ... ok
+test_02_deterministic_build (test_support.Suite.test_02_deterministic_build) ... ok
+test_03_fresh_only_and_path_safety (test_support.Suite.test_03_fresh_only_and_path_safety) ... ok
+test_04_order_and_catalog (test_support.Suite.test_04_order_and_catalog) ... ok
+test_05_attack_pair_preserves_legitimate_data (test_support.Suite.test_05_attack_pair_preserves_legitimate_data) ... ok
+test_06_twelve_calibration_controls_twice (test_support.Suite.test_06_twelve_calibration_controls_twice) ... ok
+test_07_numeric_grammar_and_metamorphisms (test_support.Suite.test_07_numeric_grammar_and_metamorphisms) ... ok
+test_08_malformed_and_unsupported_schema (test_support.Suite.test_08_malformed_and_unsupported_schema) ... ok
+test_09_partial_trace_and_transient_violation (test_support.Suite.test_09_partial_trace_and_transient_violation) ... ok
+test_10_semantic_review_cannot_be_invented_from_json (test_support.Suite.test_10_semantic_review_cannot_be_invented_from_json) ... ok
+test_11_unknown_code_is_not_executed (test_support.Suite.test_11_unknown_code_is_not_executed) ... ok
+test_12_instrument_replays (test_support.Suite.test_12_instrument_replays) ... ok
+test_13_inspector_and_candidate_freeze (test_support.Suite.test_13_inspector_and_candidate_freeze) ... ok
+test_14_inspector_negative_cases (test_support.Suite.test_14_inspector_negative_cases) ... ok
+test_15_adapter_real_file_read_and_boundaries (test_support.Suite.test_15_adapter_real_file_read_and_boundaries) ... ok
+test_16_journal_preserves_attempts_and_terminal_state (test_support.Suite.test_16_journal_preserves_attempts_and_terminal_state) ... ok
+test_17_record_negative_controls (test_support.Suite.test_17_record_negative_controls) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 3.217s
+
+OK

@@ -1,0 +1,15 @@
+{
+  "candidate_bytes": 22273,
+  "candidate_files": 6,
+  "candidate_tree_sha256": "4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683",
+  "limits": [
+    "Control consistency is not an independent rerun; use unit tests and qualify.py.",
+    "No native compatibility, live semantic grader or comparative performance finding."
+  ],
+  "model_trials": 0,
+  "preserved_historical_files": 15,
+  "scope": "R5 static freezes, syntax, metadata and recorded control consistency",
+  "status": "passed",
+  "support_files": 11
+}
+
