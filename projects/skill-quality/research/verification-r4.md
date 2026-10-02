@@ -36,7 +36,11 @@ The local checker passed, including 99 relative file/anchor destinations, all th
 
 ## Publication checkpoint
 
-Pending substantive commit and independent remote byte/scope verification. A tracking-only update will record the verified substantive checkpoint here; the PR description will carry the final branch checkpoint without requiring this file to embed its own Git hash.
+Substantive design published at [`55ab7f0f2941ba0f0801c889962f9bbf1af91fc6`](https://github.com/danrjoyce/skills/commit/55ab7f0f2941ba0f0801c889962f9bbf1af91fc6). All 18 project files were independently fetched at that exact commit and matched local bytes. GitHub comparison against the starting checkpoint showed exactly the nine intended project paths, one commit ahead and none behind.
+
+No pull-request workflow, commit status or check run was returned for that commit. This is not a CI pass. The performed checks are the local static checks above.
+
+A final documentation checkpoint records publication in this file, TASKS and HANDOFF and adds an explicit public-evidence sanitization rule to the protocol. It does not change task allocation, comparison policy, metrics or budgets. Final remote bytes and the four-path checkpoint scope are verified before reporting completion; the PR description records the exact final head without requiring a self-referential Git hash.
 
 ## Limits and next stage
 
