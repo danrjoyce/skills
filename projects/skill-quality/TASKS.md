@@ -15,13 +15,16 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - Keep a source register with version pins, evidence quality, claim scope, and limitations.
    - Acceptance: substantive first draft and research records on a branch, remotely verified; exact fresh-context critique prompt recorded. No final meta-skill yet.
    - Completed checkpoint: substantive draft, source register, implementation audit, methodology, and source pins published. All eight original project files remotely verified byte-for-byte at `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27`. Local text/link/JSON checks passed. See [verification record](research/verification-r1.md). This completes a research draft, not empirical validation.
-2. **R2: Independently critique the foundations. PENDING**
+2. **R2: Independently critique the foundations. COMPLETED**
    - Fresh context, no private reasoning from R1.
    - Verify important citations and definitions. Seek counterexamples and methodological weaknesses.
    - Deliver a prioritized critique with concrete revisions and unresolved questions.
+   - Completed: [independent critique](research/critique-01.md), approximately 5,300 words, with nine prioritized findings, source/code checks, counterexamples, strengths, empirical gaps, and R3 acceptance criteria. All nine public implementation blob pins matched. Main analysis and R1 evidence artifacts left unchanged.
+   - Key corrections: distinguish fitness from superiority; specify the callable/runtime contract; reconcile SkillsBench v4; preserve the fair Anthropic selection-set finding and add static probe-interference risks; formalize creator evaluation and proportionate measurement. No creator or benchmark was executed.
 3. **R3: Revise and settle the measurement model. PENDING**
    - Respond to each critique item with evidence or a recorded uncertainty.
    - Freeze a defensible initial decision framework and identify remaining evidence needs.
+   - Follow C1-C9 and the acceptance checklist in critique-01.md. Write a response ledger, revise the main analysis and supporting evidence, and record the exact R4 prompt. Do not implement the creator or silently promote a static source risk to an observed runtime effect.
 4. **R4: Design the comparative evaluation. PENDING**
    - Declare creation-task and downstream-task distributions, baselines, budgets, holdout ownership, grading calibration, safety gates, uncertainty analysis, and stopping rules before implementation.
    - Distinguish testing a creator from testing a skill it creates.
@@ -41,3 +44,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: Repository inspected at `3cca18b368ae95cdbdebbff572ccafa662551015`. No existing project or research branch found. Created `research/skill-quality`. Root `AGENTS.md` resolves to `CLAUDE.md`; project research will remain outside shipped skill buckets. Repository prose prohibits em dashes.
 - 2026-10-02: Scaffold published at `dcf2ec650120d4a2cd86cbcef4f1fe61d81783c2`; [draft PR #1](https://github.com/danrjoyce/skills/pull/1) opened. The first substantive draft is approximately 5,400 words. Public implementations are pinned and the main proposed framework is separated from measured results.
 - 2026-10-02: R1 substantive commit `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27` verified remotely. Comparison with the original main shows only project-document additions; no existing skill or configuration changed. No PR-triggered workflow run or commit status was returned for that commit. Stop here and renew context for R2; the exact critique prompt is in HANDOFF.md.
+
+- 2026-10-02: R2 independently reviewed remote project commit `9283609fbd998aeb3a4de2e00e41d73d0bfd5cf8`. Published critique and updated project tracking only. The revised evidence review must address the June 2026 SkillsBench v4; the linked SWE-Skills-Bench repository returned 404 during verification. These findings do not constitute benchmark replication. R3 is the next substantive task.
