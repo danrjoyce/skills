@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: R1-R7 complete through independent critique. The original primary campaign remains gated and unrun. R6 found a shared output-directory contract failure, with no creator superiority finding. Next: implement a smaller research-only v2 in a fresh R8 context, then separately decide a feasible live assessment. Started 2026-10-02.
+Status: R8 has produced a smaller two-file v2 and deterministic static checks. Behavioral usefulness remains untested. Next: independent readiness review in a fresh context, then separately authorize any live assessment. R6 is closed; its original primary campaign remains gated/unrun, with no creator-superiority finding. Started 2026-10-02.
 
 ## Purpose
 
@@ -21,11 +21,13 @@ This is a research project, not an installed skill. It does not change existing 
 
 ## Navigation
 
+- [Practical v2 creator](candidate/evidence-skill-creator-v2/SKILL.md): 664-word, two-file research candidate; [changes, calling/installation limits and C1-C10 responses](research/r8/README.md), [freeze](research/r8/candidate-freeze.json), [static results](research/r8/static-results.json), [verification](research/verification-r8.md), [proposed later assessment](research/r8/assessment-plan.md), and [exact next independent-review prompt](research/r8/continuation.md)
+
 - [R7 independent critique](research/r7/critique.md), [terminal-status correction](research/r7/r6-status-addendum.md), [review checks](research/r7/evidence-review.json), [verification](research/verification-r7.md), and [exact R8 implementation prompt](research/r7/continuation.md)
 
 - [R6 final bounded report](research/r6/report.md), [predeclared diagnostic](research/r6/diagnostic-protocol.md), [attempt journal](research/r6/journal.jsonl), [retained source-archive manifest](research/r6/retained-evidence-manifest.json), [retained runtime-archive manifest](research/r6/retained-evidence-manifest.json), and [historical R7 critique prompt](research/r6/continuation.md)
 
-- [Research candidate](candidate/evidence-skill-creator/SKILL.md): six-file model-invocable creator, uninstalled and behaviorally unproven
+- [Frozen v1 candidate](candidate/evidence-skill-creator/SKILL.md): six-file model-invocable creator, preserved unchanged and uninstalled
 - [R5 guide](research/r5/README.md), [design/traceability](research/r5/design.md), [qualification summary](research/r5/qualification.json) and [verification](research/verification-r5.md): local support, 33 tests, twelve oracle controls twice, and explicit runtime limits
 
 - [How to determine if a skill is good](how-to-determine-if-a-skill-is-good.md): the revised measurement and decision framework
@@ -44,4 +46,4 @@ This is a research project, not an installed skill. It does not change existing 
 - [TASKS.md](TASKS.md): sequential task ledger and acceptance criteria
 - [HANDOFF.md](HANDOFF.md): current state and exact restart prompt
 
-The creator is implemented and statically checked. Its effectiveness, native compatibility and advantage over a direct solver, simple template or public creator remain unproven. The published fixtures are exploratory and contaminated by design knowledge, with no independent holdout custody.
+Both creator versions remain uninstalled research artifacts. V2 is implemented and statically checked; its effectiveness, native compatibility and advantage over a direct solver or simple template remain unproven. The published R6 cases are known development evidence for v2, with no independent holdout custody. Static checks and a shorter package do not prove better decisions.

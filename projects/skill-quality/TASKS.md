@@ -48,13 +48,16 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - All 26 public source blobs matched fresh complete pinned trees. Selected packages and freezes remain unchanged; ten existing mechanical reports replayed without new trials.
    - [Terminal-status correction](research/r7/r6-status-addendum.md) records the conservative setup-bound overshoot and loading/semantic timing uncertainty. No verified active-time, full-action or superiority claim.
    - Next: a concrete smaller v2, not more generic evaluation machinery. Verification is recorded [here](research/verification-r7.md).
-8. **R8: Implement a proportionate v2 creator. PENDING**
-   - Follow the [exact fresh-context prompt](research/r7/continuation.md); respond to every C1-C10 item, preserve v1/evidence, create a separate research-only v2 and new freeze.
-   - Make the ordinary authoring path shorter and test the consumer's supported starting state while preserving permissions and collision refusal.
-   - Static checks only. No new runtime campaign or budget reset. Describe a feasible later assessment without launching it.
-9. **R9: Assess v2 usefulness under a declared feasible plan. BLOCKED PENDING R8 AND NEW CAMPAIGN DISPOSITION**
-   - Keep known examples separate from new-case assessment, retain practical controls and fixed denominators, define repeated-use benefit and adequate evidence capture.
-   - No paid/native study, promotion or merge is authorized by the prior campaign or the R8 handoff. General superiority remains unproven.
+8. **R8: Implement a proportionate v2 creator. COMPLETED (STATIC IMPLEMENTATION)**
+   - [Two-file v2](candidate/evidence-skill-creator-v2/SKILL.md), 664 words and 4,665 bytes, has a short authoring path and explicit material starting-state/authority contract. Collision refusal and uncertain-outcome reconciliation remain.
+   - [C1-C10 response and compatibility](research/r8/README.md), [new freeze](research/r8/candidate-freeze.json), [static checks](research/r8/static-results.json), and [verification](research/verification-r8.md). V1 and all historical nontracking evidence are preserved.
+   - Zero new model/helper/semantic trials. [Later assessment](research/r8/assessment-plan.md) is proposed only; there is no R6 restart or budget refund. The first-use requirement is implemented in instructions, not demonstrated by R8.
+9. **R9: Independently review v2 readiness. PENDING**
+   - Follow the [exact fresh-context prompt](research/r8/continuation.md). Inspect usability, claims, boundary handling and feasibility of the small assessment; deterministic validation only.
+   - Decide revise, ready for a separately authorized limited assessment, or insufficient basis. Preserve immutable package versions and empirical unknowns.
+10. **Later: Assess v2 usefulness. BLOCKED PENDING REVIEW AND NEW AUTHORIZATION**
+   - Proposed four author slots and eighteen consumer slots cover two workflow families, fixed template/direct alternatives, first and second use, and a blocked boundary. No launch is authorized in R8.
+   - Keep known examples separate from new-case evidence and define feasible supervision and publication before admissions. No paid/native study, installation, promotion or merge follows from this plan. General superiority remains unproven.
 
 ## Checkpoints
 
@@ -83,3 +86,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R6 substantive commit `7833edd1edb6dc038fa30cbb90bf1ec4ac5f5ad2` verified across all 102 published project files, with exactly 60 intended changed paths and no outside changes. Exact-commit workflow/status/check-run queries returned zero, not a CI pass. Three compressed archives remain local after the disclosed authorization denial; curated synthetic replay evidence and pinned source URLs/hashes are published.
 
 - 2026-10-02: R7 began from confirmed remote `0e66e7eff6899f9e3082cbe9d67c3e9847966b1e`. PR metadata was stale and the local terminal stop record postdated the published journal. Independent review supplies a status addendum without rewriting R6 evidence. The next substantive task is a usable, smaller v2 in R8, with no new trials in that implementation context.
+
+- 2026-10-02: R8 began from confirmed remote `fbc7a59232c1d74c4928b385cd8b7e1a5d08613c`. V2 frozen at `cd74d8380c5aefbdc3ae4b8b77e2fd59a74323c5ecbb714a17a20e972afe53a9`; local static format and preserved-v1/support checks passed. No live trial, installation, archive upload, campaign reset or settings change. Publication evidence is recorded in [R8 verification](research/verification-r8.md).

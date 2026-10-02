@@ -1,0 +1,17 @@
+# Exact next fresh-context review prompt
+
+R8 implements and statically checks a candidate; it does not establish useful behavior. The next task is an independent readiness review, with no automatic authorization to start another live campaign.
+
+```text
+Review R8 independently in a fresh context for danrjoyce/skills, research/skill-quality, draft PR #1. Verify the actual remote head and complete changed-path scope first. Read repository guidance and relevant research/writing skills, projects/skill-quality/HANDOFF.md, TASKS.md, research/r8/README.md, candidate-freeze.json, assessment-plan.md and research/verification-r8.md. Inspect the two-file candidate/evidence-skill-creator-v2 package directly, R7 critique C1-C10 and the R6 terminal-status correction. Follow historical evidence only where a concrete claim needs it.
+
+Determine whether the artifact is economical and usable enough to justify a limited live trial. Check the inputs/starting-state/outputs/tools/authority contract, allowed new files versus occupied targets, uncertain-outcome reconciliation, realistic first-use instructions, source boundaries, proportionality, invocation metadata and native-function limits. Seek concrete counterexamples, including non-file workflows and small updates. Re-run deterministic packaging/freeze checks only. These are document/code inspection, not behavior tests; do not execute any creator, solver, generated helper or semantic-reviewer trial.
+
+Independently assess whether the proposed 4-author/18-consumer plan can answer its practical decision, preserves denominators and known-example labels, and can be supervised and retained using the actually available host. Verify feasible wall-time headroom; unavailable telemetry must remain unknown. Preserve R6's exact counts, limits and stop caveat. A revised plan is not a refund or reopening of R6. Do not expand the protocol merely for volume.
+
+Return a short prioritized review, concrete revisions if required, and one decision: revise, ready for a separately authorized limited assessment, or insufficient basis. Separate static findings from empirical questions; no general superiority or user-ready adoption claim is presently supported. Specify exactly what needs approval before a live campaign and what evidence would support a scoped recommendation afterward. If a necessary capability or evidence destination is unavailable, name the blocker rather than silently changing hosts or endpoints.
+
+Publish only the authorized new review and current project-tracking files on the existing branch, verify remote bytes/current head and exact-commit CI, and leave the PR draft. Preserve v1, v2 and all freezes and R1-R8 evidence. No installation, promotion, merge, spending, credential/settings/protection edits or upstream synchronization. The three denied R6 source/runtime archives remain local; no retry or alternate route. Stop after the independent review. Any implementation correction is a separately versioned next task, and any new live assessment needs an explicitly settled scope and authorization before launch.
+```
+
+Before a user-ready recommendation: resolve substantive independent-review findings, observe realistic first and second use under the intended envelope with serious simpler alternatives, disclose all failed/unrun checks and missing action/cost coverage, and separately check the target host's loading route when it is authorized. A limited successful assessment would justify only a scoped trial or adoption recommendation; it would not establish universal creator quality.

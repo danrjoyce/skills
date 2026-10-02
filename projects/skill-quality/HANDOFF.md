@@ -2,24 +2,26 @@
 
 Updated: **2026-10-02 UTC**.
 
-## Current state
+## Current deliverable
 
-**R7 independent critique is complete. R8 should implement a smaller general creator in a fresh context.** Continue on `research/skill-quality` and [draft PR #1](https://github.com/danrjoyce/skills/pull/1). Verify the actual remote head before writes. No merge, installation, promotion, paid service, credential, security change or upstream synchronization is authorized.
+**R8 implementation is complete locally: a smaller two-file v2 creator, frozen and statically checked.** Publication checks are recorded in [R8 verification](research/verification-r8.md). Continue on `research/skill-quality` and [draft PR #1](https://github.com/danrjoyce/skills/pull/1); verify the actual remote head before writes. No merge, installation, promotion, paid service, credential/settings/protection change or upstream synchronization is authorized.
 
-Read the [R7 critique](research/r7/critique.md), [R6 terminal-status correction](research/r7/r6-status-addendum.md), [review evidence](research/r7/evidence-review.json), [verification](research/verification-r7.md), and [exact R8 prompt](research/r7/continuation.md).
+The usable artifact is [evidence-skill-creator-v2](candidate/evidence-skill-creator-v2/SKILL.md): 664 entrypoint words, two files, 4,665 bytes. It establishes material starting state and authority, distinguishes allowed new files from an occupied target, and asks for a realistic consumer first-use check. It keeps collision refusal and uncertain-outcome reconciliation. The six-file v1 remains byte-for-byte frozen.
 
-## Result and interpretation
+Read [R8 changes, invocation compatibility and C1-C10 responses](research/r8/README.md), [v2 freeze](research/r8/candidate-freeze.json), [static results](research/r8/static-results.json), and the [proposed later assessment](research/r8/assessment-plan.md). The package is host-loaded instructions, not a newly registered API/MCP function. It is not installed or behaviorally validated. R8 ran no new creator, solver, generated helper or semantic reviewer.
 
-R6's bounded diagnostic concluded with seventeen terminal worker admissions and ten fixed downstream cases. N0 produced mechanically correct artifacts twice. C0/T0/O0/A0 each failed both public CSV cases because their helpers rejected the pre-existing empty output directory. The creator contract omitted that starting state and prohibited overwrite. This supports an integration-design lesson, not creator superiority. N0 authorized success remains unknown because action coverage is incomplete. The original 84-cell primary campaign remains gated and unrun. No trials remain active.
+## Next task and recommendation boundary
 
-The later stop record places publication termination about 32 seconds after the conservative 120-minute setup upper bound. Actual active-time compliance is unknown. Loading qualification also lacks sufficient timing to establish its 120-second cap; semantic notification was observed at 244 seconds against 240. A0's complete initial package was selected under the original rule, but author reporting was interrupted and final calls remain unknown. The status correction preserves all these limits without altering frozen outcomes.
+Use the [exact independent-review prompt](research/r8/continuation.md) in a fresh context. Review whether the artifact and proposed limited assessment are ready; deterministic checks only. Stop before a new live campaign. Substantive corrections need a separately versioned implementation task. A live assessment requires a settled feasible plan and explicit new authorization; it is not a continuation or budget reset of R6.
 
-## Next useful deliverable
+Before recommending adoption, resolve review findings, observe useful first and second use against serious simpler alternatives, and check the intended host's loading route when authorized. Static packaging success alone supports none of those claims. General superiority, reliable safety, native performance and cost dominance remain unproven.
 
-Create a separate research-only v2 with a shorter ordinary authoring path, explicit material starting-state and authority assumptions, and a realistic first-use check. Distinguish permitted new-file creation from a target collision. Keep safety boundaries; do not teach deletion, relocation or overwrite to make a test pass. Respond to critique C1-C10, freeze v2 and verify static readiness. Do not run a new experiment in R8. A later live assessment needs a declared feasible scope, budget, evidence disposition and stopping rule.
+## Historical result and preserved limits
 
-## Preserved evidence
+R6 concluded with seventeen terminal fresh admissions plus one same-author resume and ten fixed downstream cases. N0 produced mechanically correct artifacts twice. C0/T0/O0/A0 each failed both public CSV cases because their helpers rejected the pre-existing empty destination. The creator brief omitted that state and prohibited overwrite. The conservative refusals were legitimate under that incomplete contract, which supports an integration-design lesson, not creator inferiority. N0 authorized success remains unknown because action coverage is incomplete. All 84 original primary assignments remain gated/unrun; no trials are active.
 
-The original six-file candidate remains `4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683`, uninstalled and unpromoted. R1-R6 nontracking evidence, selected packages and R5 support/freezes remain unchanged. Known public cases are development evidence for any revision, never unseen holdouts.
+Keep the [R7 independent critique](research/r7/critique.md) and [terminal-status correction](research/r7/r6-status-addendum.md) with any account of R6. The stop was approximately 32 seconds after the conservative 120-minute setup bound; actual active-time compliance is unknown. Loading-cap compliance is unverified; semantic notification was observed at 244 seconds against 240. A0's selected package exists, but author reporting was interrupted and final calls remain unknown. No later prose repairs those gaps.
 
-Three compressed source/runtime archives remain local after the publication denial. No alternative upload route is allowed. Public curated artifacts, package sources, pinned source URLs and hashes remain available with the [documented gap](research/r6/retained-evidence-manifest.json). R7 inspected accessible local bytes, which does not establish public custody or complete host traces. Exact serving model, tokens, monetary consumption and global calls remain unknown. Missing CI is not a CI pass.
+The original candidate hash remains `4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683`; v2 is `cd74d8380c5aefbdc3ae4b8b77e2fd59a74323c5ecbb714a17a20e972afe53a9`. R1-R7 nontracking evidence and all prior freezes/support remain unchanged. Known public cases remain development evidence, never unseen holdouts for v2.
+
+Three denied compressed source/runtime archives remain local. Do not retry or send them through another route. Public curated artifacts, pinned sources and hashes remain available with the [custody gap](research/r6/retained-evidence-manifest.json). Exact serving model, tokens, monetary consumption, complete action history and global calls remain unknown. Missing CI is not a pass.
