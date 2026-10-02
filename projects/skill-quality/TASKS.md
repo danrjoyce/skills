@@ -1,0 +1,40 @@
+# Task ledger
+
+Updated: 2026-10-02. Only one substantive task may be active.
+
+## Status vocabulary
+
+Pending, active, completed, blocked. "Completed" means the stated artifact and checks exist; it does not imply empirical validation or endorsement.
+
+## Sequential plan
+
+1. **R1: Establish foundations and evidence triage. ACTIVE**
+   - Inspect repository guidance and current public implementations.
+   - Produce an initial rigorous answer to "How to determine if a skill is good?"
+   - Include construct validity, causal marginal usefulness, activation, task distributions, generalization, reliability, safety, cost, maintainability, environment constraints, contamination, and an evaluation protocol.
+   - Keep a source register with version pins, evidence quality, claim scope, and limitations.
+   - Acceptance: substantive first draft and research records on a branch, remotely verified; exact fresh-context critique prompt recorded. No final meta-skill yet.
+2. **R2: Independently critique the foundations. PENDING**
+   - Fresh context, no private reasoning from R1.
+   - Verify important citations and definitions. Seek counterexamples and methodological weaknesses.
+   - Deliver a prioritized critique with concrete revisions and unresolved questions.
+3. **R3: Revise and settle the measurement model. PENDING**
+   - Respond to each critique item with evidence or a recorded uncertainty.
+   - Freeze a defensible initial decision framework and identify remaining evidence needs.
+4. **R4: Design the comparative evaluation. PENDING**
+   - Declare creation-task and downstream-task distributions, baselines, budgets, holdout ownership, grading calibration, safety gates, uncertainty analysis, and stopping rules before implementation.
+   - Distinguish testing a creator from testing a skill it creates.
+5. **R5: Implement a candidate skill-creation skill. PENDING**
+   - Follow repository packaging and invocation rules.
+   - Implement only requirements justified by the research and protocol.
+6. **R6: Run comparative tests and adversarial validation. PENDING**
+   - Use isolated environments and frozen baselines.
+   - Archive outcomes, costs, artifacts, failures, and confidence limits.
+7. **R7: Critique, refine, and report the bounded result. PENDING**
+   - Fresh-context review and held-out confirmation.
+   - State where the candidate improves, ties, loses, or remains unproven.
+   - Promote only after evidence and explicit merge authorization.
+
+## Checkpoints
+
+- 2026-10-02: Repository inspected at `3cca18b368ae95cdbdebbff572ccafa662551015`. No existing project or research branch found. Created `research/skill-quality`. Root `AGENTS.md` resolves to `CLAUDE.md`; project research will remain outside shipped skill buckets. Repository prose prohibits em dashes.
