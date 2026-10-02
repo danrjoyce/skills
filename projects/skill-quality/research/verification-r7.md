@@ -19,4 +19,8 @@ Detailed observations and timing limits: [evidence-review.json](r7/evidence-revi
 
 ## Publication
 
-The substantive R7 publication is pending at creation of this record. Intended scope is exactly eight project paths: the three current tracking documents, this verification record and four new R7 review files. All original candidate/support/research evidence stays unchanged. Remote byte/scope and exact-commit CI observations will be recorded after publication; absent CI is never a pass.
+Substantive R7 commit: `60bfad2a3661f89f68904e5f045b52f5403d7837`. A fresh PR read confirmed this exact branch head and the draft state. All eight changed files were independently fetched by commit and matched their local UTF-8 bytes exactly. A complete untruncated tree comparison against the R6 tracking commit found exactly the eight intended project paths: the three current tracking documents, this verification record and four new R7 review files. All original candidate/support/research evidence and every outside-project blob remain unchanged; the denied archives remain absent.
+
+The final R4 static checker passed 246 relative links/anchors and retained protocol arithmetic. The R5 static freeze checker passed again after writing the review. These checks did not run a model or a generated helper.
+
+For this exact substantive R7 commit, the GitHub workflow, combined-status and check-run endpoints each returned zero records. The combined state was `pending` with zero statuses, not evidence of running CI. This is absent CI, not a CI pass. A final tracking-only commit updates this verification file; its remote bytes/head and exact-commit CI are checked separately and recorded in the PR status. There is no further experiment in R7.
