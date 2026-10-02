@@ -26,7 +26,13 @@ These checks validate document consistency and illustrative algebra. They are no
 
 ## Publication checkpoint
 
-Pending the substantive commit and remote byte verification. This section will be updated in a tracking-only commit after the first remote comparison, and final branch bytes will be checked again before completion is reported.
+Substantive revision published at [`90b16afb072f1d2ecfd7297664b7281c33e33e9e`](https://github.com/danrjoyce/skills/commit/90b16afb072f1d2ecfd7297664b7281c33e33e9e). All 12 project files were independently fetched at that exact commit and matched byte-for-byte against local content, including the unchanged R2 critique and R1 verification.
+
+GitHub's comparison with the starting checkpoint reported exactly the ten intended changed paths, all under `projects/skill-quality/`, one commit ahead and none behind. No unrelated file changed. The local validation suite passed again after final prose adjustments.
+
+No pull-request-triggered workflow, commit status, or check run was returned for that substantive commit. This is absence of reported CI evidence, not a CI pass or assertion about required checks. Documentation-only local checks are the performed validation.
+
+A subsequent tracking-only commit records this checkpoint in TASKS, HANDOFF, and this file. Its final branch bytes and scope are checked before completion is reported; the PR description carries the exact final checkpoint so this record does not require a self-referential Git hash.
 
 ## Verification limits
 

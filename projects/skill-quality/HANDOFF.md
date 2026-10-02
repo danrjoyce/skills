@@ -6,7 +6,7 @@ Updated: **2026-10-02 UTC**.
 
 **R1 foundations, R2 independent critique, and R3 conceptual revision are complete. R4 comparative-protocol design is next.** Continue on `research/skill-quality` and [draft PR #1](https://github.com/danrjoyce/skills/pull/1), based on main at `3cca18b368ae95cdbdebbff572ccafa662551015`. Inspect the actual branch tip before writing; do not recreate the branch or PR.
 
-R1's substantive draft was published at `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27`, with tracking checkpoint `9283609fbd998aeb3a4de2e00e41d73d0bfd5cf8`. R2's critique is at `ca27f690562c7440458dc50cdc0f01b5073f08ad`. R3 revised from that commit and preserves the independent critique and historical R1 verification unchanged. The PR and [R3 verification record](research/verification-r3.md) identify the published revision checkpoint.
+R1's substantive draft was published at `abbb267774acafdb8cfaad70b7b8dea3b1ae8f27`, with tracking checkpoint `9283609fbd998aeb3a4de2e00e41d73d0bfd5cf8`. R2's critique is at `ca27f690562c7440458dc50cdc0f01b5073f08ad`. R3 substantive revision is `90b16afb072f1d2ecfd7297664b7281c33e33e9e`, independently verified across all 12 project files. It preserves the independent critique and historical R1 verification unchanged. The PR and [R3 verification record](research/verification-r3.md) identify the published revision checkpoint.
 
 No final creator, model-performance experiment, runtime compatibility result, calibrated grader, sealed holdout, or superiority finding exists. The conceptual framework is settled enough for protocol design; numerical thresholds, actual host configurations, budget, and custody remain open. No merge, repository-security change, or upstream synchronization is part of this checkpoint.
 
