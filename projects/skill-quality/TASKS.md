@@ -52,12 +52,14 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - [Two-file v2](candidate/evidence-skill-creator-v2/SKILL.md), 664 words and 4,665 bytes, has a short authoring path and explicit material starting-state/authority contract. Collision refusal and uncertain-outcome reconciliation remain.
    - [C1-C10 response and compatibility](research/r8/README.md), [new freeze](research/r8/candidate-freeze.json), [static checks](research/r8/static-results.json), and [verification](research/verification-r8.md). V1 and all historical nontracking evidence are preserved.
    - Zero new model/helper/semantic trials. [Later assessment](research/r8/assessment-plan.md) is proposed only; there is no R6 restart or budget refund. The first-use requirement is implemented in instructions, not demonstrated by R8.
-9. **R9: Independently review v2 readiness. PENDING**
-   - Follow the [exact fresh-context prompt](research/r8/continuation.md). Inspect usability, claims, boundary handling and feasibility of the small assessment; deterministic validation only.
-   - Decide revise, ready for a separately authorized limited assessment, or insufficient basis. Preserve immutable package versions and empirical unknowns.
-10. **Later: Assess v2 usefulness. BLOCKED PENDING REVIEW AND NEW AUTHORIZATION**
-   - Proposed four author slots and eighteen consumer slots cover two workflow families, fixed template/direct alternatives, first and second use, and a blocked boundary. No launch is authorized in R8.
-   - Keep known examples separate from new-case evidence and define feasible supervision and publication before admissions. No paid/native study, installation, promotion or merge follows from this plan. General superiority remains unproven.
+9. **R9: Independently review v2 readiness. COMPLETED (STATIC REVIEW)**
+   - [Independent review](research/r9/review.md) accepts the frozen package as ready for a separately authorized limited assessment. No material package defect or further rewrite is required by inspection.
+   - Inputs/state/outputs/tools/authority, file and non-file counterexamples, trigger metadata, evidence boundaries and small-update proportionality checked. Deterministic package/freeze and historical preservation checks passed; no live trial or native loading test. [Verification](research/verification-r9.md).
+   - The proposed assessment is proportionate after three launch clarifications: second-use state carryover/direct-control fairness, the intervention outcome, and feasible per-slot stopping/evidence retention. Maximum trial durations plus preparation leave seven minutes of interim overhead before the experimental stop; all 22 slots are a ceiling, not guaranteed completion.
+10. **Later: Assess v2 usefulness. BLOCKED PENDING SETTLED SCOPE AND NEW AUTHORIZATION**
+   - [Minimal next work](research/r9/review.md#minimal-next-work-and-stopping-condition): freeze the exact synthetic briefs/checks and scope, then obtain approval for the host, evidence destinations and bounded live comparison. No implementation change is presently required.
+   - Proposed four author slots and eighteen consumer slots cover two workflow families, fixed template/direct alternatives, first and second use, and a blocked boundary. No launch is authorized by R9.
+   - Keep known mechanisms as development evidence and retain all assigned outcomes/missingness. No paid/native study, installation, promotion or merge follows from this plan. General superiority remains unproven.
 
 ## Checkpoints
 
@@ -88,3 +90,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R7 began from confirmed remote `0e66e7eff6899f9e3082cbe9d67c3e9847966b1e`. PR metadata was stale and the local terminal stop record postdated the published journal. Independent review supplies a status addendum without rewriting R6 evidence. The next substantive task is a usable, smaller v2 in R8, with no new trials in that implementation context.
 
 - 2026-10-02: R8 began from confirmed remote `fbc7a59232c1d74c4928b385cd8b7e1a5d08613c`. V2 frozen at `cd74d8380c5aefbdc3ae4b8b77e2fd59a74323c5ecbb714a17a20e972afe53a9`; local static format and preserved-v1/support checks passed. No live trial, installation, archive upload, campaign reset or settings change. Publication evidence is recorded in [R8 verification](research/verification-r8.md).
+
+- 2026-10-02: R9 reviewed remote `08c73746c256fbed73910b13f09589b510e96231` in a fresh context and accepted package readiness for a separately authorized limited assessment. V1, v2 and R1-R8 evidence remain frozen. No new experiment, native activation or raw archive access/upload. The review ends with the scope and authorization gate recorded in [R9 verification](research/verification-r9.md).

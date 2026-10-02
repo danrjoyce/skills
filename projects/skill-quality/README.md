@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: R8 has produced a smaller two-file v2 and deterministic static checks. Behavioral usefulness remains untested. Next: independent readiness review in a fresh context, then separately authorize any live assessment. R6 is closed; its original primary campaign remains gated/unrun, with no creator-superiority finding. Started 2026-10-02.
+Status: R9's independent review accepts the frozen two-file v2 as usable enough for a separately authorized limited assessment. No material package revision is required. Behavioral usefulness remains untested. Next: settle the exact smoke-test scope and obtain new authorization; no live campaign is active. R6 is closed; its original primary campaign remains gated/unrun, with no creator-superiority finding. Started 2026-10-02.
 
 ## Purpose
 
@@ -21,7 +21,9 @@ This is a research project, not an installed skill. It does not change existing 
 
 ## Navigation
 
-- [Practical v2 creator](candidate/evidence-skill-creator-v2/SKILL.md): 664-word, two-file research candidate; [changes, calling/installation limits and C1-C10 responses](research/r8/README.md), [freeze](research/r8/candidate-freeze.json), [static results](research/r8/static-results.json), [verification](research/verification-r8.md), [proposed later assessment](research/r8/assessment-plan.md), and [exact next independent-review prompt](research/r8/continuation.md)
+- [R9 independent readiness review](research/r9/review.md): package accepted for a separately authorized limited assessment; three launch clarifications and [minimal next work](research/r9/review.md#minimal-next-work-and-stopping-condition). [Verification](research/verification-r9.md) records deterministic checks and publication scope.
+
+- [Practical v2 creator](candidate/evidence-skill-creator-v2/SKILL.md): 664-word, two-file research candidate; [changes, calling/installation limits and C1-C10 responses](research/r8/README.md), [freeze](research/r8/candidate-freeze.json), [static results](research/r8/static-results.json), [verification](research/verification-r8.md), [proposed later assessment](research/r8/assessment-plan.md), and [historical R9 review prompt](research/r8/continuation.md)
 
 - [R7 independent critique](research/r7/critique.md), [terminal-status correction](research/r7/r6-status-addendum.md), [review checks](research/r7/evidence-review.json), [verification](research/verification-r7.md), and [exact R8 implementation prompt](research/r7/continuation.md)
 
