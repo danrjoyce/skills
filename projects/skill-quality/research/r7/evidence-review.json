@@ -1,0 +1,35 @@
+{
+  "candidate_tree_sha256": "4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683",
+  "downstream_order_and_reports": 10,
+  "frozen_candidate_files": 6,
+  "frozen_support_files": 11,
+  "limits": [
+    "Archive byte verification does not authenticate host execution.",
+    "No new generated helper, solver, creator or semantic reviewer was run.",
+    "Local private publication gap remains; raw archive payloads are not republished.",
+    "Exact active time, serving model, global calls, tokens and monetary consumption remain unknown."
+  ],
+  "loading_qualification": {
+    "admission_to_completion_seconds": null,
+    "declared_limit_seconds": 120,
+    "interpretation": "225-second bookkeeping interval cannot verify 120-second runtime compliance; it is not an established computation overrun.",
+    "journal_running_to_terminal_record_seconds": 225.154583
+  },
+  "local_only_difference": "R6 journal has the later stop-record append; its remote version is preserved.",
+  "local_runtime_archive_entries": 652,
+  "local_runtime_archive_file_payloads_hash_verified": 450,
+  "mechanical_replay_existing_artifacts": {
+    "new_trials": 0,
+    "reports_matched": 10
+  },
+  "pinned_public_source_files_verified_against_fresh_complete_trees": 26,
+  "preserved_historical_files": 15,
+  "primary_terminal_unrun_gate_records": 84,
+  "r6_stop_record": "r6-status-addendum.md",
+  "remote_local_exact_matches": 101,
+  "remote_project_blobs": 102,
+  "reviewed_remote_commit": "0e66e7eff6899f9e3082cbe9d67c3e9847966b1e",
+  "scope": "R7 read-only source/artifact consistency review. No new model or generated-helper execution.",
+  "selected_packages_match_initial_and_current_bytes": 4,
+  "terminal_worker_admissions": 17
+}

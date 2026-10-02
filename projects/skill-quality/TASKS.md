@@ -43,10 +43,18 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - Follow the USD 0 ceiling and all caps in the exact [R6 handoff](HANDOFF.md); primary discovery must not be silently replaced by explicit loading. A blocked-preflight report is an honest outcome.
    - Archive outcomes, costs, artifacts, failures, and confidence limits.
    - R6 final: 17 fresh worker admissions, four frozen D1 packages, one A0 development solver, ten fixed downstream cells, loading qualification and four-artifact semantic qualification. N0 artifact correctness 2/2; C0/T0/O0/A0 each 0/2 on an existing-output-directory incompatibility. No retries, repairs or fallback. A0 documentation cutoff and semantic timing uncertainty retained. Original 84 primary cells remain methodology-gated/unrun. See the [final report](research/r6/report.md), [verification](research/verification-r6.md), and [exact R7 critique prompt](research/r6/continuation.md).
-7. **R7: Critique, refine, and report the bounded result. PENDING**
-   - Fresh-context review and held-out confirmation.
-   - State where the candidate improves, ties, loses, or remains unproven.
-   - Promote only after evidence and explicit merge authorization.
+7. **R7: Independently critique the bounded result. COMPLETED**
+   - [Critique C1-C10](research/r7/critique.md) independently checks the published and accessible local evidence, addresses contract fairness and legitimate stopping, baseline fidelity, selection, units, provenance, timing and practical usefulness.
+   - All 26 public source blobs matched fresh complete pinned trees. Selected packages and freezes remain unchanged; ten existing mechanical reports replayed without new trials.
+   - [Terminal-status correction](research/r7/r6-status-addendum.md) records the conservative setup-bound overshoot and loading/semantic timing uncertainty. No verified active-time, full-action or superiority claim.
+   - Next: a concrete smaller v2, not more generic evaluation machinery. Verification is recorded [here](research/verification-r7.md).
+8. **R8: Implement a proportionate v2 creator. PENDING**
+   - Follow the [exact fresh-context prompt](research/r7/continuation.md); respond to every C1-C10 item, preserve v1/evidence, create a separate research-only v2 and new freeze.
+   - Make the ordinary authoring path shorter and test the consumer's supported starting state while preserving permissions and collision refusal.
+   - Static checks only. No new runtime campaign or budget reset. Describe a feasible later assessment without launching it.
+9. **R9: Assess v2 usefulness under a declared feasible plan. BLOCKED PENDING R8 AND NEW CAMPAIGN DISPOSITION**
+   - Keep known examples separate from new-case assessment, retain practical controls and fixed denominators, define repeated-use benefit and adequate evidence capture.
+   - No paid/native study, promotion or merge is authorized by the prior campaign or the R8 handoff. General superiority remains unproven.
 
 ## Checkpoints
 
@@ -73,3 +81,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R6 bounded diagnostic completed without candidate tuning. All ten downstream attempts retained. Complete action and exact cost telemetry remain unknown; no superiority or native-performance finding. R7 begins only in fresh context after verified publication.
 
 - 2026-10-02: R6 substantive commit `7833edd1edb6dc038fa30cbb90bf1ec4ac5f5ad2` verified across all 102 published project files, with exactly 60 intended changed paths and no outside changes. Exact-commit workflow/status/check-run queries returned zero, not a CI pass. Three compressed archives remain local after the disclosed authorization denial; curated synthetic replay evidence and pinned source URLs/hashes are published.
+
+- 2026-10-02: R7 began from confirmed remote `0e66e7eff6899f9e3082cbe9d67c3e9847966b1e`. PR metadata was stale and the local terminal stop record postdated the published journal. Independent review supplies a status addendum without rewriting R6 evidence. The next substantive task is a usable, smaller v2 in R8, with no new trials in that implementation context.
