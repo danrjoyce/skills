@@ -1,0 +1,3 @@
+interface:
+  display_name: "Evidence Skill Creator"
+  short_description: "Create and assess reusable agent skills"

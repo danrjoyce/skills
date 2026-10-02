@@ -1,0 +1,41 @@
+{
+  "basis": "R3 abstract requirements, public creator/spec source and repository conventions; no R4 downstream fixture answers used in package",
+  "files": [
+    {
+      "bytes": 6818,
+      "path": "SKILL.md",
+      "sha256": "b70694ae41e577a4bc30d2f936ed284459c2e4dd4ad2887a0e9be9a4bfd02353"
+    },
+    {
+      "bytes": 115,
+      "path": "agents/openai.yaml",
+      "sha256": "c9200145240b342784401098ee743f69e01c3723b6edb0cdb583a5d6363d1ad7"
+    },
+    {
+      "bytes": 1608,
+      "path": "assets/assessment-template.md",
+      "sha256": "d297ca25180ec0ae3c46030e0b89954199f9d6a5b53af475a813e461a882f263"
+    },
+    {
+      "bytes": 4886,
+      "path": "references/assessment.md",
+      "sha256": "ab47eb49ebcc7a0a26fcaa5b914c7fd2ff62333955b2b7a6fc4f9f2f5522510d"
+    },
+    {
+      "bytes": 2592,
+      "path": "references/evidence.md",
+      "sha256": "4564b7f8ec9ecd4d388e10b00dc403a292df23124c71750e9f8b1317e84ba2ba"
+    },
+    {
+      "bytes": 6254,
+      "path": "scripts/inspect_package.py",
+      "sha256": "87340af16056f129375802b2f11ad1b16c74452dcd3b26c424c0b3f7db61616a"
+    }
+  ],
+  "previous_freeze": "candidate-freeze-original.json",
+  "reason": "Independent generic controls reproduced falsely complete inspection of multiline scalars, implicitly typed YAML values and malformed single quotes. Restrict colon whitespace, detect indented continuation, and defer uncertain scalar forms to a full YAML parser. Only the inspector changed; no workflow or evaluation-case instruction changed.",
+  "stage": "R5 revision 1: generic inspector boundary repair",
+  "status": "unproven candidate; no model run",
+  "tree_digest_algorithm": "sha256 of UTF-8 JSON files array; sorted keys; separators comma/colon; ensure_ascii=false; no terminal newline",
+  "tree_sha256": "4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683"
+}

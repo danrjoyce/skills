@@ -32,12 +32,15 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
    - Proposes a USD 0 new-spend common-host exploratory pilot: three core briefs, four creator policies plus no-added-package control, 60 downstream episodes, 12 short routing policies, exact resource caps and all-attempt accounting.
    - Preserves native-baseline fidelity limits, shared-environment contamination, absent independent custody, incomplete telemetry and model nondeterminism. Stronger confirmation has explicit units, power assumptions, margins and resource gates.
    - Local schema/link/arithmetic checks are recorded in [R4 verification](research/verification-r4.md). No creator implementation, model trial, calibrated runtime grader, native compatibility result or superiority finding exists.
-5. **R5: Implement a candidate skill-creation skill. PENDING**
+5. **R5: Implement a candidate skill-creation skill. COMPLETED**
    - Implement a standard research-only package at `projects/skill-quality/candidate/evidence-skill-creator/`, with repository-consistent invocation metadata, without installation or promotion.
    - Implement only justified authoring requirements and minimal synthetic fixture/recording support; run deterministic local checks only.
-   - Freeze candidate, adapter and development support with exact version/evidence labels for R6; do not execute a model comparison during R5.
+   - Completed: six-file [research candidate](candidate/evidence-skill-creator/SKILL.md), [design/traceability](research/r5/design.md), [local fixture/oracle/adapter/record support](research/r5/README.md), original/revised candidate and support freezes, protocol clarifications and reproducible calibration evidence.
+   - Verification: 33 tests; twelve oracle controls twice, eleven instrument replays and six fixed routing annotations; two identical 394-file evidence bundles; public pinned validator, syntax/metadata/hash/link checks. See [R5 verification](research/verification-r5.md).
+   - One generic inspector defect repaired with disclosed freeze revision; all five other candidate files unchanged. Zero model trials. Native activation, live grader qualification, full source closures and execution supervision remain R6 preflight gates.
 6. **R6: Run comparative tests and adversarial validation. PENDING**
-   - Use isolated environments and frozen baselines.
+   - Qualify the actual common-host environment and full pinned baseline closures before launch. Use fresh reset state, while disclosing shared-environment exposure; do not pretend isolation is enforced.
+   - Follow the USD 0 ceiling and all caps in the exact [R6 handoff](HANDOFF.md); primary discovery must not be silently replaced by explicit loading. A blocked-preflight report is an honest outcome.
    - Archive outcomes, costs, artifacts, failures, and confidence limits.
 7. **R7: Critique, refine, and report the bounded result. PENDING**
    - Fresh-context review and held-out confirmation.
@@ -59,3 +62,5 @@ Pending, active, completed, blocked. "Completed" means the stated artifact and c
 - 2026-10-02: R4 designed from `ff852c9e979302c937aceb82f8dca557294c8e73`. Provisional engineering choices resolve routine scope decisions so R5 can proceed; paid/native confirmation, independent custody and owner-validated adoption margins remain gated. The first pilot is expressly public and exploratory, not an independent holdout. No experiment was run.
 
 - 2026-10-02: R4 substantive design `55ab7f0f2941ba0f0801c889962f9bbf1af91fc6` verified remotely across all 18 project files. Exactly nine project paths changed; no workflow/status/check run was returned. Static schema, 99 local links/anchors, budgets and conditional power arithmetic passed. Final documentation checkpoint adds the verification record and explicit public-evidence sanitization guidance. R5 implementation is the next context-bounded task.
+
+- 2026-10-02: R5 implemented from `ed3e468139f6f90eb8c954989ea95a123c161801`. Candidate workflow froze before fixture details; fresh-context review strengthened evidence custody, Git semantic-state checks, malformed-input handling and failure/fallback/cap accounting. Original fifteen nontracking research files remain byte-identical. Candidate tree: `4dc5eef71128fcb98b2ab27c6163a91fc701c91854a8ba3df9dafa9965b55683`. R6 is next in fresh context; no runtime comparison or native compatibility claim. Publication checks: [R5 verification](research/verification-r5.md).

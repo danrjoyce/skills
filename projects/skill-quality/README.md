@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: R1-R4 complete through comparative-protocol design; R5 research-candidate implementation is next. Started 2026-10-02. No skill-performance experiment has been run.
+Status: R1-R5 complete through a frozen research candidate and deterministic local support. R6 preflight is next in fresh context. Started 2026-10-02. No creator/model performance experiment has been run.
 
 ## Purpose
 
@@ -21,6 +21,9 @@ This is a research project, not an installed skill. It does not change existing 
 
 ## Navigation
 
+- [Research candidate](candidate/evidence-skill-creator/SKILL.md): six-file model-invocable creator, uninstalled and behaviorally unproven
+- [R5 guide](research/r5/README.md), [design/traceability](research/r5/design.md), [qualification summary](research/r5/qualification.json) and [verification](research/verification-r5.md): local support, 33 tests, twelve oracle controls twice, and explicit runtime limits
+
 - [How to determine if a skill is good](how-to-determine-if-a-skill-is-good.md): the revised measurement and decision framework
 - [Independent critique](research/critique-01.md): nine prioritized findings, verified code/source checks, and revision acceptance criteria
 - [R3 response ledger](research/revision-01.md): C1-C9 dispositions, independently checked evidence, and remaining decisions
@@ -37,4 +40,4 @@ This is a research project, not an installed skill. It does not change existing 
 - [TASKS.md](TASKS.md): sequential task ledger and acceptance criteria
 - [HANDOFF.md](HANDOFF.md): current state and exact restart prompt
 
-The draft proposes a measurement and decision framework. It does not claim that a new creator has been built or has beaten any alternative.
+The creator is implemented and statically checked. Its effectiveness, native compatibility and advantage over a direct solver, simple template or public creator remain unproven. The published fixtures are exploratory and contaminated by design knowledge, with no independent holdout custody.

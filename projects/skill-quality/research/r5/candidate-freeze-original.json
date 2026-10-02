@@ -1,0 +1,38 @@
+{
+  "stage": "R5 pre-fixture implementation freeze",
+  "status": "unproven candidate; no model run",
+  "basis": "R3 abstract requirements, public creator/spec source and repository conventions; no R4 downstream fixture answers used in package",
+  "files": [
+    {
+      "bytes": 6818,
+      "path": "SKILL.md",
+      "sha256": "b70694ae41e577a4bc30d2f936ed284459c2e4dd4ad2887a0e9be9a4bfd02353"
+    },
+    {
+      "bytes": 115,
+      "path": "agents/openai.yaml",
+      "sha256": "c9200145240b342784401098ee743f69e01c3723b6edb0cdb583a5d6363d1ad7"
+    },
+    {
+      "bytes": 1608,
+      "path": "assets/assessment-template.md",
+      "sha256": "d297ca25180ec0ae3c46030e0b89954199f9d6a5b53af475a813e461a882f263"
+    },
+    {
+      "bytes": 4886,
+      "path": "references/assessment.md",
+      "sha256": "ab47eb49ebcc7a0a26fcaa5b914c7fd2ff62333955b2b7a6fc4f9f2f5522510d"
+    },
+    {
+      "bytes": 2592,
+      "path": "references/evidence.md",
+      "sha256": "4564b7f8ec9ecd4d388e10b00dc403a292df23124c71750e9f8b1317e84ba2ba"
+    },
+    {
+      "bytes": 5847,
+      "path": "scripts/inspect_package.py",
+      "sha256": "32f43d57b31f710495e0c9487a51286b74f587f89f1c71b62360646bfc4e8234"
+    }
+  ],
+  "tree_sha256": "34aecc5ba29cef4de4ea7247db125b517c08f13aa4bd04d313ca3a4ed064933e"
+}
