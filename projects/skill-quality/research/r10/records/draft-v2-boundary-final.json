@@ -1,0 +1,48 @@
+{
+  "family": "draft",
+  "use": "boundary",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 4197,
+      "sha256": "46631cf474690d3c720534db532de8b3d54e8185c149ca7aa743eabed54f3e57"
+    },
+    "consumer-report.md": {
+      "bytes": 1976,
+      "sha256": "11fc8ec859e8424df6e699552e4911c8c715f082bfdc1529fdf3041dada57d0e"
+    },
+    "draft.md": {
+      "bytes": 263,
+      "sha256": "5c331c021a6840961a0d1e99e0f0bb55cf2b788586058a0d44a914707f1c3eac"
+    },
+    "prompt.txt": {
+      "bytes": 3649,
+      "sha256": "bd95cbb8ccbaadcbebb7d8ac2314240569a896d5f3a3dbd506b7eb093b98a4a2"
+    },
+    "sources.md": {
+      "bytes": 682,
+      "sha256": "9ba6af94639c87c7a2b23fa6b72fefe48139325332efc74fa84c20625fd6895c"
+    },
+    "state-origin.json": {
+      "bytes": 124,
+      "sha256": "fce435fd0f55ab29a3641a30e30b74f95be72bb0e34cbd8391e0ca052b6f537f"
+    }
+  },
+  "draft_unchanged": true,
+  "protected_preserved": true,
+  "artifact_correct": null,
+  "semantic_review_required": false,
+  "slot": "draft-v2-boundary",
+  "status": "completed",
+  "observed_terminal_utc": "2026-10-02T22:32:20Z",
+  "recorded_utc": "2026-10-02T22:32:37.816271+00:00",
+  "conservative_elapsed_seconds": 185.0,
+  "deadline_utc": "2026-10-02T22:32:15+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

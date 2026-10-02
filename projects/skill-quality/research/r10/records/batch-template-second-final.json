@@ -1,0 +1,67 @@
+{
+  "family": "batch",
+  "use": "second",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 3640,
+      "sha256": "3f892e349d684a7a754c3cff5ba9bbe89d2a37b4ffefb1c23359fdb8de04a39a"
+    },
+    "consumer-report.md": {
+      "bytes": 1413,
+      "sha256": "304b6c37a320a26dfa760722e076490c70c4709fcde6c53bf1bdb967c181c019"
+    },
+    "destination/": {
+      "directory": true
+    },
+    "destination/KEEP.txt": {
+      "bytes": 39,
+      "sha256": "be9ec134719eeaf79c16e5f1c4f0dbff0b4ab36bfdc963864404668e5a3af3f7"
+    },
+    "destination/index.json": {
+      "bytes": 239,
+      "sha256": "97b77cc7d98076bf1c7fd26d1cf905a33e9f18156e09546866d91ba279cd8e4a"
+    },
+    "destination/quiet-room.md": {
+      "bytes": 27,
+      "sha256": "8fa8c628735a8ddbbc70c00cd7859a56055f1e5f5d085e4d7161738283e49a08"
+    },
+    "destination/stone-arch.md": {
+      "bytes": 27,
+      "sha256": "5354412196a795adcabb7ce3760d76c8b992426059e6460cbac93d0132b92767"
+    },
+    "input.json": {
+      "bytes": 230,
+      "sha256": "77c6c1115dd429a51e9d02a88b6678bfe033c8e7e7b3b8185b9c9c0449b41a05"
+    },
+    "prompt.txt": {
+      "bytes": 4536,
+      "sha256": "816ca8b3777eb5b152ee32320a5850de8d42b4d442c5fbd61ee79c4297e36246"
+    },
+    "state-origin.json": {
+      "bytes": 120,
+      "sha256": "a6679a032aa04be45fd22d616a70954572a6784c5fbed1b6ec93da260db7b758"
+    }
+  },
+  "protected_preserved": true,
+  "target_checks": {
+    "quiet-room.md": true,
+    "stone-arch.md": true,
+    "index.json": true
+  },
+  "no_unexpected_destination_paths": true,
+  "artifact_correct": true,
+  "slot": "batch-template-second",
+  "status": "completed",
+  "observed_terminal_utc": "2026-10-02T22:37:52Z",
+  "recorded_utc": "2026-10-02T22:37:59.217897+00:00",
+  "conservative_elapsed_seconds": 152.0,
+  "deadline_utc": "2026-10-02T22:38:20+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

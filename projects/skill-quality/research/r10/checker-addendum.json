@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-10-02T21:24:55.636435+00:00",
+  "reason": "Coordinator inspection found read_text universal-newline conversion could accept CRLF despite exact Markdown-byte contract. Original checker/freeze retained. Before any consumer output exists, v2 compares decoded read_bytes without newline normalization. No task inputs, expectations, budgets or packages changed.",
+  "new_checker": "check-artifacts-v2.py",
+  "sha256": "d0c5102527cb2231f9aea7b2ef5218e5d1be247f80f65daa3aefc5a029015027",
+  "controls": {
+    "expected_batch_accepted": true,
+    "CRLF_card_rejected": true
+  },
+  "consumer_trials_at_revision": 0,
+  "author_trials_completed_at_revision": 1,
+  "scope": "Measurement bug repair before consumer grading, not candidate tuning"
+}

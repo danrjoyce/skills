@@ -1,0 +1,77 @@
+{
+  "checks": {
+    "batch-v2-first": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-v2-second": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-v2-boundary": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-template-first": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-template-second": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-template-boundary": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-direct-first": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-direct-second": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-direct-boundary": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-v2-first": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-v2-second": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-v2-boundary": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-template-first": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-template-second": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "batch-template-boundary": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-direct-first": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-direct-second": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    },
+    "draft-direct-boundary": {
+      "initial_files_preserved_except_authorized_draft_body": true,
+      "mismatches": []
+    }
+  },
+  "complete_action_history": "unknown; endpoint comparison only"
+}

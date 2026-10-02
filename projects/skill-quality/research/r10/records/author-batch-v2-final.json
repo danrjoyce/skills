@@ -1,0 +1,311 @@
+{
+  "actions.md": {
+    "bytes": 18228,
+    "sha256": "800e851d9b31be3c7fcb3df8350fb4405be3e0fe04f7a75ad4055caa43a9a385"
+  },
+  "author-report.md": {
+    "bytes": 4844,
+    "sha256": "354e9509e1c95a4f1cc3679c77c34615088c0e405e800047c4466de028dab6b1"
+  },
+  "brief.md": {
+    "bytes": 2179,
+    "sha256": "ccbc7d97bdc8d2e81600ee4806c5feac8762289da0525d541a91db863d10d822"
+  },
+  "check_package.py": {
+    "bytes": 4572,
+    "sha256": "5e079feb885c6ec92d0c0f52e9cfbb022de7d4b2cfd6bc599b048c7dd92f8354"
+  },
+  "dev-expected.json": {
+    "bytes": 221,
+    "sha256": "c02dbdb61c949fcee6904cda47e7ce3e3b08c8414e4912604a2d61f4d881b4f9"
+  },
+  "dev-input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "package/": {
+    "directory": true
+  },
+  "package/catalogue-export/": {
+    "directory": true
+  },
+  "package/catalogue-export/SKILL.md": {
+    "bytes": 3953,
+    "sha256": "f1583e658673e9f6c2eec1c9a0100feb4510c27a8273040a83e529f7e374ccee"
+  },
+  "package/catalogue-export/scripts/": {
+    "directory": true
+  },
+  "package/catalogue-export/scripts/export_catalogue.py": {
+    "bytes": 6127,
+    "sha256": "e5b041684a15f3fb67dc38304d04f1b909da9bdf0b46bf6d2a5c97b4a53fd612"
+  },
+  "policy/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/SKILL.md": {
+    "bytes": 4546,
+    "sha256": "07d314b1b320d07193753740557277a478f409d9904842473fe14d20a8735dfe"
+  },
+  "policy/evidence-skill-creator-v2/agents/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/agents/openai.yaml": {
+    "bytes": 119,
+    "sha256": "d0cede36134d4aef65385956045be16b82725e0e3b20c1720fe09ca2aaed3d3b"
+  },
+  "prompt.txt": {
+    "bytes": 2730,
+    "sha256": "8ef48af2146fdf1adc0fdb1611c909d074423037f6c3b0db299571bf2dac1ebe"
+  },
+  "tests/": {
+    "directory": true
+  },
+  "tests/.keep": {
+    "bytes": 40,
+    "sha256": "a9b15179aa50c90b7667ea0b50b2fbca5b298ad6d01c5561a677ce8f0b4e4ec8"
+  },
+  "tests/run-nvzp7kzm/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/changed-batch/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/changed-batch/input.json": {
+    "bytes": 124,
+    "sha256": "23473dd2997ad47d2bce52768e86190b056ced1feeef6142c8f3b6598a34c65b"
+  },
+  "tests/run-nvzp7kzm/changed-batch/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/changed-batch/out/a.md": {
+    "bytes": 18,
+    "sha256": "f06d8344bd57827148396a6e05ca56aaccbdccb95f2a7f1e8ade33ea107ff3c5"
+  },
+  "tests/run-nvzp7kzm/changed-batch/out/index.json": {
+    "bytes": 212,
+    "sha256": "5fce9805a99829f33f997909c33a800dba90e9d4ce1fc9b20b4a8b8b5b3533ce"
+  },
+  "tests/run-nvzp7kzm/changed-batch/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/changed-batch/out/z-2.md": {
+    "bytes": 33,
+    "sha256": "686b95c2aac416dad6e710481696e826f1da8eafc494cc6e003c1a0174bb9632"
+  },
+  "tests/run-nvzp7kzm/dangling-target-link/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/dangling-target-link/input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "tests/run-nvzp7kzm/dangling-target-link/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/dangling-target-link/out/amber.md": {
+    "symlink": "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/dangling-target-link/missing.md"
+  },
+  "tests/run-nvzp7kzm/dangling-target-link/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/destination-link/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/destination-link/alias": {
+    "symlink": "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/destination-link/out"
+  },
+  "tests/run-nvzp7kzm/destination-link/input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "tests/run-nvzp7kzm/destination-link/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/destination-link/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/development/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/development/input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "tests/run-nvzp7kzm/development/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/development/out/amber.md": {
+    "bytes": 31,
+    "sha256": "cc8958aed1418fafc4e89f22bc1e76eff7574ea32d808afd1a582b76b3ba1b27"
+  },
+  "tests/run-nvzp7kzm/development/out/index.json": {
+    "bytes": 129,
+    "sha256": "eff2fdb34ce12ae052b8caf0cdea00415c5812d6b86f5c08d654db3e22430f84"
+  },
+  "tests/run-nvzp7kzm/development/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/duplicate-id/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/duplicate-id/input.json": {
+    "bytes": 67,
+    "sha256": "b5c4a400287befb5c18b9243351e26b0565c73422f36c28df6291e7971dbab74"
+  },
+  "tests/run-nvzp7kzm/duplicate-id/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/duplicate-id/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/duplicate-json-key/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/duplicate-json-key/input.json": {
+    "bytes": 43,
+    "sha256": "e379c3529651be40d8947513980e64e1f7364744cb3a29fc77cc79b6ec0a4fca"
+  },
+  "tests/run-nvzp7kzm/duplicate-json-key/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/duplicate-json-key/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/empty/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/empty/input.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "tests/run-nvzp7kzm/empty/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/empty/out/index.json": {
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "tests/run-nvzp7kzm/empty/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/extra-key/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/extra-key/input.json": {
+    "bytes": 44,
+    "sha256": "cffd90e88b2fc901231bdb59b56043774465376f20ae2d4f613826fd1d3a8b90"
+  },
+  "tests/run-nvzp7kzm/extra-key/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/extra-key/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/invalid-utf8-scalar/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/invalid-utf8-scalar/input.json": {
+    "bytes": 39,
+    "sha256": "1b212b62f7456bae3943646776261b8275598433bcb1352b5ab6e1a5d30a7c4a"
+  },
+  "tests/run-nvzp7kzm/invalid-utf8-scalar/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/invalid-utf8-scalar/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/late-invalid-record/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/late-invalid-record/input.json": {
+    "bytes": 86,
+    "sha256": "1b11768343128da90865a3432e7aaa128683cbbdc04ed3d73a8e474286b0ebe3"
+  },
+  "tests/run-nvzp7kzm/late-invalid-record/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/late-invalid-record/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/multiline-title/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/multiline-title/input.json": {
+    "bytes": 37,
+    "sha256": "1d68a5eefff9fe875538eb896c4f840c72d0f718ca7ec0b68fed64b7dd6d91dc"
+  },
+  "tests/run-nvzp7kzm/multiline-title/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/multiline-title/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/nonstring-tag/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/nonstring-tag/input.json": {
+    "bytes": 35,
+    "sha256": "b84a49a7ce7d3b7b9cacc1f1645087d472b28e19e955032e45e1781913d216ce"
+  },
+  "tests/run-nvzp7kzm/nonstring-tag/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/nonstring-tag/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/occupied-card/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/occupied-card/input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "tests/run-nvzp7kzm/occupied-card/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/occupied-card/out/amber.md": {
+    "bytes": 13,
+    "sha256": "008f806adedc474746e4b38bf739a74a6fe2d8b4cace216fb0b4f87c8e6c47fd"
+  },
+  "tests/run-nvzp7kzm/occupied-card/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/occupied-index-directory/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/occupied-index-directory/input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "tests/run-nvzp7kzm/occupied-index-directory/out/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/occupied-index-directory/out/index.json/": {
+    "directory": true
+  },
+  "tests/run-nvzp7kzm/occupied-index-directory/out/protected.bin": {
+    "bytes": 12,
+    "sha256": "5d8b63df8e671ea1255b996d37c4a6849ada3906b19123a0d5208819c5d159bb"
+  },
+  "tests/run-nvzp7kzm/results.json": {
+    "bytes": 10974,
+    "sha256": "6e11d62735966d574d322840da0e3ad630d9dddcde76f8cb5a82d70ed0fb53fb"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "event": "executable_safety_review",
+  "slot": "author-draft-template",
+  "observed_utc": "2026-10-02T21:32:45Z",
+  "decision": "approved for stated local development runner",
+  "files_sha256": {
+    "package/release-brief-update/scripts/replace_sections.py": "5e9bcb8da1de7d00ea49e33ba354549231992763b80888d623ba4b80886065f0",
+    "test_development.py": "d9b7d069d0ed6d7249cd400810d5bc1208d214c525ab6c5ce8c1bf059ae3cffa"
+  },
+  "scope": "Own synthetic test-output files and explicitly authorized development draft section bodies; own temporary-file cleanup only. Not a correctness judgment.",
+  "task_intervention": false,
+  "harness_gate": true
+}

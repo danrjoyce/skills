@@ -1,6 +1,6 @@
 # Skill quality research
 
-Status: R9's independent review accepts the frozen two-file v2 as usable enough for a separately authorized limited assessment. No material package revision is required. Behavioral usefulness remains untested. Next: settle the exact smoke-test scope and obtain new authorization; no live campaign is active. R6 is closed; its original primary campaign remains gated/unrun, with no creator-superiority finding. Started 2026-10-02.
+Status: R10's bounded assessment is terminal. All three policies tied: each produced 4/4 correct positive artifacts and 2/2 correct boundary refusals. No observed v2 preference. Four consumers were interrupted during reporting; this is not 18/18 end-to-end success. V2 remains a frozen, uninstalled research package. Independent final review is included in this deliverable. Research stops here unless a concrete new use justifies separately authorized work. Started 2026-10-02.
 
 ## Purpose
 
@@ -19,7 +19,17 @@ This is a research project, not an installed skill. It does not change existing 
 - Renew context conservatively around 50,000 to 60,000 tokens and always before the requested approximately 90,000-token ceiling. Checkpoint earlier at a coherent stopping point.
 - Publish incremental work on a research branch and draft pull request. Do not merge.
 
+## Use the research candidate
+
+For a host that can read this repository, ask:
+
+> Read `projects/skill-quality/candidate/evidence-skill-creator-v2/SKILL.md` and use it to create or revise a skill for [repeated workflow], using [inputs], from [starting state], producing [output/destination], with [allowed effects] and [available tools/host]. Recover already-known details rather than requiring every field again.
+
+This explicitly loads instructions. It does not install a skill, register an API/MCP function, or verify native discovery. The candidate is usable for supervised exploration, but R10 does not justify preferring it over the concise template or direct execution. [Invocation and compatibility details](research/r8/README.md#calling-and-installation-compatibility).
+
 ## Navigation
+
+- [R10 result and recommendation](research/r10/report.md): 12/12 correct positive artifacts and 6/6 boundaries across v2/template/direct, with no observed preference. [Evidence and reproduction guide](research/r10/README.md), [publication verification](research/verification-r10.md), and [final independent review](research/r10/final-review.md) and [its review prompt](research/r10/continuation.md).
 
 - [R9 independent readiness review](research/r9/review.md): package accepted for a separately authorized limited assessment; three launch clarifications and [minimal next work](research/r9/review.md#minimal-next-work-and-stopping-condition). [Verification](research/verification-r9.md) records deterministic checks and publication scope.
 
@@ -48,4 +58,4 @@ This is a research project, not an installed skill. It does not change existing 
 - [TASKS.md](TASKS.md): sequential task ledger and acceptance criteria
 - [HANDOFF.md](HANDOFF.md): current state and exact restart prompt
 
-Both creator versions remain uninstalled research artifacts. V2 is implemented and statically checked; its effectiveness, native compatibility and advantage over a direct solver or simple template remain unproven. The published R6 cases are known development evidence for v2, with no independent holdout custody. Static checks and a shorter package do not prove better decisions.
+Both creator versions remain uninstalled research artifacts. V2 is implemented, statically checked, and has narrow synthetic artifact-level usefulness evidence from R10. Native compatibility, general effectiveness and advantage over a direct solver or simple template remain unproven. R6 and R10 are development evidence with no independent holdout custody. Static checks, a shorter package and a tied smoke test do not prove better decisions.

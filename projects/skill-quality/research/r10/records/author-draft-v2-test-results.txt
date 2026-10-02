@@ -1,0 +1,52 @@
+PASS: supplied development evidence read
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/package/release-brief-update/scripts/update_sections.py /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-draft.md /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-plan.json --allow Summary --allow Schedule
+EXIT: 0
+STDOUT: --- /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-draft.md
++++ /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-draft.md (proposed)
+@@ -1,10 +1,10 @@
+ # Demo release brief
+ 
+ ## Summary
+-Draft for two sites.
++The approved trial covers three sites. [D1] General release remains undecided. [D1]
+ 
+ ## Schedule
+-Trial planned 2026-11-04.
++The trial is approved for 2026-11-06. [D1]
+ 
+ ## Notes
+ Keep this wording exactly.
+DRY RUN: draft unchanged; original SHA256=bf24f88f539b70fde8effe19d6f9f46c3cf1cba21b7df79b2f0444778b4e3b28
+STDERR: 
+PASS: expected exit 0
+PASS: dry-run unchanged
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/package/release-brief-update/scripts/update_sections.py /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-draft.md /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-plan.json --allow Summary --allow Schedule --apply
+EXIT: 2
+STDOUT: 
+STDERR: ERROR: Existing-file replacement authority is missing
+PASS: expected exit 2
+PASS: missing replacement authority leaves entire draft unchanged
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/package/release-brief-update/scripts/update_sections.py /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-draft.md /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-plan.json --allow Summary --apply --replace-existing
+EXIT: 2
+STDOUT: 
+STDERR: ERROR: Requested section lacks authority: Schedule
+PASS: expected exit 2
+PASS: one unauthorized target rejects entire plan
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/package/release-brief-update/scripts/update_sections.py /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-draft.md /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-plan.json --allow Summary --allow Schedule --apply --replace-existing
+EXIT: 0
+STDOUT: UPDATED: /workspace/scratch/7a0d3a848439/r10-runtime/author-draft-v2/dev-draft.md; sections=Summary, Schedule; protected bytes verified; original SHA256=bf24f88f539b70fde8effe19d6f9f46c3cf1cba21b7df79b2f0444778b4e3b28
+STDERR: 
+PASS: expected exit 0
+PASS: provided consumer request exact expected output
+PASS: title and all heading bytes retained
+PASS: protected Notes retained byte-for-byte
+PASS: repeat preserves actual prior Summary
+PASS: proposed date remains proposed
+PASS: stale-looking protected count retained
+PASS: readiness and approved site counts distinguished
+PASS: repeat preserves Notes
+PASS: CRLF preserved without normalization
+EXPECTED REJECTION: heading injection: Replacement body contains a heading
+EXPECTED REJECTION: title replacement: Document title/introduction cannot be replaced
+EXPECTED REJECTION: missing section: Section missing or ambiguous: Missing
+PASS: development file remains first authorized result

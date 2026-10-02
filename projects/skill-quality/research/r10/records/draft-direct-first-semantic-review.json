@@ -1,0 +1,17 @@
+{
+  "slot": "draft-direct-first",
+  "artifact_correct": true,
+  "source_claims_checked": {
+    "pilot_approved_2026-10-14": true,
+    "nine_of_twelve_confirmed": true,
+    "release_undated_capacity_review": true,
+    "S2_citations": true
+  },
+  "unsupported_claims_observed": false,
+  "protected_preserved": true,
+  "reviewer": "unblinded coordinator",
+  "scope": "Authorized bodies compared with frozen S2 and claims.json.",
+  "report_complete": true,
+  "action_history_complete": "unknown",
+  "timing": "Self-reported within allowance; final observed 1 second after cap, exact cessation unknown."
+}

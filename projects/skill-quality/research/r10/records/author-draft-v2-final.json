@@ -1,0 +1,72 @@
+{
+  "actions.md": {
+    "bytes": 3433,
+    "sha256": "391666ee57f10eff28525c3f36ed486d5b7e3b9357bb900f1162a9150518adb6"
+  },
+  "author-report.md": {
+    "bytes": 2768,
+    "sha256": "5cd1e659579ce9ab3f6d1eb58a1c7c6addb15b4b5b12f9acc85767d152992d34"
+  },
+  "brief.md": {
+    "bytes": 1873,
+    "sha256": "afe09ad5b453b6495992ce16556aeb7dc703e81702343a38cd9d767c02676ba8"
+  },
+  "dev-draft.md": {
+    "bytes": 210,
+    "sha256": "e7aad9fbbc00fe6d52270774c079a5601e5fe8cfaf0018fb5b55dbb6a7b20769"
+  },
+  "dev-plan.json": {
+    "bytes": 171,
+    "sha256": "a6cb3a8df5e339dadee09524a35f07da85dd70ccbb5a7c1729dfef01be990943"
+  },
+  "dev-sources.md": {
+    "bytes": 153,
+    "sha256": "ca82d39fad81cfbed4d5e61d0bca895a11ce03c6460a8febad1f932a1eda7d76"
+  },
+  "package/": {
+    "directory": true
+  },
+  "package/release-brief-update/": {
+    "directory": true
+  },
+  "package/release-brief-update/SKILL.md": {
+    "bytes": 6295,
+    "sha256": "42752548e2ae9dc07bde85dea78a203af34f89f8c0a0463bdb15a2a7c0bdfafb"
+  },
+  "package/release-brief-update/scripts/": {
+    "directory": true
+  },
+  "package/release-brief-update/scripts/update_sections.py": {
+    "bytes": 7886,
+    "sha256": "74bd512ef05e85228472a0ac63f84e705251c7db0463490004ba075689f1c695"
+  },
+  "policy/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/SKILL.md": {
+    "bytes": 4546,
+    "sha256": "07d314b1b320d07193753740557277a478f409d9904842473fe14d20a8735dfe"
+  },
+  "policy/evidence-skill-creator-v2/agents/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/agents/openai.yaml": {
+    "bytes": 119,
+    "sha256": "d0cede36134d4aef65385956045be16b82725e0e3b20c1720fe09ca2aaed3d3b"
+  },
+  "prompt.txt": {
+    "bytes": 2730,
+    "sha256": "7a19d47e9cd0eaeb0fec6bd43caa8f2f98e7780899630d26db1b42cbc3a0fbad"
+  },
+  "test-results.txt": {
+    "bytes": 3498,
+    "sha256": "c3ef6140141448c5d5694fd315982f93aa0212d67eda4a9f6aa2f3695013f7f6"
+  },
+  "test_workflow.py": {
+    "bytes": 5092,
+    "sha256": "0317c2066da731b57bbd07fe4af7cc4540cfe75942c7edc85056174e72f712b0"
+  }
+}

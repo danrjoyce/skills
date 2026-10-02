@@ -1,0 +1,52 @@
+{
+  "family": "draft",
+  "use": "second",
+  "workspace_manifest": {
+    "actions.md": {
+      "bytes": 5940,
+      "sha256": "44096dd7b1495d0e49b627915f8b7b0ef12ef8c3f6f6bc26639497424e873560"
+    },
+    "consumer-report.md": {
+      "bytes": 1313,
+      "sha256": "31651d1d9c201f076a87332bf202088d3cef04ba37f91e90e635fc8d0595c9f8"
+    },
+    "draft.md": {
+      "bytes": 393,
+      "sha256": "ab9e49788d8ae96ffda6a354c77b32894f6488d7827312b3562b0c438f5e1347"
+    },
+    "prompt.txt": {
+      "bytes": 3764,
+      "sha256": "6c15133928b7cf0c04b8882787bedaaa50cbbb6652343627c54da435d2ebf0d8"
+    },
+    "sources.md": {
+      "bytes": 580,
+      "sha256": "13db7f0454d2da749440999dbd80a1d63ba5f3263ba72a195bc8f10e9989315e"
+    },
+    "state-origin.json": {
+      "bytes": 202,
+      "sha256": "27a7d4931e717784c8d95aadc3b8ab32c732f10a773a519f4d7f28931d54e97f"
+    },
+    "update-plan.json": {
+      "bytes": 261,
+      "sha256": "80663c7da3d345c7182735656988b102a67aedf76d04d1110714a07948d4eaba"
+    }
+  },
+  "draft_unchanged": false,
+  "protected_preserved": true,
+  "artifact_correct": null,
+  "semantic_review_required": true,
+  "slot": "draft-v2-second",
+  "status": "interrupted_at_deadline",
+  "observed_terminal_utc": "2026-10-02T22:28:47Z",
+  "recorded_utc": "2026-10-02T22:29:09.103233+00:00",
+  "conservative_elapsed_seconds": 192.0,
+  "deadline_utc": "2026-10-02T22:28:35+00:00",
+  "report_present": true,
+  "package_identity_check": {
+    "frozen_files": 50,
+    "freeze_mismatches": [],
+    "package_mismatches": []
+  },
+  "complete_action_history": "unknown",
+  "tokens_cost_backend": "unknown"
+}

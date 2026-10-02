@@ -1,0 +1,14 @@
+{
+  "event": "executable_safety_review",
+  "slot": "author-draft-v2",
+  "observed_utc": "2026-10-02T21:45:36Z",
+  "decision": "current revised test harness fully reread and approved before execution",
+  "files_sha256": {
+    "test_workflow.py": "0317c2066da731b57bbd07fe4af7cc4540cfe75942c7edc85056174e72f712b0",
+    "package/release-brief-update/scripts/update_sections.py": "74bd512ef05e85228472a0ac63f84e705251c7db0463490004ba075689f1c695"
+  },
+  "task_intervention": false,
+  "harness_gate": true,
+  "static_revision": "Author changed test citations and in-memory D2 example before receiving first approval; author paused and requested re-review. No execution preceded this second approval.",
+  "custody_correction": "The first review hash/saved source snapshot was captured after the author patch, although initial source inspection preceded it. That first snapshot is not proof the revised text had been reviewed then. Current complete source was reread before second approval. Initial exact source version is available in the observed tool read, not a separately retained source file."
+}

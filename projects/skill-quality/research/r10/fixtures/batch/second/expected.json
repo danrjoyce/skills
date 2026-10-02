@@ -1,0 +1,21 @@
+{
+  "quiet-room.md": "# Quiet Room\n\nTags: (none)\n",
+  "stone-arch.md": "# Stone Arch 2\n\nTags: a, b\n",
+  "index.json": [
+    {
+      "id": "quiet-room",
+      "title": "Quiet Room",
+      "tags": [],
+      "file": "quiet-room.md"
+    },
+    {
+      "id": "stone-arch",
+      "title": "Stone Arch 2",
+      "tags": [
+        "a",
+        "b"
+      ],
+      "file": "stone-arch.md"
+    }
+  ]
+}

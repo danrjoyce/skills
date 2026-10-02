@@ -1,0 +1,16 @@
+[
+  {
+    "id": "red-fox",
+    "title": "Replacement Fox",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": "new-card",
+    "title": "New card",
+    "tags": [
+      "new"
+    ]
+  }
+]

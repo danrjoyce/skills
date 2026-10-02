@@ -1,0 +1,17 @@
+{
+  "slot": "draft-direct-second",
+  "artifact_correct": true,
+  "source_claims_checked": {
+    "pilot_approved_2026-10-16": true,
+    "ten_of_twelve_confirmed": true,
+    "release_approved_2026-11-02": true,
+    "weekly_digest_deferred": true,
+    "S3_citations": true
+  },
+  "unsupported_claims_observed": false,
+  "protected_preserved": true,
+  "reviewer": "unblinded coordinator",
+  "scope": "Authorized bodies compared with frozen S3 and claims.json; baseline is actual first output.",
+  "report_complete": true,
+  "action_history_complete": "unknown"
+}

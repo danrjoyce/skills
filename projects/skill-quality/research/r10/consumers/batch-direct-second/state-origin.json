@@ -1,0 +1,6 @@
+{
+  "origin": "fixed synthetic fixture",
+  "fixture": "fixtures/batch/second",
+  "use": "second",
+  "fallback": false
+}

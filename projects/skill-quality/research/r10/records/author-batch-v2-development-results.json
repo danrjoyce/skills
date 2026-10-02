@@ -1,0 +1,288 @@
+[
+  {
+    "case": "development",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/development/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/development/out"
+    ],
+    "returncode": 0,
+    "stdout": "{\"created\": [\"amber.md\", \"index.json\"]}\n",
+    "stderr": "",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "only_expected": true,
+      "amber.md": true,
+      "index.json": true
+    },
+    "passed": true
+  },
+  {
+    "case": "occupied-card",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/occupied-card/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/occupied-card/out"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "No outputs created. Occupied targets: amber.md. Ask for replacement permission or another destination.\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "occupied-index-directory",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/occupied-index-directory/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/occupied-index-directory/out"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "No outputs created. Occupied targets: index.json. Ask for replacement permission or another destination.\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "dangling-target-link",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/dangling-target-link/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/dangling-target-link/out"
+    ],
+    "returncode": 3,
+    "stdout": "",
+    "stderr": "No outputs created. Occupied targets: amber.md. Ask for replacement permission or another destination.\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "destination-link",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/destination-link/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/destination-link/alias"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: [Errno 20] Not a directory: 'alias'\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "late-invalid-record",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/late-invalid-record/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/late-invalid-record/out"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: Record 2: invalid id\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "duplicate-id",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/duplicate-id/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/duplicate-id/out"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: Record 2: duplicate id 'x'\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "extra-key",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/extra-key/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/extra-key/out"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: Record 1: expected exactly id, title, tags\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "multiline-title",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/multiline-title/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/multiline-title/out"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: Record 1: title must be a nonempty single line\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "nonstring-tag",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/nonstring-tag/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/nonstring-tag/out"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: Record 1: tags must be an array of single-line strings\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "duplicate-json-key",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/duplicate-json-key/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/duplicate-json-key/out"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: Duplicate JSON key: 'id'\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "invalid-utf8-scalar",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/invalid-utf8-scalar/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/invalid-utf8-scalar/out"
+    ],
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "Stopped before output writes: 'utf-8' codec can't encode character '\\ud800' in position 2: surrogates not allowed\n",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "unchanged": true
+    },
+    "passed": true
+  },
+  {
+    "case": "empty",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/empty/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/empty/out"
+    ],
+    "returncode": 0,
+    "stdout": "{\"created\": [\"index.json\"]}\n",
+    "stderr": "",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "only_expected": true,
+      "index.json": true
+    },
+    "passed": true
+  },
+  {
+    "case": "changed-batch",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/package/catalogue-export/scripts/export_catalogue.py",
+      "--input",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/changed-batch/input.json",
+      "--destination",
+      "/workspace/scratch/7a0d3a848439/r10-runtime/author-batch-v2/tests/run-nvzp7kzm/changed-batch/out"
+    ],
+    "returncode": 0,
+    "stdout": "{\"created\": [\"a.md\", \"z-2.md\", \"index.json\"]}\n",
+    "stderr": "",
+    "checks": {
+      "exit": true,
+      "protected": true,
+      "only_expected": true,
+      "a.md": true,
+      "z-2.md": true,
+      "index.json": true
+    },
+    "passed": true
+  }
+]

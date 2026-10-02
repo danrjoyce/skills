@@ -1,0 +1,159 @@
+{
+  "rule": "Do not publish prompts/ originals. Public copies omit private coordination boilerplate. Exact originals remain in local custody; the initial freeze retains their hashes. Public copies are not claimed to be the full original prompts.",
+  "files": [
+    {
+      "exact_local_path": "prompts/author-batch-template.txt",
+      "exact_local_sha256": "80d6f21e0def93c6258175b59f4c8e72efd7dd32a729b332ca70de37f11d4b41",
+      "public_path": "public-prompts/author-batch-template.txt",
+      "public_sha256": "96eb53f9aa539a003c9e7aaaf83c11a5bfd064707d6ca0d1fbb5f3852f976b55",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/author-batch-v2.txt",
+      "exact_local_sha256": "8ef48af2146fdf1adc0fdb1611c909d074423037f6c3b0db299571bf2dac1ebe",
+      "public_path": "public-prompts/author-batch-v2.txt",
+      "public_sha256": "b0420dba2e50b527f92829d1464a95344c32a0fe2addf0090fde0dad55efce75",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/author-draft-template.txt",
+      "exact_local_sha256": "169facbb37b2754504da143df4ddcc69b2efa11f5f8f41c5b1f1701c9c08b3f3",
+      "public_path": "public-prompts/author-draft-template.txt",
+      "public_sha256": "e03d2f175bb74540eb8a30cb89d2c5d6d44c206abe3218dd8d55418fdb6fc156",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/author-draft-v2.txt",
+      "exact_local_sha256": "7a19d47e9cd0eaeb0fec6bd43caa8f2f98e7780899630d26db1b42cbc3a0fbad",
+      "public_path": "public-prompts/author-draft-v2.txt",
+      "public_sha256": "d60cf24c2a799865f2c3df1d74d4fb25952cfc386b301245a95c077630d95d7a",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-direct-boundary.txt",
+      "exact_local_sha256": "9ec7839d9968b73735d0300243863b887204bc4545a5d9147e467127c033edba",
+      "public_path": "public-prompts/batch-direct-boundary.txt",
+      "public_sha256": "1d267ab27eaadcd67dc92dc335c0a80460ca0e74fee7453ad88219a164d54df7",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-direct-first.txt",
+      "exact_local_sha256": "51d7bd05704c17d83c60e1a42ab8174b2b5955fada0d78c8f97e57174301b21e",
+      "public_path": "public-prompts/batch-direct-first.txt",
+      "public_sha256": "f6f0016baa7121666b2c186de374ccd212c96112d554ebeb49491665c4982885",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-direct-second.txt",
+      "exact_local_sha256": "2e953263962070d93b6edfdae5a163f41d81c25173b17148dc877b0624a81a9e",
+      "public_path": "public-prompts/batch-direct-second.txt",
+      "public_sha256": "9e8ce9dab99955f77dd55f67e6d10a4a24e2b8891974ac77f87ce7ad33f58558",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-template-boundary.txt",
+      "exact_local_sha256": "7d8269214e09471e5c78a2c8e3ade19fdd92a1011e7c953b0eb4c993bac774a6",
+      "public_path": "public-prompts/batch-template-boundary.txt",
+      "public_sha256": "77d5f1db78484a9fd3bf2a2f7b5ae7c3cbe41d89a1e48920466eee9e5f1ee869",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-template-first.txt",
+      "exact_local_sha256": "4ef1a640f60a606c90e12fe8ec28638faa5a096fd606b6ebb35a801f96f2ef48",
+      "public_path": "public-prompts/batch-template-first.txt",
+      "public_sha256": "9c96cd0dff54cf2726757960000c0ecd040f267488310e2bc2bb3dd6015eedeb",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-template-second.txt",
+      "exact_local_sha256": "816ca8b3777eb5b152ee32320a5850de8d42b4d442c5fbd61ee79c4297e36246",
+      "public_path": "public-prompts/batch-template-second.txt",
+      "public_sha256": "a3fe58fc670a1a70498e6a6911c3e75a20ad0aeca495c34540209704da8f3ed4",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-v2-boundary.txt",
+      "exact_local_sha256": "c2b42984771c6808724497aaec61e729de2034620ad212deadc326a7a18e4f55",
+      "public_path": "public-prompts/batch-v2-boundary.txt",
+      "public_sha256": "e40ee13a83df9e2bbeb10652d9ab17c3fdd539b36c99453a0406e458698f1a4b",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-v2-first.txt",
+      "exact_local_sha256": "31319260ba92626f8afeddd90104f5258a105d976beddb36b692365c89d0d184",
+      "public_path": "public-prompts/batch-v2-first.txt",
+      "public_sha256": "897896e221090699c52c031da5644f54cbb835e9028d5e8abb0aaba12a6d7cc4",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/batch-v2-second.txt",
+      "exact_local_sha256": "c584f385085ca3286c80f5d6ab711192ec028168dfbbe22c374f5762f39fc245",
+      "public_path": "public-prompts/batch-v2-second.txt",
+      "public_sha256": "49d17a91673b1d809651b2a09fd5835205044b5246c0ee6596ba6e3aca8cc83f",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-direct-boundary.txt",
+      "exact_local_sha256": "8e13fc1ba21f85939cbf28738dac0949167ca9eac31db2232a2159c5683e4bb1",
+      "public_path": "public-prompts/draft-direct-boundary.txt",
+      "public_sha256": "ff5769d7a2a37170346ee097543bcb659285ab2b555d5d9926c7b678470be098",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-direct-first.txt",
+      "exact_local_sha256": "a564951472bae571b53eec8a20d78f34093d4f75a25bd40e27d1e72ddb39aba5",
+      "public_path": "public-prompts/draft-direct-first.txt",
+      "public_sha256": "21f6b093dd3a46a10643c45cb7b78f89c236f365bd2187da08052252d10b5647",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-direct-second.txt",
+      "exact_local_sha256": "46c00365d4c45c0bfe9789d07ab803707244a16c0317eb5cd6832121e701a02b",
+      "public_path": "public-prompts/draft-direct-second.txt",
+      "public_sha256": "453c66adfd9ac8cd1385e8414081648ece036a5f797b50e37bd14d27eeb5ab1e",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-template-boundary.txt",
+      "exact_local_sha256": "94ffb3ff98794639a9e038a0f3354dc6d2b94953f874964589599dc9477f5852",
+      "public_path": "public-prompts/draft-template-boundary.txt",
+      "public_sha256": "af02549f91dff3618a73a253e9009287e6c56bdf60f6eccf343d44141a9385f8",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-template-first.txt",
+      "exact_local_sha256": "4b6290c106eaf954fcbf87afba5884ab6b3bc380f824e6103ad46b55b2a8767a",
+      "public_path": "public-prompts/draft-template-first.txt",
+      "public_sha256": "ae286e5d5c642df631260e5ae0cbae7c1324141d6c45a688f3aafd3e9df4102b",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-template-second.txt",
+      "exact_local_sha256": "2dcf212b913afa94b9a4054fa2e5ec9059a515ab518e173eca03323494cd6ebd",
+      "public_path": "public-prompts/draft-template-second.txt",
+      "public_sha256": "4a9a4603b0a3095353e1dfcd3e461c008780dabc8a1328c56fc0694396154b9d",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-v2-boundary.txt",
+      "exact_local_sha256": "bd95cbb8ccbaadcbebb7d8ac2314240569a896d5f3a3dbd506b7eb093b98a4a2",
+      "public_path": "public-prompts/draft-v2-boundary.txt",
+      "public_sha256": "eb20fa456bcdc9a239e985b9a9575b503e140081cb56f72ec23ef4fceae138c0",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-v2-first.txt",
+      "exact_local_sha256": "5454ed1b81ad5f2c7ff600292822056166dc1cd8c4ee28bade4f433abed65653",
+      "public_path": "public-prompts/draft-v2-first.txt",
+      "public_sha256": "a112092889fee75aeb64ccf978cef1375d091e9434fea4981e97807550595564",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    },
+    {
+      "exact_local_path": "prompts/draft-v2-second.txt",
+      "exact_local_sha256": "6c15133928b7cf0c04b8882787bedaaa50cbbb6652343627c54da435d2ebf0d8",
+      "public_path": "public-prompts/draft-v2-second.txt",
+      "public_sha256": "6e88fa3c043d40eabb4f8e8649e52bae8042ec495a32af5c29e02e1b86ee77e8",
+      "omitted": "Generic private coordinator/approval handoff paragraph only; task, supplied policy, tools, inputs, states, outputs, boundaries, budgets and evidence requirements are unchanged."
+    }
+  ]
+}

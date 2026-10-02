@@ -1,0 +1,22 @@
+{
+  "brief.md": {
+    "bytes": 2179,
+    "sha256": "ccbc7d97bdc8d2e81600ee4806c5feac8762289da0525d541a91db863d10d822"
+  },
+  "dev-expected.json": {
+    "bytes": 221,
+    "sha256": "c02dbdb61c949fcee6904cda47e7ce3e3b08c8414e4912604a2d61f4d881b4f9"
+  },
+  "dev-input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "policy.txt": {
+    "bytes": 580,
+    "sha256": "c352e947d2d6136d4209325073964d87d041fa1c5149572f77b437934225e22e"
+  },
+  "prompt.txt": {
+    "bytes": 2723,
+    "sha256": "80d6f21e0def93c6258175b59f4c8e72efd7dd32a729b332ca70de37f11d4b41"
+  }
+}

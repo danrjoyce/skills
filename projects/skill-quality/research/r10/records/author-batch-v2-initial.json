@@ -1,0 +1,35 @@
+{
+  "brief.md": {
+    "bytes": 2179,
+    "sha256": "ccbc7d97bdc8d2e81600ee4806c5feac8762289da0525d541a91db863d10d822"
+  },
+  "dev-expected.json": {
+    "bytes": 221,
+    "sha256": "c02dbdb61c949fcee6904cda47e7ce3e3b08c8414e4912604a2d61f4d881b4f9"
+  },
+  "dev-input.json": {
+    "bytes": 131,
+    "sha256": "eca66dfa4c2db811056a04ffda45aa633078ed3605bef1108c11ff60db93b6a1"
+  },
+  "policy/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/SKILL.md": {
+    "bytes": 4546,
+    "sha256": "07d314b1b320d07193753740557277a478f409d9904842473fe14d20a8735dfe"
+  },
+  "policy/evidence-skill-creator-v2/agents/": {
+    "directory": true
+  },
+  "policy/evidence-skill-creator-v2/agents/openai.yaml": {
+    "bytes": 119,
+    "sha256": "d0cede36134d4aef65385956045be16b82725e0e3b20c1720fe09ca2aaed3d3b"
+  },
+  "prompt.txt": {
+    "bytes": 2730,
+    "sha256": "8ef48af2146fdf1adc0fdb1611c909d074423037f6c3b0db299571bf2dac1ebe"
+  }
+}
